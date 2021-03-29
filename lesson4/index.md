@@ -30,7 +30,8 @@ HTML tags are...
 (a short explanation of what exercises are done during the class)
 
 - Download VS Code
-- Make a short Hello World example
+- Students see the tags and how they work in the browser using visual studio code.
+- We start building the portfolio project using only what students have learnt in class.
 
 # Glossary & Terminology
 
@@ -44,7 +45,8 @@ HTML tags are...
 
 # Homework
 
-For next session please prepare this and that, etc...
+- For next session students practice the tags they have learnt by adding more content to the project we started in class.
+- Students come with images in preparation for the next class on images
 
 # Resources
 

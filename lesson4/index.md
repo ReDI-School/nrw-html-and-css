@@ -36,11 +36,23 @@ HTML tags are...
 
 (please give related terms and vocabulary that you taught during the class)
 
-- `html tag` - An html tag is
-- `hypertext` - Hypertext means this and that
-- `...` - ...
 
----
+- Empty HTML Elements - These are tags with no content 
+- Headings tag (h1-h6)- Represents a container for introductory content or a set of navigational links. Used by search engines.
+- <pre> tag - This defines preformatted text. It helps to preserve the white space inside your html element
+- <h> tag - Used to separate content (or define a change) in an HTML page.
+- <em> tag - Used to make elements italic
+- <small> tag - Can be used to define smaller text.
+- <Mark> tag - Defines the text that should be marked or highlighted
+- <ins> tag - Defines a text that has been inserted into a document.
+- <sub> tag - This element defines subscript text
+- <sup> tag - This element defines superscript text
+- <blockquote> - This element defines a section that is quoted from another source.
+- <q> tag - This tag defines a short quotation.
+- <abbr> - Defines the abbreviation or an acronym
+- <address> - Defines the contact information for an author/owner of a document.
+- <cite> tag - This tag defines the title of a creative work
+- <bdo> tag - Stands for Bi-directional override. Used to override the current text direction.
 
 # Homework
 

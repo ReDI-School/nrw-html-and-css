@@ -3,9 +3,38 @@ title: Lesson 6
 nav_order: 6
 ---
 
-(This is a recommended student notes structure. Please follow it and feel free to extend if you feel that you need to. But also make sure to at least contain the following sections.)
+---- content discussed in meeting
 
-(Also keep in mind that these student notes are not a must for how the class should be taught. You as a teacher can choose how to teach the class but also make sure to hand out the student notes, as well.)
+- Tags:
+Must have:
+
+    - <form>
+    - <fieldset>
+    - <label>
+    - <input>
+        - text
+        - email
+        - submit
+    - <textarea>
+    - <button>
+
+
+Others:
+
+    - <select>
+    - <option>
+    - Other inputs <input>
+        - file
+
+-----
+
+The project should just have a simple form on a Contact Me Page
+- Name
+- Email
+- Message
+- Submit
+
+------- end
 
 # Session Title
 

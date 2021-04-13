@@ -1,5 +1,7 @@
 ![ReDI](redi_banner.png)
 
+(placeholder, DO NOT MERGE)
+
 # Welcome to HTML & CSS course of NRW (2021 Spring)
 
 In this course we will learn how websites are made and teach you how to build your own.

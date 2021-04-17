@@ -1,15 +1,44 @@
 body {
-    background-color: grey;
+  background-color: grey;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #about {
-    background-color: peachpuff;
+  background-color: peachpuff;
 }
 
 #proficiency {
-    background-color: peachpuff;
+  background-color: peachpuff;
 }
 
 .section {
-    background-color: paleturquoise;
+  background-color: paleturquoise;
+  border: 2px solid black;
+}
+
+.section p {
+  text-indent: 20px;
+}
+
+footer {
+  text-align: end;
+}
+
+/* 
+ * This is our main class for all anchor tags (links)
+ * which are placed in the navigation.
+ * Using a descendant selector:
+ * https://www.w3schools.com/css/css_combinators.asp
+ */
+nav a {
+  text-decoration: none;
+  color: azure;
+}
+
+/* Applying some basic text shadow over my greeting */
+#greeting {
+  text-shadow: 3px 3px 4px azure;
+  text-align: center;
+  font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
+    serif;
 }

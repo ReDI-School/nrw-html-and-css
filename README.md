@@ -18,7 +18,7 @@ In the course, each student will be working on a personal portfolio website (or 
 This project is the way to show that you are following the topics taught in class.
 Checkpoints are stages of work that use topics you are taught in class to achieve a small part of the project.
 
-### How to find Checkpoint for a Lesson (For students)
+### How to find the Checkpoint for a Lesson (For Students)
 - Visit the course's [GitHub page](https://github.com/ReDI-School/nrw-html-and-css-2021-spring). You should see something similar to the screenshot below.
 - Click on the Branch dropdown (shown in the screenshot)
 
@@ -32,3 +32,14 @@ Checkpoints are stages of work that use topics you are taught in class to achiev
 
 ### How to add a new Checkpoint (For Teachers)
 
+- Create a branch from the previous checkpoint branch.
+For example, to create a Checkpoint for Lesson 9, first go to "checkpoint8", then create a branch off "checkpoint8" called "checkpoint9".
+
+- Make your modifications in the "checkpoint" directory.
+- When done, push the new branch
+- Open a **Draft PR** on GitHub against the previous checkpoint branch. (see screnshot). Use the draft PR option because you are not merging these braching. You do this only to get feedback from other teachers.
+
+![Checkpoint draft PR](./checkpoint-step3.png)
+
+- Once feedback is done, the PR should be closed.
+- The branch should be left on GitHub for the students to find as described above.

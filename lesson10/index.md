@@ -1,6 +1,6 @@
 ---
-title: Lesson 11 - CSS Links and Lists
-nav_order: 11
+title: Lesson 10 - CSS Links and Lists
+nav_order: 10
 ---
 
 # CSS Links and Lists

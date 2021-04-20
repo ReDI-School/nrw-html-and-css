@@ -11,7 +11,7 @@ nav_order: 10
 1. CSS Link Styling
 2. CSS List Styling
 
-## 1. CSS Link Sytling
+## 1. CSS Link Styling
 
 This section teaches students how to decorate various links via CSS. This includes menu links, external links  and others. In particular, the section covers the following points:
 

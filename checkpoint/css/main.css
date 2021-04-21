@@ -42,3 +42,31 @@ nav a {
   font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
     serif;
 }
+
+ul.main-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* The `link` pseudo-class applies styles to unvisited links. 
+ * If you visit or have visited this link, then the `link` pseudo class
+ * is not going to get triggered anymore unless you to clear your browser history.
+ * - In our case we use the same styles for both visited and unvisited links.
+ */
+a:link, a:visited {
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*
+ * :active MUST come after :hover (if present) in the CSS definition in order to be effective!
+ * More info at https://www.w3schools.com/cssref/sel_active.asp 
+ */
+a:hover, a:active {
+  background-color: cadetblue;
+  color: white;
+}

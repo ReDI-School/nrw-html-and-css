@@ -19,7 +19,7 @@ nav_order: 11
 - What are Relative Length Units (em, % etc.) ?
 - Explain why px is absolute but relative to device
 
-ETA: 50mins
+ETA: 40mins
 
 ## 2. CSS Font Size
 
@@ -38,19 +38,19 @@ ETA: 30mins
 
 - What is the differnce between max-width and width?
 
-ETA: 15min
+ETA: 15mins
 
 # Exercise Description
 
-- 
+- Increase the font-size of the "About Me", "Education" and "Language Profiencicy" headers in your portfolio website
+- Align your profile image at the center of the page and make it 20% of the screen size (the image size should adjust on different screen-sizes)
+- At the end of this exercise, your portfolio website should like [this](./lesson-11-checkpoint.png)
 
-# Glossary & Terminology
-
-- 
+ETA: 10mins
 
 # Homework
 
-- 
+- Practice how to use at least 5 CSS units each for relative and absolute length units
 
 # Resources
 

@@ -90,7 +90,7 @@ a:hover, a:active {
 
 /*
  * Lesson: CSS Units
- * Center the profile image container and make its size 20% relative to the screen width
+ * Center the profile image container and make its size 20% relative to width of it's parent
  */
 #profilePicContainer {
   width: 20%;

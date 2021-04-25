@@ -46,6 +46,7 @@ ETA: 15mins
 
 - Increase the font-size of the "About Me", "Education" and "Language Profiencicy" headers in your portfolio website
 - Align your profile image at the center of the page and make it 20% of the screen size (the image size should adjust on different screen-sizes)
+  - Teacher's Note: We'll explain `margin` better in Box Model class. For now students should just learn that one way to center a block element in the page is using `margin: auto`
 - At the end of this exercise, your portfolio website should like [this](./lesson-11-checkpoint.png)
 
 ETA: 10mins

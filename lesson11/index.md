@@ -39,7 +39,7 @@ ETA: 30mins
 
 ## 4. CSS Max-Width
 
-- What is the differnce between max-width and width?
+- What is the difference between max-width and width?
 
 ETA: 15mins
 

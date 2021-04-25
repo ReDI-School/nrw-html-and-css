@@ -95,3 +95,13 @@ a:hover, a:active {
   width: 20%;
   margin: auto;
 }
+
+.container {
+  max-width: 1000px; /* or use 80% */
+  margin: auto;
+}
+
+/* goal is to have the Header take up most of above-the fold view */
+header {
+  height: 800px;
+}

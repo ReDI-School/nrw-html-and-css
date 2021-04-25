@@ -7,7 +7,7 @@ nav_order: 11
 
 ## Class Agenda
 
-1. Intro to CSS Units
+1. Introduction to CSS Units
 3. CSS Font Size
 4. CSS Height & Width
 5. CSS Max-width

@@ -82,7 +82,7 @@ a:hover, a:active {
  * Lesson: CSS Units
  * Explicitly declare the profile image size
  */
-#profilePic {
+#main-photo img {
   width: 100%;
   height: 100%;
 }
@@ -91,17 +91,16 @@ a:hover, a:active {
  * Lesson: CSS Units
  * Center the profile image container and make its size 20% relative to width of it's parent
  */
-#profilePicContainer {
+#main-photo {
   width: 20%;
   margin: auto;
 }
 
+/*
+ * Lesson: CSS Units
+ * Set the max width for the nav bar
+ */
 .container {
   max-width: 1000px; /* or use 80% */
   margin: auto;
-}
-
-/* goal is to have the Header take up most of above-the fold view */
-header {
-  height: 800px;
 }

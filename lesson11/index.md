@@ -17,7 +17,8 @@ nav_order: 11
 - What are CSS Units used for?
 - What are Absolute Length Units (cm, px, in etc.) ?
 - What are Relative Length Units (em, % etc.) ?
-- Explain why px is absolute but relative to device
+- What do we mean by "absolute"? What do we mean by "relative"?
+- What are the most used units and what are the differences between them? (px vs em vs rem)
 
 ETA: 40mins
 
@@ -46,7 +47,6 @@ ETA: 15mins
 
 - Increase the font-size of the "About Me", "Education" and "Language Profiencicy" headers in your portfolio website
 - Align your profile image at the center of the page and make it 20% of the screen size (the image size should adjust on different screen-sizes)
-  - Teacher's Note: We'll explain `margin` better in Box Model class. For now students should just learn that one way to center a block element in the page is using `margin: auto`
 - At the end of this exercise, your portfolio website should like [this](./lesson-11-checkpoint.png)
 
 ETA: 10mins
@@ -59,3 +59,4 @@ ETA: 10mins
 
 - [CSS Units](https://www.w3schools.com/css/css_units.asp)
 - [CSS Layout - width and max-width](https://www.w3schools.com/css/css_max-width.asp)
+- [Differences between main CSS units px,em and rem](https://chiamakaikeanyi.dev/sizing-in-css-px-vs-em-vs-rem/)

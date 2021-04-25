@@ -24,6 +24,8 @@ ETA: 40mins
 ## 2. CSS Font Size
 
 - `font-size` - using some of the units
+  - Practice sizing text size using absolute unit (px)
+  - Practice sizing text size using relative unit (em or rem)
 
 ETA: 15mins
 

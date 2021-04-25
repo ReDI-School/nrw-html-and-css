@@ -12,7 +12,7 @@ nav_order: 11
 4. CSS Height & Width
 5. CSS Max-width
 
-## 1. Intro to CSS Units
+## 1. Introduction to CSS Units
 
 - What are CSS Units used for?
 - What are Absolute Length Units (cm, px, in etc.) ?

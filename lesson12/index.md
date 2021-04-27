@@ -12,7 +12,7 @@ nav_order: 12
 3. Padding, margin, border
 4. Alternative Box Model
 
-## 1. Intro to CSS Box Model
+## 1. Introduction to CSS Box Model
 
 This section describes the CSS Box Model as a whole. It briefly covers the content, padding, border and margin. Moreover, the section explains the characteristics of an `inline` element and those of a `block` element. Furthermore, the students would learn how to find out what element they are working with via the browser dev tools. In summary, the section includes the following points:
 

@@ -30,7 +30,7 @@ Students will learn about the standard box model in which the `width` and the `h
 
 ETA: 20min
 
-## 3. Padding, margin, border
+## 3. Padding, Margin, Border
 
 This section covers in detail the usage of the basic css rules around the padding, border and margin. The sections below show what students will learn in relation with each piece of the box model.
 

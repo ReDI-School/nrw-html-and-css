@@ -22,9 +22,13 @@ This section describes the CSS Box Model as a whole. It briefly covers the conte
 - The characteristics of inline and block elements affect the usage of padding, border and margin.
 - The `Padding` and the `Margin` are transparent
 
+ETA: 30min
+
 ## 2. Standard Box Model
 
 Students will learn about the standard box model in which the `width` and the `height` are only applied to the content of the box. Moreover, students will practice working with the Chrome dev tools to identify the sizes of html elements.
+
+ETA: 20min
 
 ## 3. Padding, margin, border
 
@@ -39,6 +43,8 @@ This section covers in detail the usage of the basic css rules around the paddin
 - What are the different number of used values doing (e.g. 1 value, 2 values, 3 values, 4 values)?
 - How can we apply padding in only one direction (e.g. top, right, bottom, left)?
 
+ETA: 7-10min
+
 ### Margin:
 
 - Where is margin used?
@@ -51,6 +57,8 @@ This section covers in detail the usage of the basic css rules around the paddin
 - What is the margin auto-collapse?
 - How can we center a box horizontally with margin `auto`?
 
+ETA: 25min
+
 ### Border:
 
 - When is border used?
@@ -60,9 +68,13 @@ This section covers in detail the usage of the basic css rules around the paddin
 - How can we combine a direction and a style rule into one rule?
 - What is the `border-radius` rule?
 
+ETA: 15min
+
 ## 4. Alternative Box Model
 
 The students are also given an insight into the alternative box model and the corresponding `box-sizing` CSS property.
+
+ETA: 5-10min
 
 # Exercise Description
 

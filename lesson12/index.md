@@ -7,7 +7,7 @@ nav_order: 12
 
 ## Class Agenda
 
-1. Intro to CSS Box Model
+1. Introduction to CSS Box Model
 2. Standard Box Model
 3. Padding, margin, border
 4. Alternative Box Model

@@ -48,13 +48,13 @@ ETA: 7-10min
 ### Margin:
 
 - Where is margin used?
-- How to apply margin with the shorthand?
+- How to apply margin with the shorthand `margin` property?
 - Is the margin transparent?
-- What are the possible margin values?
+- What are the possible values for `margin` property?
 - What are the different number of used values doing (e.g. 1 value, 2 values, 3 values, 4 values)?
-- How can we apply margin in only one direction (e.g. top, right, bottom, left)?
-- What are the negative margin values?
-- What is the margin auto-collapse?
+- How can we apply margin in only one side (e.g. top, right, bottom, left)?
+- What are negative margin values?
+- What is margin auto-collapse?
 - How can we center a box horizontally with margin `auto`?
 
 ETA: 25min
@@ -96,7 +96,7 @@ Exercises should be done along with the content of the lecture. Students will pr
 
 # Homework
 
-- Apply everything we have learned today on your websites. Improvise and design your websites as much as you can via using the concepts we have learned in the past lectures. Before next lesson, we would like to see a screenshot of your page posted in the `Classroom` channel. Try to express yourself to the world by styling the website to your taste.
+- Apply everything we have learned today on your websites. Improvise and design your websites as much as you can using the concepts we have learned in the past lectures. Before next lesson, we would like to see a screenshot of your page posted in the `Classroom` channel. Try to express yourself to the world by styling the website to your taste.
 - If you have any sort of question please ask in the `Classroom` channel
 
 # Resources
@@ -105,5 +105,5 @@ Exercises should be done along with the content of the lecture. Students will pr
 - [HTML Block and Inline Block Elements](https://www.w3schools.com/html/html_blocks.asp)
 - [CSS Border Tricks](https://css-tricks.com/almanac/properties/b/border/)
 - [CSS Padding](https://www.w3schools.com/css/css_padding.asp)
-- [How to remember margin and padding value?](https://inspirnathan.medium.com/simple-mnemonic-for-margin-or-padding-shorthand-property-values-e73ddcfe1e70#:~:text=%2Dright%3A%202rem%3B-,padding%2Dbottom%3A%202rem%3B,then%20bottom%2C%20and%20then%20left.)
+- [How to remember margin and padding value](https://inspirnathan.medium.com/simple-mnemonic-for-margin-or-padding-shorthand-property-values-e73ddcfe1e70)
 - [When to use margin and and when padding?](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css)

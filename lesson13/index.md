@@ -25,7 +25,7 @@ ETA: 20 mins
 ## 2. CSS Display types
 
 In this section, students get understanding of the display types available `block, inline and inline-block`
-
+> Disclaimer: Lesson 12 (link to it) already covered the characteristics and differences between inline boxes and block boxes. This sections of the lecture goes into more details about the different display types and  explains how to change the default display type with the css `display` rules.
 - understand what display block, inline and inline-block is.
   -what are the default display style of element tags like `div, anchor tag, span...`
 - how to change the default `display` of elements to align differently. E.g. `anchor` tags are by default inline but you can make them block.

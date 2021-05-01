@@ -32,13 +32,18 @@ Exercise:
 
 - Float was originally introduced to simple layouts like wrapping text around an image (borrowed from print design).
 - But it became used to achieve more complex layouts
-- Exercise: We will use Float to layout our header contain (logo on the right, navigation bar on the left)
-- In the process, we'll learn:
+- Exercises:
+  - We will restructure our HTML a little bit
+    - Pull out the `nav` content out of the header, so it is a direct child of the `body`
+    - Copy and paste the `nav` across the other HTML files
+    - In index.html,  the `header` should now be below the `nav` and should contain then `h1` and `img`
+    - All of this can be seen in Checkpoint 13
+  - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
+  -
+- In the exercises, we'll learn:
   - `float: left`
   - `float: right`
   - Clearing floats
-
-ETA: 40 mins
 
 
 # Exercise Description

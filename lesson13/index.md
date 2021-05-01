@@ -1,41 +1,34 @@
 ---
-title: Lesson 11 - CSS Position and Display types
+title: Lesson 13 - CSS Layout - Part I
+nav_order: 13
 ---
-
-# CSS Display
-
-In this session, students will get an understanding of the different display types that are available in CSS.
 
 ## Class Agenda
 
 1. Normal Flow
-1. CSS Display types
-1. CSS Float
+1. The `display` Property
+1. Floats
 
 ## 1. Normal Flow
 
-This section will help the students to understand the way that webpage elements lay themselves out by default.
+This section will help the students to understand how webpage elements are laid out by default.
 
-- what does block level and inline elements mean?
-- How buttons can be styled
-- How to style borders (border radius, border style e.g dotted....)
+- Last class introduced the idea that everything on the page is a box.
+- By default, these boxes can be stacked up on top of one another, or side by side
+- Revision: What does block level and inline elements mean?
 
-ETA: 20 mins
 
-## 2. CSS Display types
+## 2. The `display` Property
 
-In this section, students get understanding of the display types available `block, inline and inline-block`
-> Disclaimer: Lesson 12 (link to it) already covered the characteristics and differences between inline boxes and block boxes. This sections of the lecture goes into more details about the different display types and  explains how to change the default display type with the css `display` rules.
-- understand what display block, inline and inline-block is.
-  -what are the default display style of element tags like `div, anchor tag, span...`
-- how to change the default `display` of elements to align differently. E.g. `anchor` tags are by default inline but you can make them block.
-- explain that height and width don't work for in-line elements. It also doesn't allow margin-top and bottom styling.
+You can change how elements behave in normal flow with the `display` property.
 
-ETA: 50 mins
+Exercise:
+1. Apply a border on all elements on your page.
+2. Using the dev tools, identify elements with display block and change them to inline (and vice versa)
+3. Observe how the flow of elements on the page changes
 
-## 3. CSS Floats
 
-Students will learn how to position items to the desired position using float.
+## 3. Floats
 
 - The CSS float property specifies how an element should float. It helps to wrap text around images.
 - values for the Float property `"left", "right", "none", "inherit"`

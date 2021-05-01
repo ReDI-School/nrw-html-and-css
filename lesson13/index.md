@@ -37,7 +37,7 @@ Exercise:
     - Pull out the `nav` content out of the header, so it is a direct child of the `body`
     - Copy and paste the `nav` across the other HTML files
     - In index.html,  the `header` should now be below the `nav` and should contain then `h1` and `img`
-    - All of this can be seen in Checkpoint 13
+    - Check Checkpoint 13 for a example with completed steps
   - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
   -
 - In the exercises, we'll learn:

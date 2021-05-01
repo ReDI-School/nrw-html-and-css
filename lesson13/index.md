@@ -10,7 +10,7 @@ In this session, students will get an understanding of the different display typ
 
 1. Normal Flow
 1. CSS Display types
-1. CSS Positions
+1. CSS Float
 
 ## 1. Normal Flow
 

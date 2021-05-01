@@ -30,25 +30,29 @@ Exercise:
 
 ## 3. Floats
 
-- The CSS float property specifies how an element should float. It helps to wrap text around images.
-- values for the Float property `"left", "right", "none", "inherit"`
+- Float was originally introduced to simple layouts like wrapping text around an image (borrowed from print design).
+- But it became used to achieve more complex layouts
+- Exercise: We will use Float to layout our header contain (logo on the right, navigation bar on the left)
+- In the process, we'll learn:
+  - `float: left`
+  - `float: right`
+  - Clearing floats
 
 ETA: 40 mins
 
+
 # Exercise Description
 
-Allow ample time for students to practice the topics mentioned
+Exercises are listed as part of each section.
 
----
 
 # Homework
 
-apply what has been learnt to their portfolio in the way that fits
+- Checkpoint 13
+
 
 # Resources
 
-[Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
-
-[CSS Display Property](https://www.w3schools.com/cssref/pr_class_display.asp)
-
-[CSS Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+- [Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
+- [CSS Display Property](https://www.w3schools.com/cssref/pr_class_display.asp)
+- [CSS Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)

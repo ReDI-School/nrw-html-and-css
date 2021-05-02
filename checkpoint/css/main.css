@@ -96,3 +96,60 @@ p {
   width: 100%;
   border-radius: 20px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/* nav styles */
+nav {
+  margin-bottom: 50px;
+}
+
+nav * {
+  margin: 0;
+  padding: 0;
+}
+
+.logo a {
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-family: cursive;
+  text-shadow: 1px 1px black;
+}
+
+.logo {
+  float: left;
+}
+
+.main-menu {
+  float: right;
+}
+
+.main-menu li {
+  float: left;
+}
+
+.clear-fix {
+  clear: both;
+}
+/* end nav styles */
+
+/* header styles */
+header {
+  color: rgb(20, 20, 20);
+}
+
+#greeting {
+  float: left;
+  width: 50%;
+  margin-top: 10%;
+}
+
+#main-photo {
+  float: right;
+  width: 50%;
+}
+/* end header styles */

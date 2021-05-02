@@ -1,5 +1,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
 }
 
 #about {
@@ -17,10 +19,6 @@ body {
   margin: 25px;
 }
 
-.section p {
-  text-indent: 20px;
-}
-
 footer {
   text-align: end;
 }
@@ -33,13 +31,10 @@ footer {
  */
 nav a {
   text-decoration: none;
-  color: azure;
 }
 
 /* Applying some basic text shadow over my greeting */
-#greeting {
-  text-shadow: 3px 3px 4px azure;
-  text-align: center;
+#greeting h1 {
   font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
     serif;
 }
@@ -55,8 +50,8 @@ ul.main-menu {
  * is not going to get triggered anymore unless you to clear your browser history.
  * - In our case we use the same styles for both visited and unvisited links.
  */
-a:link,
-a:visited {
+.main-menu a:link,
+.main-menu a:visited {
   color: black;
   padding: 10px 20px;
   text-align: center;
@@ -68,36 +63,36 @@ a:visited {
  * :active MUST come after :hover (if present) in the CSS definition in order to be effective!
  * More info at https://www.w3schools.com/cssref/sel_active.asp
  */
-a:hover,
-a:active {
+.main-menu a:hover,
+.main-menu a:active {
   background-color: cadetblue;
   color: white;
 }
 
-/*
- * Lesson: CSS Units
- * Increase font size of the h2 header elements in the sections
- */
-h2 {
-  font-size: 35px;
+h1,
+h2,
+h3 {
+  font-family: "Julius Sans One", sans-serif;
 }
 
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 35px;
+  font-size: 1.6em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
 /*
  * Lesson: CSS Units
  * Explicitly declare the profile image size
  */
 #main-photo img {
   width: 100%;
-  border: 5px groove paleturquoise;
   border-radius: 20px;
-}
-
-/*
- * Lesson: CSS Units
- * Center the profile image container and make its size 20% relative to width of it's parent
- */
-#main-photo {
-  width: 20%;
-  /* This makes it horizontally centered in the container */
-  margin: 20px auto;
 }

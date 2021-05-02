@@ -4,26 +4,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReDI Student Portfolio</title>
-  <link href="css/main.css" rel="stylesheet">
+  <title>Joanna Ahmed</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* nav styles */
+    nav {
+      margin-bottom: 50px;
+    }
+
+    nav * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo a {
+      color: rgb(8, 4, 41);
+      cursor: pointer;
+    }
+
+    .logo h2 {
+      font-family: cursive;
+      text-shadow: 1px 1px black;
+    }
+
+    .logo {
+      float: left;
+    }
+
+    .main-menu {
+      float: right;
+    }
+
+    .main-menu li {
+      float: left;
+    }
+
+    .clear-fix {
+      clear: both;
+    }
+
+    /* end nav styles */
+
+    /* header styles */
+    header {
+      color: rgb(20, 20, 20);
+    }
+
+    #greeting {
+      float: left;
+      width: 50%;
+      margin-top: 10%;
+    }
+
+    #main-photo {
+      float: right;
+      width: 50%;
+    }
+
+    /* end header styles */
+  </style>
 </head>
 
 <body>
+  <nav>
+    <div class="logo">
+      <h2>
+        <a href="/">J.A.</a>
+      </h2>
+    </div>
+    <ul class="main-menu">
+      <li><a href="./">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="clear-fix"></div>
+  </nav>
   <header>
-    <nav>
-      <ul class="main-menu">
-        <li><a href="./">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <h1 id="greeting">Hello, I'm Joanna</h1>
-  </header>
+    <div id="greeting">
+      <h1>Hello, I'm Joanna</h1>
+      <h2>
+        I am a Junior Web Developer. I love to design and code beautiful web
+        interfaces.
+      </h2>
+      <p>
+        I am highly-motivated, result oriented, self-driven, hard-working.
+      </p>
+      <p>
+        This is my home on the Internet. Feel free to browse around, and drop
+        me a line 😎
+      </p>
+    </div>
 
-  <div id="main-photo">
-    <img src="./photo.png" alt="A photo of me enjoying sunset at the beach">
-  </div>
+    <div id="main-photo">
+      <img src="./photo.png" alt="A photo of me enjoying sunset at the beach" />
+    </div>
+    <div class="clear-fix"></div>
+  </header>
 
   <!-- Here is the About section -->
   <section class="section" id="about">
@@ -63,7 +144,7 @@
   <hr />
   <!-- Here is the Hobbies section -->
   <section class="section" id="hobbies">
-    <h1>Here are my Hobbies:</h1>
+    <h2>Here are my Hobbies:</h2>
     <ul>
       <li>Dancing</li>
       <li>Singing</li>

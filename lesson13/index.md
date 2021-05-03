@@ -16,6 +16,7 @@ This section will help the students to understand how webpage elements are laid 
 - Last class introduced the idea that everything on the page is a box.
 - By default, these boxes can be stacked up on top of one another, or side by side
 - Revision: What does block level and inline elements mean?
+- Discuss `display: inline-block`. How is it similar/different to block and inline?
 
 
 ## 2. The `display` Property
@@ -37,7 +38,7 @@ Exercise:
     - Pull out the `nav` content out of the header, so it is a direct child of the `body`
     - Copy and paste the `nav` across the other HTML files
     - In index.html,  the `header` should now be below the `nav` and should contain then `h1` and `img`
-    - Check Checkpoint 13 for a example with completed steps
+    - Check Checkpoint 13 for example with completed steps
   - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
   -
 - In the exercises, we'll learn:

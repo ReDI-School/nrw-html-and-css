@@ -40,7 +40,7 @@ Exercise:
     - In index.html,  the `header` should now be below the `nav` and should contain then `h1` and `img`
     - Check Checkpoint 13 for example with completed steps
   - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
-  -
+  
 - In the exercises, we'll learn:
   - `float: left`
   - `float: right`

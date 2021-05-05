@@ -1,5 +1,5 @@
 ---
-title: Lesson 14 - CSS Layout 2
+title: Lesson 14 - CSS Layout 2 - Flexbox
 nav_order: 14
 ---
 

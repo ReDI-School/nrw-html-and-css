@@ -32,10 +32,6 @@ If a student has reached checkpoint 14 then they can start doing extra exercises
 
 - **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/dropdown-navigation/template
 
-### Hard
-
-- **Flex Form:** TODO: https://codepen.io/CityRay/pen/vXEakj
-
 # Homework
 
 - Try doing all exercises which you haven't managed to finish in class.

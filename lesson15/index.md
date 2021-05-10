@@ -22,13 +22,13 @@ If a student has reached checkpoint 14 then they can start doing extra exercises
 
 ### Easy
 
-- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/nested-flex/template
+- **Nested Flex:**  Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/nested-flex/template
 
-- **Instagram Stories:** TODO: https://codepen.io/c9w/pen/oNZXWXB
+- **Instagram Stories:** [Resource](./exercises/ig-stories)
 
 ### Medium
 
-- **App Layout:** TODO: https://github.com/wesbos/What-The-Flexbox/blob/master/flexbox-app-layout/style-ANSWER.css
+- **Flex App Layout:** [Resource](./exercises/flex-app-layout)
 
 - **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/dropdown-navigation/template
 

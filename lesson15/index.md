@@ -22,15 +22,15 @@ If a student has reached checkpoint 14 then they can start doing extra exercises
 
 ### Easy
 
-- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/nested-flex/template
+- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/nested-flex/template)
 
-- **Instagram Stories:** [Resource](./exercises/ig-stories)
+- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/ig-stories/template)
 
 ### Medium
 
-- **Flex App Layout:** [Resource](./exercises/flex-app-layout)
+- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/flex-app-layout/template)
 
-- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. Resource - https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/dropdown-navigation/template
+- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/dropdown-navigation/template)
 
 # Homework
 

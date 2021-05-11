@@ -32,6 +32,26 @@ If a student has reached checkpoint 14 then they can start doing extra exercises
 
 - **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson15/exercises/dropdown-navigation/template)
 
-# Homework
+## Homework
 
 - Try doing all exercises which you haven't managed to finish in class.
+
+## How to start an exercise in codesandbox ?
+
+1. Open your browser and go to https://codesandbox.io/.
+2. (Optional) step - you can sign in codesandbox so that you keep your work saved for a long time.
+3. On the top right corner there should be a blue button called `Create Sandbox`. Please click on it.
+
+![Codesandbox Main Page](./CodeSandboxMainPage.png)
+
+4. A pop-up window would appear. Please click on `Import Project`.
+5. After you have chosen an exercise from the given ones above, you have to copy the `Resource` link for that chosen exercise and paste it into the field called `GitHub Repository URL`
+
+![Import Project](./ImportProject.png)
+
+6. Finally click on `Import and Fork`.
+7. It is a good idea to edit the name of the new codesandbox by adding the name of the exercise and your name. This way, the teachers can identify your work more easily.
+
+![Renamed Fork](./RenamedFork.png)
+
+8. Good Luck and Have Fun !

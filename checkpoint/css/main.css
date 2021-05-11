@@ -105,6 +105,7 @@ p {
 /* nav styles */
 nav {
   display: flex;
+  justify-content: space-between;
 }
 
 nav * {
@@ -119,10 +120,6 @@ nav * {
 .logo h2 {
   font-family: cursive;
   text-shadow: 1px 1px black;
-}
-
-.logo {
-  flex: 1;
 }
 
 .main-menu li {

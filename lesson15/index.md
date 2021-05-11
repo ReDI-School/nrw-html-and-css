@@ -1,5 +1,5 @@
 ---
-title: Lesson 15 - Exercise I
+title: Lesson 15 - Exercise Class I
 nav_order: 15
 ---
 

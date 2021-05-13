@@ -1,18 +1,16 @@
-/* utility classes */
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-/* end utility classes */
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
   margin: 0;
   font-size: 1.2em;
+
+  /** 
+   * This padding-top needs to be the same value as the
+   * value of the height which is applied on the nav.
+   * This is needed so that the navigation content and the body
+   * content do not collied with each other.
+   */
+  padding-top: 50px;
 }
 
 #about {
@@ -44,6 +42,10 @@ nav a {
   text-decoration: none;
 }
 
+#greeting {
+  margin-right: 20px;
+}
+
 /* Applying some basic text shadow over my greeting */
 #greeting h1 {
   font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
@@ -67,7 +69,9 @@ ul.main-menu {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 /*
@@ -106,11 +110,28 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: lightsteelblue;
+  width: 100%;
+  top: 0;
+
+  /** 
+   * This height needs to be the same value as the
+   * value of the padding-top which is applied on the body.
+   * This is needed so that the navigation content and the body
+   * content do not collied with each other.
+   */
+  height: 50px;
 }
 
 nav * {
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  margin: 5px 50px 10px 50px;
 }
 
 .logo a {
@@ -122,7 +143,12 @@ nav * {
   text-shadow: 1px 1px black;
 }
 
+.main-menu {
+  height: 100%;
+}
+
 .main-menu li {
+  height: 100%;
   display: inline-block;
 }
 /* end nav styles */
@@ -131,6 +157,8 @@ nav * {
 header {
   display: flex;
   align-items: center;
+  justify-items: center;
+  margin: 40px 60px;
 }
 
 header > div {

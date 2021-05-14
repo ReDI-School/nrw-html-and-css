@@ -84,4 +84,6 @@ Make sure to ask questions!
 
 - [Example of fixed navigation bar in the Portfolio Project - Checkpoint16](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/blob/checkpoint16/checkpoint/css/main.css#L110)
 - [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
+- [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
 - [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
+- [W3S CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)

@@ -17,7 +17,7 @@ nav_order: 16
 
 # 1. Introduction to Positioning
 
-The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces the CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
+The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
 
 ETA: 5-10min
 
@@ -29,13 +29,13 @@ ETA: 5min
 
 # 3. Relative Positioning
 
-The relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following css rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
+Relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
 
 ETA: 15min
 
 # 4. Absolute Positioning
 
-The absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. The absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
+Absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
 
 - What is absolute positioning?
 - Where is it used?
@@ -52,7 +52,7 @@ ETA: 10min
 
 # 6. Fixed Positioning
 
-The fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint16](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/blob/checkpoint16/checkpoint/css/main.css#L110)
+Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint16](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/blob/checkpoint16/checkpoint/css/main.css#L110)
 
 ETA: 20min
 

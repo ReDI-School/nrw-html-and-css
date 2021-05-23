@@ -56,6 +56,17 @@ ul.main-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  /**
+   * To add horizontal scroll bars we need
+   * to use the following rule. Keep in mind that
+   * the white-space: nowrap is required to override
+   * the default white-space behaviour which prevents
+   * the overflow-x from working.
+   * https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
+   */
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 /* The `link` pseudo-class applies styles to unvisited links.

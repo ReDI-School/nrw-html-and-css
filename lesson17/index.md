@@ -9,6 +9,7 @@ nav_order: 17
 
 1. CSS Overflow
 2. CSS Text Effects
+3. CSS White Space
 
 # 1. Overflow
 
@@ -46,18 +47,32 @@ Some of these rules are very similar but yet distinct enough. The lecture would 
 
 ETA: 40min
 
-# Glossary & Terminology
+# 3. CSS White Space
+
+Apart from all the above CSS rules there is one additional one which also deals with how content is displayed inside a container. This section teaches the CSS `white-space` rule.
+
+ETA: 20min
+
+---
 
 # Homework
 
-1. The usage of overflow and text effects is more situational. Please practice using these rules on your website but do not necessarily include these rules in your websites. That is why we also do not have a fixed checkpoint.
+1. The usage of overflow and text effects is more situational. Please practice using these rules on W3Schools or MDN. You can find examples to practice on the respective pages there.
 
-2. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
+2. Try to make the menu points in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 17. Here are the respective links to compare your solution
+
+   - [Portfolio Project - Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint17/checkpoint)
+   - [What has changed between Checkpoint 17 and Checkpoint 16?](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/compare/checkpoint16...checkpoint17). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 17.
+
+3. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
 
 Make sure to ask questions!
 
 # Resources
 
+- [How to create a horizontal scrollable menu?](https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp)
 - [How to deal with long words?](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
 - [MDN CSS Overflowing Content Tutorial](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
 - [MDN CSS Overflow rule](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+- [MDN White Space rule](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
+- [W3S CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp)

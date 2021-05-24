@@ -1,6 +1,6 @@
 ---
-title: Lesson 16 - CSS Positioning
-nav_order: 16
+title: Lesson 18 - CSS Positioning
+nav_order: 18
 ---
 
 # Cascade, Specificity and Inheritance

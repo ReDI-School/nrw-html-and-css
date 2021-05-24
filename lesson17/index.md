@@ -17,7 +17,7 @@ There are many scenarios in which the content of an html tag is simply bigger th
 
 Students would learn about the default `overflow` behaviour and the principle which CSS applies to ["avoid data loss"](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content#css_tries_to_avoid_data_loss).
 
-Apart from that, the section covers the CSS `overflow` rule. Students would learn about the different values possible to be added to overflow:
+Apart from that, the section covers the CSS `overflow` property. Students would learn about the different values possible to be added to overflow:
 
 - `visible`
 - `hidden`
@@ -59,7 +59,7 @@ ETA: 20min
 
 1. The usage of overflow and text effects is more situational. Please practice using these rules on W3Schools or MDN. You can find examples to practice on the respective pages there.
 
-2. Try to make the menu points in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 17. Here are the respective links to compare your solution
+2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 17. Here are the respective links to compare your solution
 
    - [Portfolio Project - Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint17/checkpoint)
    - [What has changed between Checkpoint 17 and Checkpoint 16?](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/compare/checkpoint16...checkpoint17). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 17.

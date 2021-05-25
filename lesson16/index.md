@@ -65,7 +65,7 @@ ETA: 10min
 # Glossary & Terminology
 
 - `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
-- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here|https://developer.mozilla.org/en-US/docs/Web/CSS/z-index]
+- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
 ---
 

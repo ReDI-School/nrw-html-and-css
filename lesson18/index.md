@@ -1,13 +1,13 @@
 ---
-title: Lesson 18 - CSS Positioning
+title: Lesson 18 - Cascade, Specificity and Inheritance
 nav_order: 18
 ---
 
 # Cascade, Specificity and Inheritance
 
-In this class, we want to improve your understanding of how CSS applies the styles we write on the HTML elements.
+In this class, we want to improve our understanding of how CSS applies the styles we write on the HTML elements.
 
-Students should be able to understand situations like: what happens when there are conflicting rules, and what happens if two exact same selectors are adding a diffent styles to an element.
+Students should be able to understand situations like: what happens when there are conflicting rules, and what happens if multiple selectors are attempting to add a style to an element.
 
 Note: Teachers are not limited to the examples shown in this note.
 
@@ -22,7 +22,7 @@ Note: Teachers are not limited to the examples shown in this note.
 
 # Introduction
 
-The word "Cascading" in Cascading Style Sheets is a key concept to understand. As your webpage styles increases, you may have a situation where a particular CSS rule you just wrote is not applying to the element becuase another rule is taking precendence.
+The word "Cascading" in Cascading Style Sheets is a key concept to understand. As your webpage styles increases, you may have a situation where a particular CSS rule you just wrote is not applying to the element becuase another rule is taking precendence, or because of a specificity case. We explore these concepts below.
 
 
 # Precedence
@@ -32,7 +32,8 @@ When multiple CSS rules are used on an element at the same specificity level, CS
 ```css
 /* Example 1 */
 /* If you have multiple places in your stylesheet(s) where the background is
-defined for the h1 tag, the pink background will be applied becuase it comes last. */
+defined for the h1 tag like below, the pink background will be applied
+becuase it comes last. */
 
 h1 {
   background: red;
@@ -45,7 +46,7 @@ h1 {
 
 ```css
 /* Example 2 */
-/* If you an h1 with two classes like this:
+/* If you have an h1 with two classes like this:
 <h1 class="heading top-heading">Heading</h1>, and you applied the same
 css rule with the different classes as shown below, the last one will be used.
 */
@@ -64,11 +65,11 @@ Specificity is how CSS decides which rule to apply when there are multiple rules
 
 ## Inline Styles
 
-If you use an HTML style attribute to apply stles to an element, that style will override any other styles defined in a `<style>` tag or a stylesheet.
+If you use the HTML **style** attribute to apply styles to an element, that style will override any other styles defined in a `<style>` tag or a stylesheet.
 
 Example:
 
-Consider a heading like this"
+Consider a heading like this:
 
 ```html
 <h1 class="heading" id="main-h1" style="color: red">Heading</h1>
@@ -90,12 +91,12 @@ Consider a heading like this"
 
 ## Selector Specificity
 
-Different types of selectors have different specificities. For example, an ID selector has a higher specificity than a class selector. In this section, we want to show (with examples) how different selector rules are ranked and which ones win over the others.
+Different types of selectors have different specificities. For example, an ID selector has a higher specificity than a Class selector, while a Class selector has higher specificity than an Element selector. In this section, we want to show (with examples) how different selector rules are ranked and which ones win over the others.
 
 ```css
 /* Consider an example with a heading like this
   <h1 class="heading" id="main-h1">Heading</h1>,
-  which color applies?
+  which color will be applied on the page?
 */
 .heading {
   color: pink;
@@ -108,7 +109,7 @@ Different types of selectors have different specificities. For example, an ID se
 
 # Inheritance
 
-Inheritance is another crucial part of CSS cascade. Inheritance is how some CSS values set on a parent element are inherited by their child elements. In this section, we want to show examples where a property value (e.g color, font-family) is inherited by an element.
+Inheritance is another crucial part of CSS Cascade. Inheritance is how some CSS rules set on a parent element are inherited by their child elements. In this section, we want to show examples where a property value (e.g color, font-family) is inherited by an element.
 
 Example:
 
@@ -138,18 +139,24 @@ section {
 
 # !important
 
-This is a special declaration in CSS that you can use to overrule all the specificity or inheritance logic explained above. When you apply `!important` to a rule, it becomes the most specific one and overrides the normal rules of the cascade.
+This is a special declaration in CSS that you can use to overrule all the specificity or inheritance logic explained above. When you apply `!important` to a rule, it becomes the most specific one and overrides the normal rules of the cascade. It also overrides inline styles in the markup.
 
 It is useful to know that `!important` exists, however, you are strongly adviced not to use it unless if you absolutely need to.
+
+# Extra Exercise
+
+- Show how to see overriden rules using the Dev Tools. [Example](https://developer.chrome.com/docs/devtools/css/overrides/)
 
 
 # Glossary & Terminology
 
 - Inheritance is a process of receiving values of properties by a child element from its parent element.
+- Specificity determines, which CSS rule is applied by the browsers.
+
 
 # Homework
 
-??
+- Look in your project and review how specific your CSS selectors are. See if you can find places you could be using lower specificity while still achieving your styling.
 
 # Resources
 

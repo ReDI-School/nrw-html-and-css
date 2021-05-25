@@ -48,7 +48,8 @@ h1 {
 /* Example 2 */
 /* If you have an h1 with two classes like this:
 <h1 class="heading top-heading">Heading</h1>, and you applied the same
-css rule with the different classes as shown below, the last one that comes last in the source code will be used (i.e padding: 0)
+css rule with the different classes as shown below, the last one that 
+comes last in the source code will be used (i.e padding: 0)
 */
 .heading {
   padding: 50px;

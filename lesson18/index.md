@@ -48,7 +48,7 @@ h1 {
 /* Example 2 */
 /* If you have an h1 with two classes like this:
 <h1 class="heading top-heading">Heading</h1>, and you applied the same
-css rule with the different classes as shown below, the last one will be used.
+css rule with the different classes as shown below, the last one that comes last in the source code will be used (i.e padding: 0)
 */
 .heading {
   padding: 50px;
@@ -109,7 +109,7 @@ Different types of selectors have different specificities. For example, an ID se
 
 # Inheritance
 
-Inheritance is another crucial part of CSS Cascade. Inheritance is how some CSS rules set on a parent element are inherited by their child elements. In this section, we want to show examples where a property value (e.g color, font-family) is inherited by an element.
+Inheritance is another crucial part of CSS Cascade. Inheritance is how some CSS rules, which are set on parent elements, are inherited by their child elements. In this section, we want to show examples where a property value (e.g color, font-family) is inherited by an element.
 
 Example:
 
@@ -150,8 +150,8 @@ It is useful to know that `!important` exists, however, you are strongly adviced
 
 # Glossary & Terminology
 
-- Inheritance is a process of receiving values of properties by a child element from its parent element.
-- Specificity determines, which CSS rule is applied by the browsers.
+- `Inheritance` is a process of receiving values of properties by a child element from its parent element.
+- `Specificity` determines which CSS rule is applied by the browsers.
 
 
 # Homework
@@ -160,7 +160,7 @@ It is useful to know that `!important` exists, however, you are strongly adviced
 
 # Resources
 
-- [MDN Cascade and Inheritance Page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-- [Precedence in CSS](https://css-tricks.com/precedence-css-order-css-matters/)
 - [Calculating CSS Specificity Value](https://css-tricks.com/specifics-on-css-specificity/#calculating-css-specificity-value)
-
+- [MDN Cascade and Inheritance Page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+- [MDN Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- [Precedence in CSS](https://css-tricks.com/precedence-css-order-css-matters/)

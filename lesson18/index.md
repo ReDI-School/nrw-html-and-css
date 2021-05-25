@@ -22,7 +22,7 @@ Note: Teachers are not limited to the examples shown in this note.
 
 # Introduction
 
-The word "Cascading" in Cascading Style Sheets is a key concept to understand. As your webpage styles increases, you may have a situation where a particular CSS rule you just wrote is not applying to the element becuase another rule is taking precendence, or because of a specificity case. We explore these concepts below.
+The word "Cascading" in Cascading Style Sheets is a key concept to understand. As your webpage styles increases, you may have a situation where a particular CSS rule you just wrote is not applying to the element because another rule is taking Precedence, or because of a specificity case. We explore these concepts below.
 
 
 # Precedence
@@ -33,7 +33,7 @@ When multiple CSS rules are used on an element at the same specificity level, CS
 /* Example 1 */
 /* If you have multiple places in your stylesheet(s) where the background is
 defined for the h1 tag like below, the pink background will be applied
-becuase it comes last. */
+because it comes last. */
 
 h1 {
   background: red;
@@ -141,11 +141,11 @@ section {
 
 This is a special declaration in CSS that you can use to overrule all the specificity or inheritance logic explained above. When you apply `!important` to a rule, it becomes the most specific one and overrides the normal rules of the cascade. It also overrides inline styles in the markup.
 
-It is useful to know that `!important` exists, however, you are strongly adviced not to use it unless if you absolutely need to.
+It is useful to know that `!important` exists, however, you are strongly advised not to use it unless if you absolutely need to.
 
 # Extra Exercise
 
-- Show how to see overriden rules using the Dev Tools. [Example](https://developer.chrome.com/docs/devtools/css/overrides/)
+- Show how to see overridden rules using the Dev Tools. [Example](https://developer.chrome.com/docs/devtools/css/overrides/)
 
 
 # Glossary & Terminology

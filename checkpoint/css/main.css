@@ -1,10 +1,12 @@
 body {
+  /* Note about Inheritance: The font-family is inherited by
+  the child elements in the body */
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
   margin: 0;
   font-size: 1.2em;
 
-  /** 
+  /**
    * This padding-top needs to be the same value as the
    * value of the height which is applied on the nav.
    * This is needed so that the navigation content and the body
@@ -14,6 +16,9 @@ body {
 }
 
 #about {
+  /* Note about Specificity: Here we defined a background-color that
+  overrides the background-color defined using the `section` class which
+  has lesser specificity */
   background-color: peachpuff;
 }
 
@@ -48,6 +53,8 @@ nav a {
 
 /* Applying some basic text shadow over my greeting */
 #greeting h1 {
+  /* Note about Specificity: Here we defined a font-family that
+  overrides the general font-family defined for all h1 tags */
   font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
     serif;
 }
@@ -127,7 +134,7 @@ nav {
   width: 100%;
   top: 0;
 
-  /** 
+  /**
    * This height needs to be the same value as the
    * value of the padding-top which is applied on the body.
    * This is needed so that the navigation content and the body
@@ -171,7 +178,7 @@ header {
   justify-items: center;
   margin: 40px auto;
   padding: 0 60px;
-  /** 
+  /**
    * This is used so that the header content (e.g. image)
    * does not stretch too much on big screens
    */

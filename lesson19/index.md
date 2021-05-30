@@ -22,7 +22,7 @@ If a student has reached checkpoint 18 then they can start doing extra exercises
 
 ### Easy
 
-- TODO: Maybe overflow fix
+- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson19/exercises/overflow/template)
 
 ### Medium
 

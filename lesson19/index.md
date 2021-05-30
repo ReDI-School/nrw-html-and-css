@@ -1,6 +1,6 @@
 ---
 title: Lesson 19 - Exercise Class II
-nav_order: 15
+nav_order: 19
 ---
 
 ## Prerequisite
@@ -16,7 +16,11 @@ Every student who enters the class should bring their implementation of their ow
 
 The goal of this class is to make sure that every student has reached checkpoint 18 in their own portfolio projects. Teachers would help students if they have not reached the checkpoint yet.
 
-## 2. Extra exercises
+## 2. Quiz
+
+During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. A Slido link for the quiz will be shared in the class. Images present in the `quiz` folder of this lesson are used in the quiz.
+
+## 3. Extra exercises
 
 If a student has reached checkpoint 18 then they can start doing extra exercises from the following list. Students can choose whatever exercise they want because there is no order. The list is solely categorized based on difficulty.
 

@@ -18,7 +18,7 @@ The goal of this class is to make sure that every student has reached checkpoint
 
 ## 2. Quiz
 
-During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. A Slido link for the quiz will be shared in the class. Images present in the `quiz` folder of this lesson are used in the quiz.
+During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. The questions for the quiz are in [quiz.md](./quiz/quiz.md). A Slido link will be shared in the class to facilitate the quiz. 
 
 ## 3. Extra exercises
 

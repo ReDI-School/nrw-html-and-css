@@ -198,3 +198,26 @@ header img {
   object-fit: cover;
 }
 /* end header styles */
+
+/* SOLUTION */
+
+/* Part 1: (applying inline styles)
+   - The idea is that we define fixed height for the div which wraps h2
+   - We also define a fixed height for the div which wraps the long text.
+   - And we also give overflow to the latter
+*/
+.divThatWrapsH2 {
+  height: 20%;
+}
+.divThatWrapsTheOverflowingText {
+  height: 80%;
+  overflow: auto;
+}
+
+/* Part 2:
+   - The idea is to add break the words since they are overflowing
+   - We need to apply inline styles to the corresponding section
+*/
+.correspondingSection {
+  overflow-wrap: break-word;
+}

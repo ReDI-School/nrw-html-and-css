@@ -90,6 +90,7 @@ It is possible to style HTML elements that have specific attributes or attribute
 
 - Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
 - In [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint18), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
+  - [What has changed between Checkpoint 20 and Checkpoint 19?](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/compare/checkpoint20...checkpoint19). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 20.
 
 # Resources
 

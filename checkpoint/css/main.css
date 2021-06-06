@@ -42,6 +42,8 @@ footer {
  * which are placed in the navigation.
  * Using a descendant selector:
  * https://www.w3schools.com/css/css_combinators.asp
+ *
+ * Check https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
  */
 nav a {
   text-decoration: none;
@@ -185,6 +187,11 @@ header {
   max-width: 1400px;
 }
 
+/**
+ * This is a CSS Child Selector (>). Selection all div(s) which are direct children
+ * of a header element. More info can be seen here
+ * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
+ */
 header > div {
   flex: 1;
 }

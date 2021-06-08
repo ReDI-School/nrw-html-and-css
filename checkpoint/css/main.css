@@ -234,6 +234,7 @@ header img {
 /**
  * Using e CSS Pseudo-Element Selector
  * Check: https://redi-school.github.io/nrw-html-and-css/lesson19/#4-css-pseudo-elements
+ */
 p::first-line {
   font-family: Verdana;
 }

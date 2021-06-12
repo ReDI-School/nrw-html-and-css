@@ -5,10 +5,10 @@ nav_order: 21
 
 # CSS Background & Color Values
 
-In previous classes, we applied flat fill colors (e.g `red`, `#ccc`) as backgrounds on elements,
+In previous classes, we applied flat fill colors (e.g `red`, `#ccc`) as the background on elements,
 but CSS gives us a lot more options and effects that we can apply on backgrounds.
 
-In this lesson, we will look at other effects that CSS allows us to apply on element backgrounds.
+In this lesson, we will look at the other effects that CSS allows us to apply on element backgrounds.
 
 ## Class Agenda
 
@@ -22,16 +22,16 @@ In this lesson, we will look at other effects that CSS allows us to apply on ele
 
 ## 1. Recap
 
-We have used `background: green`. The `background` property is a shorthand property that is capable of setting
-[the color, image, size and other properties](https://developer.mozilla.org/en-US/docs/Web/CSS/background#constituent_properties).
+We have used styles like `background: green` to specify only background colors, but take note that
+the `background` property is a shorthand property that is capable of setting not just
+the background color, but also [background image, size and other properties](https://developer.mozilla.org/en-US/docs/Web/CSS/background#constituent_properties).
 
 So, when we write `background: green`, it is similar to writing `background-color: green`.
 
 ## 2. Background Images
 
 The `background-image` property is used to apply a graphic (e.g JPG) or gradient to the background of an element.
-The url() keyword lets you provide the location of the image. You can also use the shorthand `background` property.
-See different examples below:
+The url() keyword lets you provide the location of the image. See different examples below:
 
 ```css
 .celebrate {
@@ -53,8 +53,8 @@ body {
 
 ## 3. Background Gradients
 
-You can also use CSS to create a gradient with different colors and apply that as a background image.
-There are different types of gradients, e.g. radial, linear, repeating. They are shown with examples below.
+You can use CSS to create a gradient with different colors and apply that as a background image.
+There are different types of gradients available, e.g. radial, linear, repeating. See examples below.
 
 ```css
 div {
@@ -90,10 +90,10 @@ ETA: 40 mins
 ## 5. background-blend-mode
 
 The `background-blend-mode` property is used to determine how a background image should blend with
-the element's background color, or another background image on the same element. Possible blend-modes include
+the element's background color, or blend into other background image(s) on the same element. Available blend-modes include
 `multiply`, `overlay` [and many others](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode).
 
-An example use case is when trying to adjust how an image looks without creating and loading many versions of the image into the page. For example you can adjust the blend-mode when a user hovers over an image.
+One use case is when trying to adjust how an image looks without creating and loading many versions of the image into the page. For example you can adjust the `background-blend-mode` when a user hovers over an image.
 
 ```css
 .profile {
@@ -109,8 +109,8 @@ An example use case is when trying to adjust how an image looks without creating
 ## 6. Opacity
 
 Opacity is used to specify how transparent an element should be.
-The default value of `opacity` is 1, where there is no transparency.
-0 is completely transparent.
+The default value of `opacity` is `1`, where there is no transparency.
+`0` means completely transparent.
 
 Take note that opacity applies to not just the background of an element.
 It also applies to the content of the element like text. So, you have to be careful when using it on elements with text (e.g `p`), as the text may become difficult to read.

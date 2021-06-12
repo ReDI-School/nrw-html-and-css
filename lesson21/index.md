@@ -6,7 +6,7 @@ nav_order: 21
 # CSS Background & Color Values
 
 In previous classes, we applied flat fill colors (e.g `red`, `#ccc`) as backgrounds on elements,
-but CSS gives up a lot more options and effects that we can apply on backgrounds.
+but CSS gives us a lot more options and effects that we can apply on backgrounds.
 
 In this lesson, we will look at other effects that CSS allows us to apply on element backgrounds.
 
@@ -15,9 +15,9 @@ In this lesson, we will look at other effects that CSS allows us to apply on ele
 1. Recap
 1. Background Images
 1. Background Gradients
+1. background-blend-mode
 1. Opacity
-1. blend-mode
-1. Gradient generator
+1. Gradient generators
 1. Other CSS Color Values
 
 ## 1. Recap
@@ -60,12 +60,15 @@ There are different types of gradients, e.g. radial, linear, repeating. They are
 div {
   background: radial-gradient(black, red);
 }
+
 p {
   background: linear-gradient(45deg, black, transparent);
 }
+
 .comic {
   background-image: conic-gradient(#ff8, #e71);
 }
+
 .gradient {
   background-image: repeating-linear-gradient(
     45deg,
@@ -77,26 +80,72 @@ p {
 }
 ```
 
-## 4. Opacity
+## 4. Gradient generators
 
+There are websites that makes it easy to create gradients, like <https://cssgradient.io/>
+Some websites also provide interface to generate the code for other CSS properties e.g <https://html-css-js.com/css/>.
 
-6. CSS Gradient generator (https://html-css-js.com/css/generator/)
-   (maybe 60min)
+ETA: 40 mins
 
-7. Other CSS Color Values (HEX, RGB (RGBA), HSL)
-   Color keywords (currentcolor, inherit, transparent)
-   (40min)
+## 5. background-blend-mode
+
+The `background-blend-mode` property is used to determine how a background image should blend with
+the element's background color, or another background image on the same element. Possible blend-modes include
+`multiply`, `overlay` [and many others](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode).
+
+An example use case is when trying to adjust how an image looks without creating and loading many versions of the image into the page. For example you can adjust the blend-mode when a user hovers over an image.
+
+```css
+.profile {
+  background-image: url(building.jpg);
+  background-color: blue;
+}
+
+.profile:hover {
+  background-blend-mode: multiply;
+}
+```
+
+## 6. Opacity
+
+Opacity is used to specify how transparent an element should be.
+The default value of `opacity` is 1, where there is no transparency.
+0 is completely transparent.
+
+Take note that opacity applies to not just the background of an element.
+It also applies to the content of the element like text. So, you have to be careful when using it on elements with text (e.g `p`), as the text may become difficult to read.
+
+```css
+div {
+  opacity: 0.5;
+}
+```
+
+ETA: 30 mins
+
+## 7. Other CSS Color Values
+
+In previous classes, we used color keywords like `red`, `tomato`. CSS offers more powerful ways of specifying colors. These include:
+
+- HEX e.g `#663399`
+- RGB e.g `rgb(255,0,153)` and RGBA e.g `rgb(255, 0, 153, 100%)`
+- HSL e.g `hsl(270,60%,70%)`
+- Other Color keywords (`currentcolor`, `inherit`, `transparent`)
+
+ETA: 20 mins
 
 # Homework
 
-Read More about:
+Read more about the topics below. You can start with the pages linked, but feel free to search the internet for more about them.
 
-- CSS Outline https://www.w3schools.com/css/css_outline.asp
-- CSS Border-Image https://www.w3schools.com/css/css3_border_images.asp
-- CSS Box-Shadow
+- [CSS Border-Image](https://www.w3schools.com/css/css3_border_images.asp)
+- [CSS Box-Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- [CSS Outline](https://www.w3schools.com/css/css_outline.asp)
 
 # Resources
 
-- [Repeating Gradients Background](https://www.youtube.com/watch?v=muE2B0Zylbw)
-- [MDN background property page](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 - [A Complete Guide to CSS Gradients](https://css-tricks.com/a-complete-guide-to-css-gradients/)
+- [All blend-mode keyword values](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
+- [Basics of CSS Blend Modes](https://css-tricks.com/basics-css-blend-modes/)
+- [MDN background property page](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+- [Repeating Gradients Background](https://www.youtube.com/watch?v=muE2B0Zylbw)

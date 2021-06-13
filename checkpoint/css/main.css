@@ -99,7 +99,7 @@ ul.main-menu {
 /*
  * :active MUST come after :hover (if present) in the CSS definition in order to be effective!
  * More info at https://www.w3schools.com/cssref/sel_active.asp
- * 
+ *
  * More on CSS Pseudo-Classes: https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#3-css-pseudo-classes
  */
 .main-menu a:hover,
@@ -136,6 +136,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 10;
   background: lightsteelblue;
   width: 100%;
   top: 0;
@@ -210,35 +211,63 @@ header img {
 }
 /* end header styles */
 
-/**
- * Here we use multiple CSS selectors together. These are
- * ID selector (hobbies)
- * Descendent selector (the space between #hobbies and ul)
- * Element selector (the ul and the li)
- * Child selector (the > between ul and li)
- * Pseudo-class selector (the :nth-child(odd))
- *
- * Explained in plain English this means:
- * Select the odd <li> tags which are direct children
- * of a <ul> tag, which is a descendant of the HTML element,
- * which is marked with the ID #hobbies
- */
-#hobbies ul > li:nth-child(odd) {
-  color: orangered;
+.projects,
+.education {
+  background-color: #fff;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
 }
 
-#hobbies ul > li:nth-child(even) {
-  color: midnightblue;
+.projects > h2 {
+  text-align: center;
 }
 
-/**
- * Using e CSS Pseudo-Element Selector
- * Check: https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#4-css-pseudo-elements
- */
-p::first-line {
-  font-family: Verdana;
+.projects ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-p {
-  text-indent: 2rem;
+.projects li {
+  position: relative;
+  width: 40%;
+  min-height: 700px;
+  margin: 50px;
+  list-style-type: none;
+  border: 2px solid #acbce7;
+  border-radius: 10px;
+  background-color: #30c67e;
+  background-size: cover;
+}
+
+.projects li:hover {
+  background-blend-mode: color-burn;
+}
+
+.projects .details {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 5px 20px;
+  background-color: #84a5d0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.survey-project {
+  background-image: url("../images/project-survey.png");
+}
+
+.landing-project {
+  background-image: url("../images/project-yoga-landing-page.png");
+}
+
+.animation-project {
+  background-image: url("../images/project-wow-css-animations.png");
+}
+
+.blog-project {
+  background-image: url("../images/project-the-food-blog.png");
 }

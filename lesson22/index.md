@@ -12,9 +12,10 @@ Every student who enters the class should bring their implementation of their ow
 ## Agenda
 
 1. URL Fragment (URL Hash)
-2. CSS Icons
-3. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint)
-4. Do extra exercises
+1. Transitions
+1. CSS Icons
+1. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint)
+1. Do extra exercises
 
 ## 1. URL Fragment (URL Hash)
 
@@ -33,6 +34,14 @@ html {
    * More on this here https://css-tricks.com/almanac/properties/s/scroll-padding/
    */
   scroll-padding-top: 50px;
+}
+
+/*
+This sets a smooth scrolling behavior when scrolling is triggered by the navigation
+Read more here: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+*/
+* {
+  scroll-behavior: smooth;
 }
 ```
 

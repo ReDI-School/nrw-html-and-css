@@ -12,10 +12,9 @@ Every student who enters the class should bring their implementation of their ow
 ## Agenda
 
 1. URL Fragment (URL Hash)
-1. Transitions
-1. CSS Icons
-1. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint)
-1. Do extra exercises
+2. CSS Icons
+3. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint)
+4. Do extra exercises
 
 ## 1. URL Fragment (URL Hash)
 

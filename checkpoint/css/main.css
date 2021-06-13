@@ -211,6 +211,10 @@ header img {
 }
 /* end header styles */
 
+.section > h2 {
+  text-align: center;
+}
+
 .projects,
 .education {
   background-color: #fff;
@@ -219,14 +223,6 @@ header img {
   margin: 0 auto;
 }
 
-.projects > h2 {
-  text-align: center;
-}
-
-/**
- * Using e CSS Pseudo-Element Selector
- * Check: https://redi-school.github.io/nrw-html-and-css/lesson19/#4-css-pseudo-elements
- */
 .projects ul {
   display: flex;
   justify-content: center;
@@ -274,4 +270,23 @@ header img {
 
 .blog-project {
   background-image: url("../images/project-the-food-blog.png");
+}
+
+.education li {
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 300px;
+  padding-left: 320px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-bottom: 50px;
+}
+
+.aachen {
+  background-image: url("../images/RWTH_Aachen_University_Logo.png");
+}
+
+.nus {
+  background-image: url("../images/nus-logo.png");
 }

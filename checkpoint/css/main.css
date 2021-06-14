@@ -5,6 +5,15 @@ html {
    */
   scroll-padding-top: 50px;
 }
+
+* {
+  /*
+  This sets a smooth scrolling behavior when scrolling is triggered by the navigation
+  Read more here: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+  */
+  scroll-behavior: smooth;
+}
+
 body {
   /* Note about Inheritance: The font-family is inherited by
   the child elements in the body */
@@ -228,21 +237,21 @@ header img {
   text-align: center;
 }
 
-.projects,
-.education {
+#projects,
+#education {
   background-color: #fff;
   border: none;
   width: 90%;
   margin: 0 auto;
 }
 
-.projects ul {
+#projects ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.projects li {
+#projects li {
   position: relative;
   width: 40%;
   min-height: 700px;
@@ -254,11 +263,11 @@ header img {
   background-size: cover;
 }
 
-.projects li:hover {
+#projects li:hover {
   background-blend-mode: color-burn;
 }
 
-.projects .details {
+#projects .details {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -285,7 +294,7 @@ header img {
   background-image: url("../images/project-the-food-blog.png");
 }
 
-.education li {
+#education li {
   list-style-type: none;
   background-repeat: no-repeat;
   background-position: left;

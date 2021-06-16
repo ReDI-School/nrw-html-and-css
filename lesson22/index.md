@@ -1,5 +1,5 @@
 ---
-title: Lesson 22 - Exercise Class III
+title: Lesson 22 - Exercise Class III (URL Hash and Icons)
 nav_order: 22
 ---
 
@@ -82,3 +82,22 @@ _Exercise:_
 > You can also use the Font Awesome library but it requires a personal registration their website. Please go their website and follow the instructions if you would like to access a bigger set of icons
 
 - Change the footer of your website to contain icons from the google font icon library. Check the code in [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint) to see how to do that
+
+## 3. Reach checkpoint 22
+
+Another goal of this class is to make sure that students reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint). We would also pay special attention to the implementation of the [background image](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson21/) in students personal project.
+
+## 4. Extra exercises
+
+If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson15/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson19/), which we have not managed to cover.
+
+# Homework
+
+Consider looking at the CSS Icons and fonts made available by https://fontawesome.com/. Make yourself familiar with the process of integrating that external library into your project. Try to find places where it would make sense to add icons or use a different font from the ones given by the library.
+
+# Resources
+
+- [CSS Scroll Padding](https://css-tricks.com/almanac/properties/s/scroll-padding/)
+- [Google Fonts](https://developers.google.com/fonts/)
+- [Font Awesome](https://fontawesome.com/v6.0)
+- [MDN Scroll Behaviour](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)

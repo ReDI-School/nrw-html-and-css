@@ -319,18 +319,19 @@ header img {
   min-height: 30px;
 }
 
-.material-icons:first-child {
+.icon-container *:first-child {
   margin-right: 10px;
 }
 
 .icon-link {
-  color: unset;
+  color: inherit;
   text-decoration: none;
 }
-.icon-lin:visited {
+.icon-link:visited {
   text-decoration: none;
-  color: unset;
+  color: inherit;
 }
+
 .icon-link:hover {
   opacity: 0.7;
 }

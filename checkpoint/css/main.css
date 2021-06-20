@@ -244,8 +244,12 @@ header img {
   width: 90%;
   margin: 0 auto;
 }
+#education ul {
+  padding-left: 0px;
+}
 
 #projects ul {
+  padding-left: 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -260,7 +264,7 @@ header img {
   border: 2px solid #acbce7;
   border-radius: 10px;
   background-color: #30c67e;
-  background-size: cover;
+  background-size: contain;
 }
 
 #projects li:hover {
@@ -316,7 +320,7 @@ header img {
 .icon-container {
   display: flex;
   align-items: center;
-  min-height: 30px;
+  min-height: 40px;
 }
 
 .icon-container *:first-child {

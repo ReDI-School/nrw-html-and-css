@@ -17,7 +17,7 @@ You can create nice animations with CSS on properties such as color, background-
 See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
 In this lesson, we cover a few CSS properties to achieve animations.
 
-## 1. Animations
+## 2. Animations
 
 The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
 To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.

@@ -6,9 +6,9 @@ nav_order: 24
 ## Agenda
 
 1. Introduction
-2. Animations
-2. Transitions
-3. Transform
+1. Animations
+1. Transitions
+1. Transform
 
 ## 1. Introduction
 
@@ -73,7 +73,7 @@ h1 {
 }
 ```
 
-## 2. Transitions
+## 3. Transitions
 
 Transitions are typically applied when a user interacts with an element (e.g when a user hovers or clicks on an element).
 
@@ -95,7 +95,7 @@ div:hover {
 }
 ```
 
-## 3. Transform
+## 4. Transform
 
 The `transform` property is usually used alongside animations. It allows you to visually manipulate an element by skewing, rotating, translating, or scaling. You can set transform on an element without animations e.g
 

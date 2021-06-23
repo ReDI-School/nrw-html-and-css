@@ -5,16 +5,19 @@ nav_order: 24
 
 ## Agenda
 
-1. Keyframe Animations
+1. Introduction
+2. Animations
 2. Transitions
 3. Transform
+
+## 1. Introduction
 
 An animation lets an element gradually change from one style to another.
 You can create nice animations with CSS on properties such as color, background-color, height, or width.
 See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
 In this lesson, we cover a few CSS properties to achieve animations.
 
-## 1. Keyframe Animations
+## 1. Animations
 
 The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
 To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.

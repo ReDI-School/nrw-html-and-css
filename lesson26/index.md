@@ -5,7 +5,7 @@ nav_order: 26
 
 ## Agenda
 
-1. Introduction to accessibility
+1. Introduction to Accessibility
 1. Classification of disabilities and assistive technologies
 1. Accessibility guidelines
 1. WAI-ARIA

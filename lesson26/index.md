@@ -13,7 +13,7 @@ nav_order: 26
 
 ## 1. Introduction to accessibility
 
-Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it, especially if they are physically or mentally impaired. In this section we are going to cover the main aspects of accessibility together with the biggest benefits it provides to you and to your users.
+Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it, especially if they are physically or cognitively impaired. In this section we are going to cover the main aspects of accessibility together with the biggest benefits it provides to you and to your users.
 
 ## 2. Classification of disabilities and assistive technologies
 

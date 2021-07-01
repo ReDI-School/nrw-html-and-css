@@ -5,13 +5,13 @@ nav_order: 26
 
 ## Agenda
 
-1. Introduction to accessibility
+1. Introduction to Accessibility
 1. Classification of disabilities and assistive technologies
 1. Accessibility guidelines
 1. WAI-ARIA
 1. Accessibility checkers
 
-## 1. Introduction to accessibility
+## 1. Introduction to Accessibility
 
 Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it, especially if they are physically or cognitively impaired. In this section we are going to cover the main aspects of accessibility together with the biggest benefits it provides to you and to your users.
 

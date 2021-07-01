@@ -44,7 +44,7 @@ Modern browsers provide an automated way for checking whether your website follo
 
 # Homework
 
-1. Checkout the Checkpoint26 branch and apply the changes to your project
+1. Checkout the [Checkpoint26](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint26/checkpoint) branch and apply the changes to your project
 2. Look at your own code and think about whether it satisfies the basic accessibility guidelines. Also, test your websites with the help of Google Chrome's Lightroom
 
 # Resources

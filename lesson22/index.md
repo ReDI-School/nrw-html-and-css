@@ -13,7 +13,7 @@ Every student who enters the class should bring their implementation of their ow
 
 1. URL Fragment (URL Hash)
 2. CSS Icons
-3. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint)
+3. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint)
 4. Do extra exercises
 
 ## 1. URL Fragment (URL Hash)
@@ -81,15 +81,15 @@ _Exercise:_
 
 > You can also use the Font Awesome library but it requires a personal registration their website. Please go their website and follow the instructions if you would like to access a bigger set of icons
 
-- Change the footer of your website to contain icons from the google font icon library. Check the code in [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint) to see how to do that
+- Change the footer of your website to contain icons from the google font icon library. Check the code in [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint) to see how to do that
 
 ## 3. Reach checkpoint 22
 
-Another goal of this class is to make sure that students reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint22/checkpoint). We would also pay special attention to the implementation of the [background image](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson21/) in students personal project.
+Another goal of this class is to make sure that students reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint). We would also pay special attention to the implementation of the [background image](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson21/) in students personal project.
 
 ## 4. Extra exercises
 
-If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson15/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson19/), which we have not managed to cover.
+If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson15/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson19/), which we have not managed to cover.
 
 # Homework
 

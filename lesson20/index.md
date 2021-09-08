@@ -25,8 +25,7 @@ We have written a decent amount of CSS rules for our website so far. While the a
 - the CSS universal Selector
 - and others
 
-We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson8/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson9/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
-
+We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson8/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson9/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
 
 # 2. CSS Combinator Selectors
 
@@ -49,7 +48,7 @@ For example, it can be used to:
 - Style visited and unvisited links differently
 - Style an element when it gets focus
 
-We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson10/)
+We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson10/)
 The most important pseudo-classes which this section covers are:
 
 - `:first-child`
@@ -85,9 +84,10 @@ It is possible to style HTML elements that have specific attributes or attribute
 # Homework
 
 - Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
-- In [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint20), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
-  - [What has changed between Checkpoint 20 and Checkpoint 19?](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/compare/checkpoint19...checkpoint20). Use this link to see the differences between two checkpoints. The green highlight (#e5ffec) shows the things which are added with Checkpoint 20.
+- In [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint20), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
+  - [What has changed between Checkpoint 20 and Checkpoint 19?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint19...checkpoint20). Use this link to see the differences between two checkpoints. The green highlight (#e5ffec) shows the things which are added with Checkpoint 20.
 - Practice your selector skills with this game: ["CSS Diner - the fun way to practice selectors"](http://cssdiner.com). Share a screenshot of your completed levels in the Classroom channel.
+
 # Resources
 
 - [Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)

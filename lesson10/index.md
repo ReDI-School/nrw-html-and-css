@@ -5,7 +5,6 @@ nav_order: 10
 
 # CSS Links and Lists
 
-
 ## Class Agenda
 
 1. CSS Link Styling
@@ -13,28 +12,26 @@ nav_order: 10
 
 ## 1. CSS Link Styling
 
-This section teaches students how to decorate various links via CSS. This includes menu links, external links  and others. In particular, the section covers the following points:
+This section teaches students how to decorate various links via CSS. This includes menu links, external links and others. In particular, the section covers the following points:
 
 - What are the various states that a link can have (e.g Visited, Hover, Focus, Active)?
 - How do we style the link in various states using CSS Pseudo-classes?
 - What are the `default styles`, which are applied by the browser to links?
 - How do we add background color to links?
-- How do we convert links to buttons, and style them with CSS? For example, designing navigation links as button. 
+- How do we convert links to buttons, and style them with CSS? For example, designing navigation links as button.
 
 ETA: 50min
-
 
 ## 2. CSS Lists Styling
 
 An important aspect of a webpage design is styling lists. Therefore this section teaches students how to create lists using CSS. Moreover, students learn how to design an already created HTML list. In particular the section covers the following points:
 
-- Recap of [HTML Lists](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson5/#2-lists)
-- Using the `list-style-type` css rule to apply different list item makers such as circle, square, upper-roman, etc. 
+- Recap of [HTML Lists](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson5/#2-lists)
+- Using the `list-style-type` css rule to apply different list item makers such as circle, square, upper-roman, etc.
 - Customizing list item makers with image (using `list-style-image`)
 - Changing list styles such as positioning of the list item marker, changing the default style, using different list colours and others.
 
 ETA: 45mins
-
 
 # Exercise Description
 
@@ -46,13 +43,13 @@ Therefore, Checkpoint 10 will be used in the beginning of lesson 11.
 
 # Glossary & Terminology
 
-- 
+-
 
 ---
 
 # Homework
 
-1. Create html links and decorate them based on all the link states. 
+1. Create html links and decorate them based on all the link states.
 
 # Resources
 

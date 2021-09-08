@@ -61,8 +61,8 @@ ETA: 20min
 
 2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 17. Here are the respective links to compare your solution
 
-   - [Portfolio Project - Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint17/checkpoint)
-   - [What has changed between Checkpoint 17 and Checkpoint 16?](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/compare/checkpoint16...checkpoint17). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 17.
+   - [Portfolio Project - Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint17/checkpoint)
+   - [What has changed between Checkpoint 17 and Checkpoint 16?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint16...checkpoint17). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 17.
 
 3. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
 

@@ -11,7 +11,6 @@ Students should be able to understand situations like: what happens when there a
 
 Note: Teachers are not limited to the examples shown in this note.
 
-
 ## Class Agenda
 
 - Precedence
@@ -19,11 +18,9 @@ Note: Teachers are not limited to the examples shown in this note.
 - Inheritance
 - !important
 
-
 # Introduction
 
 The word "Cascading" in Cascading Style Sheets is a key concept to understand. As your webpage styles increases, you may have a situation where a particular CSS rule you just wrote is not applying to the element because another rule is taking Precedence, or because of a specificity case. We explore these concepts below.
-
 
 # Precedence
 
@@ -148,17 +145,15 @@ It is useful to know that `!important` exists, however, you are strongly advised
 
 - Show how to see overridden rules using the Dev Tools. [Example](https://developer.chrome.com/docs/devtools/css/overrides/)
 
-
 # Glossary & Terminology
 
 - `Inheritance` is a process of receiving values of properties by a child element from its parent element.
 - `Specificity` determines which CSS rule is applied by the browsers.
 
-
 # Homework
 
 - Look in your project and review how specific your CSS selectors are. See if you can find places you could be using lower specificity while still achieving your styling.
-- In [Checkpoint 18](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint18), we added comments to our CSS file regarding inheritance and specificity. Take a look at it, and try to find other similar places in your code and label them.
+- In [Checkpoint 18](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18), we added comments to our CSS file regarding inheritance and specificity. Take a look at it, and try to find other similar places in your code and label them.
 
 # Resources
 

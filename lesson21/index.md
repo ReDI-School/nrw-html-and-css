@@ -136,7 +136,7 @@ ETA: 20 mins
 
 # Homework
 
-Review the changes in [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint21/checkpoint) and try them out in your own projects.
+Review the changes in [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint21/checkpoint) and try them out in your own projects.
 
 Read more about the topics below. You can start with the pages linked, but feel free to search the internet for more about them.
 

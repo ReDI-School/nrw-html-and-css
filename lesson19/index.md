@@ -9,7 +9,7 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 18](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/checkpoint18/checkpoint)
+1. Reach [Checkpoint 18](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18/checkpoint)
 1. Do extra exercises
 
 ## 1. Reach Checkpoint 18
@@ -18,7 +18,7 @@ The goal of this class is to make sure that every student has reached checkpoint
 
 ## 2. Quiz
 
-During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. The questions for the quiz are in [quiz.md](./quiz/quiz.md) (SPOILER ALERT: Please do not open this link before the quiz is over). A Slido link will be shared in the class to facilitate the quiz. 
+During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. The questions for the quiz are in [quiz.md](./quiz/quiz.md) (SPOILER ALERT: Please do not open this link before the quiz is over). A Slido link will be shared in the class to facilitate the quiz.
 
 ## 3. Extra exercises
 
@@ -26,11 +26,11 @@ If a student has reached checkpoint 18 then they can start doing extra exercises
 
 ### Easy
 
-- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson19/exercises/overflow/template)
+- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson19/exercises/overflow/template)
 
 ### Medium
 
-- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-spring/tree/master/lesson19/exercises/position-redi-logo/template)
+- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson19/exercises/position-redi-logo/template)
 
 ## Homework
 

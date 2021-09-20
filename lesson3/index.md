@@ -41,18 +41,17 @@ HTML is composed of elements. e.g a paragraph element looks like:
 - What is the `<title>` tag
 - What is the common meta tag usage `<meta name="description">`, `<meta charset="">`.
 
+## 4. Browser DevTools
+
+If time allows it, we would look into browser code inspection via the dev tools. This is a useful way of debugging our html and css code. Therefore, we would need to know how to open the dev tools and work with the basic `Elements` tab of tools.
+
 # Exercise Description
 
 - Open a webpage and look in the dev tools, and identify tags discussed above.
-- Students should configure their dev environment with the following:
-  - VS Code
-  - [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-  - Browser (Google Chrome)
-- Practice creating a basic HTML page in the class
-  - Write a basic HTML page just like `lesson2/Exercise.html`. Add the following tags also:
-    - Add a Doctype tag to the page
-    - Add a meta tag
-- The page should use the tags explained above
+- Make sure you have set up your environment as we are about to start working more often with code.
+- Try reaching [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint2/checkpoint/index.html), which contains the new things taught in class. Add the following tags also:
+  - Add a Doctype tag to the page
+  - Add a meta tag
 
 # Glossary & Terminology
 
@@ -72,6 +71,7 @@ HTML is composed of elements. e.g a paragraph element looks like:
 
 - Read about at least ten [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements) and when to use them
 - Read about the different [HTML metadata elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#metadata_the_%3Cmeta%3E_element)
+- Finish [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint2/checkpoint/index.html) if you haven't already done so
 
 # Resources
 

@@ -30,6 +30,7 @@ HTML is composed of elements. e.g a paragraph element looks like:
 - Do all elements contain a closing tag?
 - What is an Attribute?
 - What is a Semantic Tag?
+- What is an inline element and what is a block element? What is the [difference](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#block_versus_inline_elements) between them?
 
 ## 3. HTML Page Structure
 

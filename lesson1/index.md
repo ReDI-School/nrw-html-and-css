@@ -53,12 +53,11 @@ The practical part of this course is covered by a project which is built through
 Example CV Websites:
 
 - <https://www.sesanosanyinbi.com/>
-- <https://www.sesanosanyinbi.com/>
 - <https://ethanmarcotte.com/>
 - <https://laurieontech.com/>
 - <https://rachelandrew.co.uk/>
 - Example of the checkpoint website
-- An example [student website](https://youtu.be/upP5NuMLCGU?t=146) presented during the Demo day in 2020 Spring semester
+- An example [student website](https://julietchuks.github.io/Portfolio/) presented during the [demo day](https://youtu.be/upP5NuMLCGU?t=146) in 2020 Spring semester
 
 ETA: 30min
 

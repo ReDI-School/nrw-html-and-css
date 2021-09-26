@@ -17,12 +17,10 @@ In this course we will learn how websites are made and teach you how to build yo
 ## Teachers
 
 * Angel
-* Babatunde
-* Christopher
-* Chukwuma
-* Chuma
-* Jessica
-* Olaniyi
-* Seun
-* Tapasya
-* Vincent
+* Donald
+* Emmanuel
+* Hemanta
+* Rachid
+* Naz
+* Shilpa
+* Ahmet (Teaching Assistant)

@@ -1,96 +1,57 @@
 ---
-title: Lesson 9 - CSS Text Formatting
+title: Lesson 9 - CSS Links and Lists
 nav_order: 9
 ---
 
-# CSS Text Formatting
+# CSS Links and Lists
 
 ## Class Agenda
 
-1. CSS Descendant selector
-2. CSS Comments
-3. CSS Basic Colors
-4. Formatting Text with CSS
-5. CSS Fonts
+1. CSS Link Styling
+2. CSS List Styling
 
-## 1. CSS Descendant selector
+## 1. CSS Link Styling
 
-This section will teach how to match descendant elements by using the CSS Descendant Selector.
+This section teaches students how to decorate various links via CSS. This includes menu links, external links and others. In particular, the section covers the following points:
 
-ETA: 10mins
+- What are the various states that a link can have (e.g Visited, Hover, Focus, Active)?
+- How do we style the link in various states using CSS Pseudo-classes?
+- What are the `default styles`, which are applied by the browser to links?
+- How do we add background color to links?
+- How do we convert links to buttons, and style them with CSS? For example, designing navigation links as button.
 
-## 2. CSS Comments
+ETA: 50min
 
-Just like we can add HTML comments to our html files we can also add CSS comments to our CSS code. This section will cover how to do that.
+## 2. CSS Lists Styling
 
-ETA: 10mins
+An important aspect of a webpage design is styling lists. Therefore this section teaches students how to create lists using CSS. Moreover, students learn how to design an already created HTML list. In particular the section covers the following points:
 
-## 3. CSS Basic Colors
+- Recap of [HTML Lists](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson5/#2-lists)
+- Using the `list-style-type` css rule to apply different list item makers such as circle, square, upper-roman, etc.
+- Customizing list item makers with image (using `list-style-image`)
+- Changing list styles such as positioning of the list item marker, changing the default style, using different list colours and others.
 
-This section will cover some basic CSS colors using the [standard color names](https://www.w3schools.com/colors/colors_names.asp) (e.g. Tomato, Azure, DodgerBlue, etc.). It will also practice the usage of those color names together with the following CSS Rules, which students will learn:
-
-- Background Color
-- Text Color
-- Border Color (keep in mind that this only covers the border color without the border style and sizes. We can use `2px solid` without going into details)
-
-ETA: 20 mins
-
-## 4. Formatting Text with CSS
-
-We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
-
-- Text Alignment (`text-align`)
-- Text Direction
-- Vertical Alignment
-- Text Shadow (beware: don't overuse text shadows on your websites)
-- Text Decoration
-- Text Indentation
-
-ETA: 30 mins (Students should have enough time to practice)
-
-## 5. CSS Fonts
-
-A crucial role on all websites plays the font. It can give a totally different look and feel on your website. This section covers:
-
-- What are the different generic [font families](https://www.w3schools.com/css/css_font.asp)?
-- What are the [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)?
-- Why is it important to have fallback fonts?
-- What is the CSS [`font-style`](https://www.w3schools.com/css/css_font_style.asp) rule doing?
-- How can we inspect which font-family is used on a page?
-
-ETA: 30 mins
+ETA: 45mins
 
 # Exercise Description
 
-Exercises should be done along with the content of the lecture. After completing the Tasks, you should have content similar to `lesson9/Checkpoint9`. Checkpoint 9 adds the following things on top of Checkpoint 8:
+Exercises should be done along each section and should help students add their own styles.
 
-- Applying font on the page
-- Text aligning the content of the footer
-- Adding a dedicated class for our `<a>` tags which are placed withing the navigation via a `descendant selector`. Also applying `text-decoration` and `color` css rules
-- Applying a CSS comment on the `nav a` selector
-- Adding basic border coloring on the `section`
-- Adding text indentation to our section paragraphs
-- Adding text shadow in our `#greeting` element
+This lesson can add new content to the CV website since all these are expected to be consumed within it.
+
+Therefore, Checkpoint 9 will be used in the beginning of lesson 10.
 
 # Glossary & Terminology
 
-- `Ancestor Element` - An ancestor refers to any element that is connected to another element in the HTML Tree but is placed further up the document tree - no matter how many levels higher. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
-- `Descendant Element` - A descendant refers to any element that is connected to another element in the HTML Tree but is placed lower down the document tree - no matter how many levels lower. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
-
----
+- ***
 
 # Homework
 
-- Read more about different web font families [here](https://www.hostinger.com/tutorials/best-html-web-fonts). Get to know what the different companies are using
-- Make sure to use your own image / photo on your websites
-- (Optional) Check out the nice [CSS tricks](https://css-tricks.com/almanac/properties/t/text-shadow/) with text shadow
+1. Create html links and decorate them based on all the link states.
 
 # Resources
 
-- [Recap of HTML Tree](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html)
-- [CSS Descendant Selector](https://www.w3schools.com/css/css_combinators.asp)
-- [CSS Basic Colors](https://www.w3schools.com/css/css_colors.asp)
-- [CSS Standard Names](https://www.w3schools.com/colors/colors_names.asp)
-- [CSS Text](https://www.w3schools.com/css/css_text.asp)
-- [CSS Font](https://www.w3schools.com/css/css_font.asp)
-- [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)
+- [CSS Links - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
+- [CSS Links - W3S](https://www.w3schools.com/css/css_link.asp)
+- [CSS Lists - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters)
+- [CSS Lists - W3S](https://www.w3schools.com/css/css_list.asp)

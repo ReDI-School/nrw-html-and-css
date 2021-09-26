@@ -11,8 +11,7 @@ nav_order: 2
 2. Introduction to CSS
 3. Comparison between HTML and CSS (could also be homework)
 4. Difference between Static and Dynamic Web Pages
-5. Project CV Website (Pitch)
-6. Exercise
+5. How does the web work?
 
 ## 1. Introduction to HTML
 
@@ -71,25 +70,11 @@ This section teaches students the difference between static and dynamic web page
 
 ETA: ~1-2min
 
-## 5. Project CV Website (Pitch)
+## 5. How does the web work?
 
-This section describes the Project that students are going to build throughout the semester. The details can change but a rough overview of what the website project is about needs to be pitched to the students:
-
-- Everyone will work on their own website which would be their CV
-- Everyone will start simple and gradually add new content to this CV website
-- An example page to roughly look at is presented - e.g. <https://www.sesanosanyinbi.com/>
-- Students should not blindly follow the given example but instead be creative and use whatever styling and arrangement they want
-- There will be couple of CV dedicated sessions or homeworks where we would be able to look at each student's code and help a little bit
-- The use cases for this website are following -> Using it for future employers, Sharing with family and friends, having fun
-- QA with Students regarding the project
+This section reveals the "magic" behind the world wide web. Students should get familiar with how browsers get information from servers and turn it into websites.
 
 ETA: ~15min
-
-# Exercise Description
-
-ETA: ~10min
-
-- Make a short Hello World example in VS Code. The example could contain for example, `Max Muster's CV` in the title of page when loaded in the browser.
 
 # Glossary & Terminology
 
@@ -108,14 +93,14 @@ ETA: ~10min
 - `W3C` - W3C stands for World Wide Web Consortium, which is the main international standards organization for the World Wide Web. It maintains HTML and CSS specification (i.e. rules)
 - `W3Schools` - W3Schools is another useful website which provides documentation for HTML and CSS
 
-
 ---
 
 # Homework
 
-1. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
-2. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
-3. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>
+1. Reach checkpoint2 if you haven't done so in class. Please use your own website title including your own name.
+2. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
+3. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
+4. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>
 
 # Resources
 

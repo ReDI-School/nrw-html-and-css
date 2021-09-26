@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: HTML&CSS
-description: This is the homepage of the "NRW HTML & CSS" course at ReDI School || Spring 2021
+description: This is the homepage of the "NRW HTML & CSS" course at ReDI School || Fall 2021
 footer_content: 'Made with ❤ by teachers at <a href="https://www.redi-school.org">ReDI School NRW</a>.'
 
 # Build settings
@@ -30,4 +30,5 @@ exclude:
   - node_modules
   - vendor
   - teacher
+  - checkpoints
 # Add directories to exclude after the ones above

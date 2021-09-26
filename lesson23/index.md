@@ -1,68 +1,137 @@
 ---
-title: Lesson 23 - Responsive Design
+title: Lesson 23 - CSS Animations & Transitions
 nav_order: 23
 ---
-
-In this lesson, we will learn the basics of responsive web design. This is a fundamental concept in the modern web development and deserves special attention.
 
 ## Agenda
 
 1. Introduction
-2. Dev Tools inspection
-3. The viewport meta tag
-4. Flexbox behaviour
-5. Media Queries
+1. Animations
+1. Transitions
+1. Transform
 
 ## 1. Introduction
 
-Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust for different screen sizes and viewports. That is achieved by using such HTML and CSS that makes the web elements shrink, resize or enlarge themselves on different screen sizes. It is important to understand that responsive web design isn't a separate technology — it is a term used to describe an approach to web design or a set of best practices, used to create a layout that can respond to the device being used to view the content. These approaches can include
+An animation lets an element gradually change from one style to another.
+You can create nice animations with CSS on properties such as color, background-color, height, or width.
+See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
+In this lesson, we cover a few CSS properties to achieve animations.
 
-- Making containers fluid by setting `max-width: 100%`
-- Using relative units for typography
-- Using CSS Flexbox or CSS Grid to create responsive layouts
-- Using media queries to change styles on different viewports
+## 2. Animations
 
-## 2. Dev Tools inspection
+The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
+To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.
 
-It is extremely important to look at the result of your implementation directly in the browser. As you have already learned, the browser Dev Tools are an excellent way to check and debug your html and css code. What's more the browser Dev Tools allow you to check how your page is going to look on different devices such as tablets or mobile phones. Sometimes you can even select from a few built-in device sizes. Use the Dev Tools to check out how your website looks on mobile devices.
+- `animation-name`: Specifies the name of the `@keyframes` rule describing the animation.
+- `animation-duration`: Sets the length of time that the animation should take.
+- `animation-delay`: Sets a time before the animation starts
+- `animation-iteration-count`: Sets the number of times the animation should run
+- `animation-timing-function`: Configures the timing or speed of the animation.
 
-## 3. The viewport meta tag
+Each keyframe rule defines what should happen at specific moments during the animation.
+For example, 0% is the start and 100% is the end,
 
-One of the first steps towards responsive design is setting a special HTML meta tag inside the head of your html file.
+```css
+.element {
+  height: 200px;
+  /* animation-name must match @keyframes value */
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
 
-```html
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-```
-
-The story behind why this line is needed is very interesting and is worth reading [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag).
-
-## 4. Flexbox behaviour
-
-We learned about flexbox in [lecture 14](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson14/). One of the key aspects associated with flexbox is that it is very useful for responsive designs. This is because the flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for `flex-grow` and `flex-shrink` you can indicate how you want the items to behave when they encounter more or less space around them.
-
-## 5. Media queries
-
-Responsive design was only able to emerge due to the media query. Media Queries allow us to run a series of tests (e.g. whether the user's screen is greater than a certain width, or a certain resolution) and apply CSS selectively to style the page appropriately for the user's needs.
-
-```
-@media screen and (min-width: 800px) {
-  .container {
-    margin: 1em 2em;
+/* @keyframes <animation-name> with <percentage> steps */
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
   }
+  40% {
+    background-color: #0e1;
+  }
+  100% {
+    background-color: #ff4136;
+  }
+}
+```
+
+You can also use keywords `from` and `to` with @keyframes.
+
+```css
+h1 {
+  font-size: 20px;
+  animation-name: size-increase;
+  animation-duration: 5s;
+}
+
+@keyframes size-increase {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+```
+
+## 3. Transitions
+
+Transitions are typically applied when a user interacts with an element (e.g when a user hovers or clicks on an element).
+
+- `transition-property`: used to define what property, or properties, you want to apply a transition effect to. You can also use the keyword `all` to transition all properties possible to transition on the element.
+- `transition-duration`: used to define the duration of a specified transition.
+- `transition-delay`: used to define a length of time to delay the start of a transition
+- `transition-timing-function`: used to define a function that describes how a transition will proceed over its duration
+
+```css
+div {
+  transition: all 0.5s ease;
+  background: red;
+  padding: 10px;
+}
+
+div:hover {
+  background: green;
+  padding: 20px;
+}
+```
+
+## 4. Transform
+
+The `transform` property is usually used alongside animations. It allows you to visually manipulate an element by skewing, rotating, translating, or scaling. You can set transform on an element without animations e.g
+
+```css
+div {
+  width: 20px;
+  height: 20px;
+  transform: scale(20);
+}
+```
+
+but works well with transitions and animations e.g
+
+```css
+a {
+  font-size: 2em;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+}
+
+a:hover {
+  /* this lifts up the link on hover */
+  transform: translate(0, -5px);
 }
 ```
 
 # Glossary & Terminology
 
-- `Responsive Web Design` - Responsive web design (RWD) is an approach to web design that makes web pages look well on a variety of devices and window or screen sizes from minimum to maximum display size. More info [here](https://en.wikipedia.org/wiki/Responsive_web_design).
+- `Animatable CSS properties` - List of CSS properties can be animated using CSS Animations or CSS Transitions. More info [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
 
 # Homework
 
-1. Open the browser dev tools and checkout how your website looks on mobile devices.
-2. Identify places which can look bad and try to use the learned techniques to make them look better. If you have difficulties, feel free to ask around for help. Meanwhile checkout our [Checkpoint 23](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint23/checkpoint) to get some inspiration and look at examples of what you can do.
-3. (Optional) Learn about a more advanced layout concept called [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). The CSS Grid is very useful for responsive design but it can be more difficult to master.
+1. Checkout the Checkpoint23 branch and apply similar styles to your project.
+2. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
 
 # Resources
 
-- [MDN Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-- [W3S Responsive Design](https://www.w3schools.com/html/html_responsive.asp)
+- [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+- [Transition property](https://css-tricks.com/almanac/properties/t/transition/)

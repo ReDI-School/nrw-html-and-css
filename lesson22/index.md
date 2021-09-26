@@ -1,103 +1,68 @@
 ---
-title: Lesson 22 - Exercise Class III (URL Hash and Icons)
+title: Lesson 22 - Responsive Design
 nav_order: 22
 ---
 
-In this lesson, we will look at some useful techniques such as adding CSS Icons to your website or supplying a hash value to URLs. We would practice the latter directly on your websites. Apart from this we would make sure that you reach the latest Checkpoint 22 and if the time allows we would also do some extra exercises.
-
-## Prerequisite
-
-Every student who enters the class should bring their implementation of their own portfolio project. In other words, every student should bring their code and show it to teachers, ideally in CodeSandbox or locally in their VS Code environment.
+In this lesson, we will learn the basics of responsive web design. This is a fundamental concept in the modern web development and deserves special attention.
 
 ## Agenda
 
-1. URL Fragment (URL Hash)
-2. CSS Icons
-3. Reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint)
-4. Do extra exercises
+1. Introduction
+2. Dev Tools inspection
+3. The viewport meta tag
+4. Flexbox behaviour
+5. Media Queries
 
-## 1. URL Fragment (URL Hash)
+## 1. Introduction
 
-The fragment identifier introduced by the hash mark `#` is the optional last part of a URL for a document. It is typically used to identify a portion of that document. It is often very useful to navigate to a certain part in the page without the need to scroll. The `#` hash value can be a special built-in one such as `top` or `bottom`, respectively marking the top and the bottom of the page. Nevertheless, the value of the URL Fragment `#` can be anything you like. Let's try to do an exercise together to see how it in action.
+Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust for different screen sizes and viewports. That is achieved by using such HTML and CSS that makes the web elements shrink, resize or enlarge themselves on different screen sizes. It is important to understand that responsive web design isn't a separate technology — it is a term used to describe an approach to web design or a set of best practices, used to create a layout that can respond to the device being used to view the content. These approaches can include
 
-_Exercise:_
+- Making containers fluid by setting `max-width: 100%`
+- Using relative units for typography
+- Using CSS Flexbox or CSS Grid to create responsive layouts
+- Using media queries to change styles on different viewports
 
-- Give each each section of your main page a unique `id`
-- Create navigation links which point to sections of your main page
-- Apply the following CSS so that the fixed height of your navigation bar is taken into account. More info [here](https://css-tricks.com/almanac/properties/s/scroll-padding/)
+## 2. Dev Tools inspection
 
-```css
-html {
-  /*
-   * This height needs to be the same as the navigation bar height
-   * More on this here https://css-tricks.com/almanac/properties/s/scroll-padding/
-   */
-  scroll-padding-top: 50px;
+It is extremely important to look at the result of your implementation directly in the browser. As you have already learned, the browser Dev Tools are an excellent way to check and debug your html and css code. What's more the browser Dev Tools allow you to check how your page is going to look on different devices such as tablets or mobile phones. Sometimes you can even select from a few built-in device sizes. Use the Dev Tools to check out how your website looks on mobile devices.
+
+## 3. The viewport meta tag
+
+One of the first steps towards responsive design is setting a special HTML meta tag inside the head of your html file.
+
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+```
+
+The story behind why this line is needed is very interesting and is worth reading [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag).
+
+## 4. Flexbox behaviour
+
+We learned about flexbox in [lecture 14](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson13/). One of the key aspects associated with flexbox is that it is very useful for responsive designs. This is because the flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for `flex-grow` and `flex-shrink` you can indicate how you want the items to behave when they encounter more or less space around them.
+
+## 5. Media queries
+
+Responsive design was only able to emerge due to the media query. Media Queries allow us to run a series of tests (e.g. whether the user's screen is greater than a certain width, or a certain resolution) and apply CSS selectively to style the page appropriately for the user's needs.
+
+```
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1em 2em;
+  }
 }
-
-/*
-This sets a smooth scrolling behavior when scrolling is triggered by the navigation
-Read more here: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
-*/
-* {
-  scroll-behavior: smooth;
-}
 ```
 
-## 2. CSS Icons
+# Glossary & Terminology
 
-Icons can easily be added to your HTML page by using an icon library. This is the simplest way and does not require a lot of work. Some famous libraries are
-
-- [Font Awesome](https://fontawesome.com/v6.0)
-- [Google Fonts](https://developers.google.com/fonts/)
-
-Every font library contains instructions on how to add fonts or icons to your page. Generally, this happens by attaching a script link to your HTML page such as:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-/>
-```
-
-Then if we want to use some icon we only have to add the name of the specified icon class to any inline HTML element (like `<i>` or `<span>`). For example:
-
-```html
-<i class="material-icons">cloud</i>
-```
-
-All the icons in the icon libraries can be customized with additional CSS (size, color, shadow, etc.)
-
-_Exercise:_
-
-- Add the google font icons library to your website with
-
-```html
-<link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
-```
-
-> You can also use the Font Awesome library but it requires a personal registration their website. Please go their website and follow the instructions if you would like to access a bigger set of icons
-
-- Change the footer of your website to contain icons from the google font icon library. Check the code in [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint) to see how to do that
-
-## 3. Reach checkpoint 22
-
-Another goal of this class is to make sure that students reach [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint). We would also pay special attention to the implementation of the [background image](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson21/) in students personal project.
-
-## 4. Extra exercises
-
-If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson15/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson19/), which we have not managed to cover.
+- `Responsive Web Design` - Responsive web design (RWD) is an approach to web design that makes web pages look well on a variety of devices and window or screen sizes from minimum to maximum display size. More info [here](https://en.wikipedia.org/wiki/Responsive_web_design).
 
 # Homework
 
-Consider looking at the CSS Icons and fonts made available by https://fontawesome.com/. Make yourself familiar with the process of integrating that external library into your project. Try to find places where it would make sense to add icons or use a different font from the ones given by the library.
+1. Open the browser dev tools and checkout how your website looks on mobile devices.
+2. Identify places which can look bad and try to use the learned techniques to make them look better. If you have difficulties, feel free to ask around for help. Meanwhile checkout our [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint22/checkpoint) to get some inspiration and look at examples of what you can do.
+3. (Optional) Learn about a more advanced layout concept called [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). The CSS Grid is very useful for responsive design but it can be more difficult to master.
 
 # Resources
 
-- [CSS Scroll Padding](https://css-tricks.com/almanac/properties/s/scroll-padding/)
-- [Google Fonts](https://developers.google.com/fonts/)
-- [Font Awesome](https://fontawesome.com/v6.0)
-- [MDN Scroll Behaviour](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)
+- [MDN Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [W3S Responsive Design](https://www.w3schools.com/html/html_responsive.asp)

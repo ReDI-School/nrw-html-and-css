@@ -1,57 +1,89 @@
 ---
-title: Lesson 15 - Exercise Class I
+title: Lesson 15 - CSS Positioning
 nav_order: 15
 ---
 
-## Prerequisite
+# CSS Positioning
 
-Every student who enters the class should bring their implementation of their own portfolio project. In other words, every student should bring their code and show it to teachers, ideally in CodeSandbox or locally in their VS Code environment.
+## Class Agenda
 
-## Agenda
+1. Introduction to Positioning
+2. Static Positioning
+3. Relative Positioning
+4. Absolute Positioning
+5. Z-Index
+6. Fixed Positioning
+7. Sticky Positioning
 
-1. Reach [Checkpoint 14](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint14/checkpoint)
-1. Do extra exercises
+# 1. Introduction to Positioning
 
-## 1. Reach Checkpoint 14
+The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
 
-The goal of this class is to make sure that every student has reached checkpoint 14 in their own portfolio projects. Teachers would help students if they have not reached the checkpoint yet.
+ETA: 5-10min
 
-## 2. Extra exercises
+# 2. Static Positioning
 
-If a student has reached checkpoint 14 then they can start doing extra exercises from the following list. Students can choose whatever exercise they want because there is no order. The list is solely categorized based on difficulty.
+This is the default positioning which HTML elements are using.
 
-### Easy
+ETA: 5min
 
-- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson15/exercises/nested-flex/template)
+# 3. Relative Positioning
 
-- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson15/exercises/ig-stories/template)
+Relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
 
-### Medium
+ETA: 15min
 
-- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson15/exercises/flex-app-layout/template)
+# 4. Absolute Positioning
 
-- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson15/exercises/dropdown-navigation/template)
+Absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
 
-## Homework
+- What is absolute positioning?
+- Where is it used?
+- How is the absolute positioning determined?
+- What are the positioning contexts?
 
-- Try doing all exercises which you haven't managed to finish in class.
+ETA: 40min
 
-## How to start an exercise in codesandbox ?
+# 5. Z-Index
 
-1. Open your browser and go to https://codesandbox.io/.
-2. (Optional) step - you can sign in codesandbox so that you keep your work saved for a long time.
-3. On the top right corner there should be a blue button called `Create Sandbox`. Please click on it.
+An important aspect to CSS positioning is the concept of overlapping. We need to answer the question of would would happen when to elements overlap each other because of the special positioning? This section covers the CSS `z-index` rule.
 
-![Codesandbox Main Page](./CodeSandboxMainPage.png)
+ETA: 10min
 
-4. A pop-up window would appear. Please click on `Import Project`.
-5. After you have chosen an exercise from the given ones above, you have to copy the `Resource` link for that chosen exercise and paste it into the field called `GitHub Repository URL`
+# 6. Fixed Positioning
 
-![Import Project](./ImportProject.png)
+Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint15/checkpoint/css/main.css#L110)
 
-6. Finally click on `Import and Fork`.
-7. It is a good idea to edit the name of the new codesandbox by adding the name of the exercise and your name. This way, the teachers can identify your work more easily.
+ETA: 20min
 
-![Renamed Fork](./RenamedFork.png)
+# 7. Sticky Positioning
 
-8. Good Luck and Have Fun !
+This positioning type is a combination between relative positioning and fixed positioning. We cover it in details during the class. Moreover, we would also cover the [differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning with practical examples
+
+ETA: 10min
+
+# Glossary & Terminology
+
+- `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
+- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+
+---
+
+# Homework
+
+Go over checkpoint 15 and try to apply the new styles in it into your personal portfolio projects. The main aim here should be to make your navigation bar fixed. Below you can find the links to:
+
+- [Portfolio Project - Checkpoint 15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint15/checkpoint)
+- [What has changed between Checkpoint 15 and Checkpoint 13?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint13...checkpoint15). Use this link to see the differences between two checkpoints. The left panel shows the things which are removed from Checkpoint 13, whereas the right side shows the things which are added with Checkpoint 15.
+
+Make sure to ask questions!
+
+> There is no checkpoint 14. The previous checkpoint is checkpoint 13 because class 14 did not introduce more code to our portfolio project.
+
+# Resources
+
+- [Example of fixed navigation bar in the Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint15/checkpoint/css/main.css#L110)
+- [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
+- [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+- [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
+- [W3S CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)

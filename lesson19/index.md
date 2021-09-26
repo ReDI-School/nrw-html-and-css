@@ -1,57 +1,97 @@
 ---
-title: Lesson 19 - Exercise Class II
+title: Lesson 19 - CSS Selectors II
 nav_order: 19
 ---
 
-## Prerequisite
+# CSS Selectors II
 
-Every student who enters the class should bring their implementation of their own portfolio project. In other words, every student should bring their code and show it to teachers, ideally in CodeSandbox or locally in their VS Code environment.
+This lesson teaches various CSS Selectors which are not so often used but still important. The theory would be accompanied with practical examples for each selector case.
 
-## Agenda
+## Class Agenda
 
-1. Reach [Checkpoint 18](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18/checkpoint)
-1. Do extra exercises
+1. Recap of the CSS Selectors I
+2. CSS Combinator Selectors
+3. CSS Pseudo-classes
+4. CSS Pseudo Elements
+5. CSS Attribute Selectors
 
-## 1. Reach Checkpoint 18
+# 1. Recap of the CSS Selectors I
 
-The goal of this class is to make sure that every student has reached checkpoint 18 in their own portfolio projects. Teachers would help students if they have not reached the checkpoint yet.
+We have written a decent amount of CSS rules for our website so far. While the amount of CSS rules is high, we have not used too many different CSS Selectors for our rules. We have mainly used the Simple CSS Selectors such as
 
-## 2. Quiz
+- the CSS element Selector
+- the CSS id Selector
+- the CSS class Selector
+- the CSS universal Selector
+- and others
 
-During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. The questions for the quiz are in [quiz.md](./quiz/quiz.md) (SPOILER ALERT: Please do not open this link before the quiz is over). A Slido link will be shared in the class to facilitate the quiz.
+We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson7/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson8/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
 
-## 3. Extra exercises
+# 2. CSS Combinator Selectors
 
-If a student has reached checkpoint 18 then they can start doing extra exercises from the following list. Students can choose whatever exercise they want because there is no order. The list is solely categorized based on difficulty.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
 
-### Easy
+There are four different combinators in CSS:
 
-- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson19/exercises/overflow/template)
+- descendant selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
 
-### Medium
+# 3. CSS Pseudo-classes
 
-- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson19/exercises/position-redi-logo/template)
+A pseudo-class is used to define a special state of an element.
 
-## Homework
+For example, it can be used to:
 
-- Try doing all exercises which you haven't managed to finish in class.
+- Style an element when a user mouses over it
+- Style visited and unvisited links differently
+- Style an element when it gets focus
 
-## How to start an exercise in codesandbox ?
+We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson9/)
+The most important pseudo-classes which this section covers are:
 
-1. Open your browser and go to https://codesandbox.io/.
-2. (Optional) step - you can sign in codesandbox so that you keep your work saved for a long time.
-3. On the top right corner there should be a blue button called `Create Sandbox`. Please click on it.
-4. A pop-up window would appear. Please click on `Import Project`.
-5. After you have chosen an exercise from the given ones above, you have to copy the `Resource` link for that chosen exercise and paste it into the field called `GitHub Repository URL`
-6. Finally click on `Import and Fork`.
-7. It is a good idea to edit the name of the new codesandbox by adding the name of the exercise and your name. This way, the teachers can identify your work more easily.
-8. Good Luck and Have Fun !
+- `:first-child`
+- `:last-child`
+- `:nth-child()`
 
-- Step 3
-  ![Codesandbox Main Page](./CodeSandboxMainPage.png)
+If times allow it we would cover some additional pseudo-classes.
 
-- Steps 4, 5 and 6
-  ![Import Project](./ImportProject.png)
+# 4. CSS Pseudo Elements
 
-- Steps 7 and 8
-  ![Renamed Fork](./RenamedFork.png)
+Apart from pseudo-classes there are also pseudo-elements which can be styled with a certain CSS Pseudo-elements Selectors. A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
+
+- Style the first letter, or line, of an element
+- Insert content before, or after, the content of an element
+
+The most important Pseudo-elements we would cover are:
+
+- `::first-line`
+- `::first-letter`
+- `::before`
+- `::after`
+- `::selection`
+
+# 5. CSS Attribute Selectors
+
+It is possible to style HTML elements that have specific attributes or attribute values. This section covers how to do that.
+
+# Glossary & Terminology
+
+- `Pseudo-class` - A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to change a button's color when the user's pointer hovers over it.
+- `Pseudo-element` - A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, `::first-line` can be used to change the font of the first line of a paragraph.
+
+# Homework
+
+- Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
+- In [Checkpoint 19](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint19), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
+  - [What has changed between Checkpoint 19 and Checkpoint 18?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint18...checkpoint19). Use this link to see the differences between two checkpoints. The green highlight (#e5ffec) shows the things which are added with Checkpoint 19.
+- Practice your selector skills with this game: ["CSS Diner - the fun way to practice selectors"](http://cssdiner.com). Share a screenshot of your completed levels in the Classroom channel.
+
+# Resources
+
+- [Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
+- [Categorization of CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
+- [Combinator Selectors](https://www.w3schools.com/css/css_combinators.asp)
+- [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+- [Pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)

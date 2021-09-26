@@ -1,97 +1,105 @@
 ---
-title: Lesson 6 - HTML Tags 3
+title: Lesson 6 - HTML Forms
 nav_order: 6
 ---
 
-# HTML Tags 3
-
-This session teaches HTML Tags that go beyond the scope of our CV Project website. The exercises could still use the content of checkpoint 5 but at the end of the lesson, there should be no new content added to the CV Website. In other words, there is no checkpoint 6 but we would instead use checkpoint 5 in the beginning of lesson 7.
-
-> If a student insists that they use a certain HTML Tag which they learnt during this lesson, then they can still add it to their personal CV website but the general content at the beginning of lesson 7 should be the content from checkpoint 5.
+# HTML Forms
 
 ## Class Agenda
 
-1. HTML Tables
-2. HTML Multimedia
-3. HTML Entities
-4. Other HTML Tags
+1. What are HTML Forms?
+2. Form Tags (Part 1)
+3. Form Tags Part 2 (if there is time)
 
-## 1. HTML Tables
+## 1. What are HTML forms?
 
-This section teaches students how to do an HTML table without doing any CSS improvements. The section covers:
+- Allow us to get information from users
+- Look at examples of forms on other websites
+  - Sign up / Log in forms
+  - Search Box
+  - Contact Form
+  - Payment Form
 
-- How can we do a table in HTML?
-- How do we define the number of rows?
-- How do we define the number of columns
-- How do we make cell span multiple columns / rows via the `rowspan`, `columnspan` attributes?
-- How do we add `<caption>` to tables?
+ETA: 20 mins
 
-ETA: 40min
+## 2. Form Tags (Part 1)
 
-## 2. HTML Multimedia
+- There are many tags needed to make a working form. For now, we will cover a few.
 
-Students should learn about basic HTML Multimedia and how to embed such in their website without the need for using any JavaScript. This section covers:
+### `<form>`
 
-- What HTML Multimedia is?
-- What are the different and most common file formats for multimedia (e.g. video and audio)
-- How to create an HTML `<video>` and what are the attributes we can use there?
-- How to create an HTML `<audio>` and what are the attributes we can use there?
+- All forms start with a `<form>` element. It is a container element like `<section>` but for containing forms.
+- Two important attributes of `<form>`:
+  - action - defines the location (URL) where the form's collected data should be sent when it is submitted.
+  - method - defines which HTTP method to send the data with
 
-ETA: 30min
+### `<input>`
 
-## 3. HTML Entities
+- used to create elements that specifically accept data (input) from the user
+- There are different types of input elements
 
-This section should explain how to add html [character entities](https://www.w3schools.com/html/html_entities.asp) and what their purpose is. In short, character entities are used to display reserved characters in HTML. These include:
+  - `<input type="text">`
+  - `<input type="email">`
+  - `<input type="password">`
+  - `<input type="search">`
+  - `<input type="submit">`
+  - `<button type="submit">Submit</button>`
+  - See other input types [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
 
-- non breaking space
-- less than `<`
-- greater than `>`
-- ampersand `&`
-- single quotation mark `'`
-- double quotation mark `"`
-- and others such as euro, cent, pound, yen, etc.
+ETA: 25 mins
 
-ETA: 15mins
+### `<label>`
 
-# 4. Other HTML Tags
+- represents a caption for an item
+- importance of adding a `<label>` for an `<input>` element
+  - A user can click the label to focus/activate the associated input
+  - A screen reader will read out the label when a user interacts with it's input
+- the `for` attribute
 
-This section covers various HTML tags which are less famous but good to keep in mind. These include
+ETA: 15 mins
 
-- `<meter>`
-- `<progress>`
-- `<cite>`
-- `<blockquote>`
-- `<bdi>` and `<bdo>`
-- `<details>` with `<summary>`
-- `<address>`
-- `<abbr>`
-- `<hgroup>`
+### `<textarea>`
 
-ETA: 25min
+- represents a multi-line plain-text editing
+- Note: This is not an empty element. It requires a closing tag.
+
+ETA: 10 mins
+
+- Task: Make time for students to try out the introduced tags.
+- Task: Show this [image](./form-quiz.png) of a contact form, and let students identify tags to be used for creating it.
+- Task: Checkpoint 6:
+
+  - Take a few mins to explain the concept of Checkpoints to the students and how we are using it to build the Portfolio Project, and ensure they are up to date
+
+- Create a "Contact Me" Page for the Portfolio Project.
+  - Students are to create a contact form similar to [this](./form-sketch.png)
+  - The page should use the introduced tags
+  - The students should test that their forms can submit data with both GET and POST methods.
+
+ETA: 40 mins
+
+## Form Tags (Part 2)
+
+**If there's more time left in the class**
+
+- `<input type="checkbox">`
+- `<input type="radio">`
+- `<select>`
+- `<option>`
 
 # Exercise Description
 
-Exercises should be done along while explaining the tags.
-
-This lesson does not add any new content to our project because the information taught in the lecture does not strictly relate to the CV website.
-
-Therefore, Checkpoint 5 will be used in the beginning of lesson 7.
+Students should complete Checkpoint 6 as described above.
 
 # Glossary & Terminology
 
-- `HTML Entity` - An HTML Entity is a sequence of characters that produce a single output character in the HTML. Character entities are used to display reserved characters in HTML. For example, `<` and `>` are reserved characters and a developer cannot put these inside their HTML unless the developer uses an HTML Entity. More on this can be found [here](https://www.w3schools.com/html/html_entities.asp).
-- `Multimedia` - Multimedia on the web is sound, music, videos, movies, and animations. More on this can be found [here](https://www.w3schools.com/html/html_media.asp)
-
----
+- HTML form - An HTML form is used to collect user input. [Source](https://www.w3schools.com/html/html_forms.asp)
 
 # Homework
 
-1. Read more about HTML Entities and [HTML Symbol Entities](https://www.w3schools.com/html/html_symbols.asp).
+- Go over everything we have covered for HTML so far. The next class will be on CSS, so make sure you understand what has been taught so far.
+- Review your copy of the Portfolio Project and make sure that you are at a similar structure with Checkpoint 6.
 
 # Resources
 
-- [HTML Audio](https://www.w3schools.com/html/html5_audio.asp)
-- [HTML Entities](https://www.w3schools.com/html/html_entities.asp)
-- [HTML Multimedia](https://www.w3schools.com/html/html_media.asp)
-- [HTML Symbols](https://www.w3schools.com/html/html_symbols.asp)
-- [HTML5 Video](https://www.w3schools.com/html/html5_video.asp)
+- [MDN's HTML Forms Page](https://developer.mozilla.org/en-US/docs/Learn/Forms)

@@ -1,137 +1,57 @@
 ---
-title: Lesson 24 - CSS Animations & Transitions
+title: Lesson 24 - Web Accessibility
 nav_order: 24
 ---
 
 ## Agenda
 
-1. Introduction
-1. Animations
-1. Transitions
-1. Transform
+1. Introduction to Accessibility
+1. Classification of disabilities and assistive technologies
+1. Accessibility guidelines
+1. WAI-ARIA
+1. Accessibility checkers
 
-## 1. Introduction
+## 1. Introduction to Accessibility
 
-An animation lets an element gradually change from one style to another.
-You can create nice animations with CSS on properties such as color, background-color, height, or width.
-See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
-In this lesson, we cover a few CSS properties to achieve animations.
+Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it, especially if they are physically or cognitively impaired. In this section we are going to cover the main aspects of accessibility together with the biggest benefits it provides to you and to your users.
 
-## 2. Animations
+## 2. Classification of disabilities and assistive technologies
 
-The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
-To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.
+The topic of accessibility is very huge. There are many different disabilities and impairments which need to be considered in order to provide corresponding technical solutions. Therefore, we would try to classify the most common impairments which potential users could have so that we also try to apply a better designed solution for those cases. We would learn how we as developers can help people with:
 
-- `animation-name`: Specifies the name of the `@keyframes` rule describing the animation.
-- `animation-duration`: Sets the length of time that the animation should take.
-- `animation-delay`: Sets a time before the animation starts
-- `animation-iteration-count`: Sets the number of times the animation should run
-- `animation-timing-function`: Configures the timing or speed of the animation.
+- visual impairments
+- hearing impairments
+- mobility impairments
+- cognitive impairments
 
-Each keyframe rule defines what should happen at specific moments during the animation.
-For example, 0% is the start and 100% is the end,
+## 3. Accessibility guidelines
 
-```css
-.element {
-  height: 200px;
-  /* animation-name must match @keyframes value */
-  animation-name: pulse;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
+Without going into too many concrete details, we would look at some top level accessibility guidelines which we should be aware of. These are important to keep in mind and try to follow in our projects. We would also look at some examples of good and bad HTML code and how it can affect the results of a Screen Reader, for example.
 
-/* @keyframes <animation-name> with <percentage> steps */
-@keyframes pulse {
-  0% {
-    background-color: #001f3f;
-  }
-  40% {
-    background-color: #0e1;
-  }
-  100% {
-    background-color: #ff4136;
-  }
-}
-```
+## 4. WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications)
 
-You can also use keywords `from` and `to` with @keyframes.
+WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications) is a specification written by the W3C, defining a set of additional HTML attributes that can be applied to elements to provide additional semantics and improve accessibility wherever it is lacking. We would learn about the three main features defined by the specification: `roles`, `properties` and `states`
 
-```css
-h1 {
-  font-size: 20px;
-  animation-name: size-increase;
-  animation-duration: 5s;
-}
+## 5. Accessibility checkers
 
-@keyframes size-increase {
-  from {
-    font-size: 20px;
-  }
-  to {
-    font-size: 80px;
-  }
-}
-```
-
-## 3. Transitions
-
-Transitions are typically applied when a user interacts with an element (e.g when a user hovers or clicks on an element).
-
-- `transition-property`: used to define what property, or properties, you want to apply a transition effect to. You can also use the keyword `all` to transition all properties possible to transition on the element.
-- `transition-duration`: used to define the duration of a specified transition.
-- `transition-delay`: used to define a length of time to delay the start of a transition
-- `transition-timing-function`: used to define a function that describes how a transition will proceed over its duration
-
-```css
-div {
-  transition: all 0.5s ease;
-  background: red;
-  padding: 10px;
-}
-
-div:hover {
-  background: green;
-  padding: 20px;
-}
-```
-
-## 4. Transform
-
-The `transform` property is usually used alongside animations. It allows you to visually manipulate an element by skewing, rotating, translating, or scaling. You can set transform on an element without animations e.g
-
-```css
-div {
-  width: 20px;
-  height: 20px;
-  transform: scale(20);
-}
-```
-
-but works well with transitions and animations e.g
-
-```css
-a {
-  font-size: 2em;
-  transition: transform 0.3s ease-out;
-  display: inline-block;
-}
-
-a:hover {
-  /* this lifts up the link on hover */
-  transform: translate(0, -5px);
-}
-```
+Modern browsers provide an automated way for checking whether your website follows a certain set of standardized accessibility rules. We would look at Google Chrome Lightroom and use it with our own website
 
 # Glossary & Terminology
 
-- `Animatable CSS properties` - List of CSS properties can be animated using CSS Animations or CSS Transitions. More info [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
+- `Accessibility` - Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it
+- `WAI-ARIA` - Web Accessibility Initiative - Accessible Rich Internet Applications is a technology that can help with such problems by adding in further semantics that browsers and assistive technologies can recognize and use to let users know what is going on. [Read more about this technology here.](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
+- `WCAG` - Web Content Accessibility Guidelines is developed by W3C and covers a wide range of recommendations for making Web content more accessible.
 
 # Homework
 
-1. Checkout the Checkpoint24 branch and apply similar styles to your project.
-2. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
+1. Checkout the [Checkpoint24](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint24/checkpoint) branch and apply the changes to your project
+2. Look at your own code and think about whether it satisfies the basic accessibility guidelines. Also, test your websites with the help of Google Chrome's Lightroom
 
 # Resources
 
-- [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
-- [Transition property](https://css-tricks.com/almanac/properties/t/transition/)
+- [MDN Accessibility Tutorial](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [Screen Reader Demo](https://www.youtube.com/watch?v=dEbl5jvLKGQ)
+- [Using an IPhone with screen readers](https://www.youtube.com/watch?v=wueLXCbm_KY)
+- [WAI-ARIA basics](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
+- [WCAG - Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WCAG - Cheat sheet](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)

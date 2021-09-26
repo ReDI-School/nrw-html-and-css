@@ -1,89 +1,78 @@
 ---
-title: Lesson 16 - CSS Positioning
+title: Lesson 16 - CSS Overflow and Text Effects
 nav_order: 16
 ---
 
-# CSS Positioning
+# CSS Overflow and Text Effects
 
 ## Class Agenda
 
-1. Introduction to Positioning
-2. Static Positioning
-3. Relative Positioning
-4. Absolute Positioning
-5. Z-Index
-6. Fixed Positioning
-7. Sticky Positioning
+1. CSS Overflow
+2. CSS Text Effects
+3. CSS White Space
 
-# 1. Introduction to Positioning
+# 1. Overflow
 
-The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
+There are many scenarios in which the content of an html tag is simply bigger than the size of the html tag container itself. This makes the content overflow.
 
-ETA: 5-10min
+Students would learn about the default `overflow` behaviour and the principle which CSS applies to ["avoid data loss"](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content#css_tries_to_avoid_data_loss).
 
-# 2. Static Positioning
+Apart from that, the section covers the CSS `overflow` property. Students would learn about the different values possible to be added to overflow:
 
-This is the default positioning which HTML elements are using.
+- `visible`
+- `hidden`
+- `clip`
+- `scroll`
+- `auto`
 
-ETA: 5min
+Furthermore, this section covers the different directions an overflow can happen. These are `overflow-x` and `overflow-y`. Additionally, the students would learn the requirements for the `overflow` property to work properly. All of this would be taught with practical examples.
 
-# 3. Relative Positioning
+ETA: 40 min
 
-Relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
+# 2. Text Effects
 
-ETA: 15min
+What should we do when we have long words? Should we use scrolling with `overflow-x` ? In this section students would learn alternative and perhaps better approaches to deal with the former problem. This includes covering the [CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp) and the respective CSS rules associated with them. These are:
 
-# 4. Absolute Positioning
+- `text-overflow`
+- `overflow-wrap` (`word-wrap`)
+- `word-break`
+- `line-break`
+- `writing-mode`
 
-Absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
+Some of these rules are very similar but yet distinct enough. The lecture would cover in details the differences between:
 
-- What is absolute positioning?
-- Where is it used?
-- How is the absolute positioning determined?
-- What are the positioning contexts?
+- `word-break: break-all` versus `overflow-wrap: break-word` in CSS
+- `word-wrap` and `overflow-wrap`
+- `line-break` and `word-break`
 
 ETA: 40min
 
-# 5. Z-Index
+# 3. CSS White Space
 
-An important aspect to CSS positioning is the concept of overlapping. We need to answer the question of would would happen when to elements overlap each other because of the special positioning? This section covers the CSS `z-index` rule.
-
-ETA: 10min
-
-# 6. Fixed Positioning
-
-Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint16](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint16/checkpoint/css/main.css#L110)
+Apart from all the above CSS rules there is one additional one which also deals with how content is displayed inside a container. This section teaches the CSS `white-space` rule.
 
 ETA: 20min
-
-# 7. Sticky Positioning
-
-This positioning type is a combination between relative positioning and fixed positioning. We cover it in details during the class. Moreover, we would also cover the [differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning with practical examples
-
-ETA: 10min
-
-# Glossary & Terminology
-
-- `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
-- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
 ---
 
 # Homework
 
-Go over checkpoint 16 and try to apply the new styles in it into your personal portfolio projects. The main aim here should be to make your navigation bar fixed. Below you can find the links to:
+1. The usage of overflow and text effects is more situational. Please practice using these rules on W3Schools or MDN. You can find examples to practice on the respective pages there.
 
-- [Portfolio Project - Checkpoint 16](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint16/checkpoint)
-- [What has changed between Checkpoint 16 and Checkpoint 14?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint14...checkpoint16). Use this link to see the differences between two checkpoints. The left panel shows the things which are removed from Checkpoint 14, whereas the right side shows the things which are added with Checkpoint 16.
+2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 16. Here are the respective links to compare your solution
+
+   - [Portfolio Project - Checkpoint 16](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint16/checkpoint)
+   - [What has changed between Checkpoint 16 and Checkpoint 15?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint15...checkpoint16). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 16.
+
+3. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
 
 Make sure to ask questions!
 
-> There is no checkpoint 15. The previous checkpoint is checkpoint 14 because class 15 did not introduce more code to our portfolio project.
-
 # Resources
 
-- [Example of fixed navigation bar in the Portfolio Project - Checkpoint16](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint16/checkpoint/css/main.css#L110)
-- [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
-- [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
-- [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
-- [W3S CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)
+- [How to create a horizontal scrollable menu?](https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp)
+- [How to deal with long words?](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
+- [MDN CSS Overflowing Content Tutorial](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
+- [MDN CSS Overflow rule](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+- [MDN White Space rule](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
+- [W3S CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp)

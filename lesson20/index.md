@@ -1,97 +1,153 @@
 ---
-title: Lesson 20 - CSS Selectors II
+title: Lesson 20 - CSS Background & Color Values
 nav_order: 20
 ---
 
-# CSS Selectors II
+# CSS Background & Color Values
 
-This lesson teaches various CSS Selectors which are not so often used but still important. The theory would be accompanied with practical examples for each selector case.
+In previous classes, we applied flat fill colors (e.g `red`, `#ccc`) as the background on elements,
+but CSS gives us a lot more options and effects that we can apply on backgrounds.
+
+In this lesson, we will look at the other effects that CSS allows us to apply on element backgrounds.
 
 ## Class Agenda
 
-1. Recap of the CSS Selectors I
-2. CSS Combinator Selectors
-3. CSS Pseudo-classes
-4. CSS Pseudo Elements
-5. CSS Attribute Selectors
+1. Recap
+1. Background Images
+1. Background Gradients
+1. Background-blend-mode
+1. Opacity
+1. Gradient generators
+1. Other CSS Color Values
 
-# 1. Recap of the CSS Selectors I
+## 1. Recap
 
-We have written a decent amount of CSS rules for our website so far. While the amount of CSS rules is high, we have not used too many different CSS Selectors for our rules. We have mainly used the Simple CSS Selectors such as
+We have used styles like `background: green` to specify only background colors, but take note that
+the `background` property is a shorthand property that is capable of setting not just
+the background color, but also [background image, size and other properties](https://developer.mozilla.org/en-US/docs/Web/CSS/background#constituent_properties).
 
-- the CSS element Selector
-- the CSS id Selector
-- the CSS class Selector
-- the CSS universal Selector
-- and others
+So, when we write `background: green`, it is similar to writing `background-color: green`.
 
-We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson8/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson9/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
+## 2. Background Images
 
-# 2. CSS Combinator Selectors
+The `background-image` property is used to apply a graphic (e.g JPG) or gradient to the background of an element.
+The url() keyword lets you provide the location of the image. See different examples below:
 
-A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+```css
+.celebrate {
+  background-image: url(balloons.jpg);
+}
 
-There are four different combinators in CSS:
+body {
+  background: url(sweet_texture.jpg);
+}
 
-- descendant selector (space)
-- child selector (>)
-- adjacent sibling selector (+)
-- general sibling selector (~)
+.section {
+  background: no-repeat url("../../media/examples/lizard.png");
+}
+.fancy {
+  /* You can also set multiple images */
+  background-image: url("sparkles.png"), url("balloons.jpg");
+}
+```
 
-# 3. CSS Pseudo-classes
+## 3. Background Gradients
 
-A pseudo-class is used to define a special state of an element.
+You can use CSS to create a gradient with different colors and apply that as a background image.
+There are different types of gradients available, e.g. radial, linear, repeating. See examples below.
 
-For example, it can be used to:
+```css
+div {
+  background: radial-gradient(black, red);
+}
 
-- Style an element when a user mouses over it
-- Style visited and unvisited links differently
-- Style an element when it gets focus
+p {
+  background: linear-gradient(45deg, black, transparent);
+}
 
-We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson10/)
-The most important pseudo-classes which this section covers are:
+.comic {
+  background-image: conic-gradient(#ff8, #e71);
+}
 
-- `:first-child`
-- `:last-child`
-- `:nth-child()`
+.gradient {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #af002d,
+    #131417 10px,
+    #373c49 10px,
+    #6d2ee5 20px
+  );
+}
+```
 
-If times allow it we would cover some additional pseudo-classes.
+## 4. Gradient generators
 
-# 4. CSS Pseudo Elements
+There are websites that makes it easy to create gradients, like <https://cssgradient.io/>
+Some websites also provide interface to generate the code for other CSS properties e.g <https://html-css-js.com/css/>.
 
-Apart from pseudo-classes there are also pseudo-elements which can be styled with a certain CSS Pseudo-elements Selectors. A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
+ETA: 40 mins
 
-- Style the first letter, or line, of an element
-- Insert content before, or after, the content of an element
+## 5. background-blend-mode
 
-The most important Pseudo-elements we would cover are:
+The `background-blend-mode` property is used to determine how a background image should blend with
+the element's background color, or blend into other background image(s) on the same element. Available blend-modes include
+`multiply`, `overlay` [and many others](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode).
 
-- `::first-line`
-- `::first-letter`
-- `::before`
-- `::after`
-- `::selection`
+One use case is when trying to adjust how an image looks without creating and loading many versions of the image into the page. For example you can adjust the `background-blend-mode` when a user hovers over an image.
 
-# 5. CSS Attribute Selectors
+```css
+.profile {
+  background-image: url(building.jpg);
+  background-color: blue;
+}
 
-It is possible to style HTML elements that have specific attributes or attribute values. This section covers how to do that.
+.profile:hover {
+  background-blend-mode: multiply;
+}
+```
 
-# Glossary & Terminology
+## 6. Opacity
 
-- `Pseudo-class` - A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to change a button's color when the user's pointer hovers over it.
-- `Pseudo-element` - A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, `::first-line` can be used to change the font of the first line of a paragraph.
+Opacity is used to specify how transparent an element should be.
+The default value of `opacity` is `1`, where there is no transparency.
+`0` means completely transparent.
+
+Take note that opacity applies to not just the background of an element.
+It also applies to the content of the element like text. So, you have to be careful when using it on elements with text (e.g `p`), as the text may become difficult to read.
+
+```css
+div {
+  opacity: 0.5;
+}
+```
+
+ETA: 30 mins
+
+## 7. Other CSS Color Values
+
+In previous classes, we used color keywords like `red`, `tomato`. CSS offers more powerful ways of specifying colors. These include:
+
+- HEX e.g `#663399`
+- RGB e.g `rgb(255,0,153)` and RGBA e.g `rgb(255, 0, 153, 100%)`
+- HSL e.g `hsl(270,60%,70%)`
+- Other Color keywords (`currentcolor`, `inherit`, `transparent`)
+
+ETA: 20 mins
 
 # Homework
 
-- Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
-- In [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint20), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
-  - [What has changed between Checkpoint 20 and Checkpoint 19?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint19...checkpoint20). Use this link to see the differences between two checkpoints. The green highlight (#e5ffec) shows the things which are added with Checkpoint 20.
-- Practice your selector skills with this game: ["CSS Diner - the fun way to practice selectors"](http://cssdiner.com). Share a screenshot of your completed levels in the Classroom channel.
+Review the changes in [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint20/checkpoint) and try them out in your own projects.
+
+Read more about the topics below. You can start with the pages linked, but feel free to search the internet for more about them.
+
+- [CSS Border-Image](https://www.w3schools.com/css/css3_border_images.asp)
+- [CSS Box-Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- [CSS Outline](https://www.w3schools.com/css/css_outline.asp)
 
 # Resources
 
-- [Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
-- [Categorization of CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
-- [Combinator Selectors](https://www.w3schools.com/css/css_combinators.asp)
-- [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
-- [Pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
+- [A Complete Guide to CSS Gradients](https://css-tricks.com/a-complete-guide-to-css-gradients/)
+- [All blend-mode keyword values](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
+- [Basics of CSS Blend Modes](https://css-tricks.com/basics-css-blend-modes/)
+- [MDN background property page](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+- [Repeating Gradients Background](https://www.youtube.com/watch?v=muE2B0Zylbw)

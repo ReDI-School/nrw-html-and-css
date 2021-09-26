@@ -1,153 +1,103 @@
 ---
-title: Lesson 21 - CSS Background & Color Values
+title: Lesson 21 - Exercise Class III (URL Hash and Icons)
 nav_order: 21
 ---
 
-# CSS Background & Color Values
+In this lesson, we will look at some useful techniques such as adding CSS Icons to your website or supplying a hash value to URLs. We would practice the latter directly on your websites. Apart from this we would make sure that you reach the latest Checkpoint 21 and if the time allows we would also do some extra exercises.
 
-In previous classes, we applied flat fill colors (e.g `red`, `#ccc`) as the background on elements,
-but CSS gives us a lot more options and effects that we can apply on backgrounds.
+## Prerequisite
 
-In this lesson, we will look at the other effects that CSS allows us to apply on element backgrounds.
+Every student who enters the class should bring their implementation of their own portfolio project. In other words, every student should bring their code and show it to teachers, ideally in CodeSandbox or locally in their VS Code environment.
 
-## Class Agenda
+## Agenda
 
-1. Recap
-1. Background Images
-1. Background Gradients
-1. Background-blend-mode
-1. Opacity
-1. Gradient generators
-1. Other CSS Color Values
+1. URL Fragment (URL Hash)
+2. CSS Icons
+3. Reach [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint21/checkpoint)
+4. Do extra exercises
 
-## 1. Recap
+## 1. URL Fragment (URL Hash)
 
-We have used styles like `background: green` to specify only background colors, but take note that
-the `background` property is a shorthand property that is capable of setting not just
-the background color, but also [background image, size and other properties](https://developer.mozilla.org/en-US/docs/Web/CSS/background#constituent_properties).
+The fragment identifier introduced by the hash mark `#` is the optional last part of a URL for a document. It is typically used to identify a portion of that document. It is often very useful to navigate to a certain part in the page without the need to scroll. The `#` hash value can be a special built-in one such as `top` or `bottom`, respectively marking the top and the bottom of the page. Nevertheless, the value of the URL Fragment `#` can be anything you like. Let's try to do an exercise together to see how it in action.
 
-So, when we write `background: green`, it is similar to writing `background-color: green`.
+_Exercise:_
 
-## 2. Background Images
-
-The `background-image` property is used to apply a graphic (e.g JPG) or gradient to the background of an element.
-The url() keyword lets you provide the location of the image. See different examples below:
+- Give each each section of your main page a unique `id`
+- Create navigation links which point to sections of your main page
+- Apply the following CSS so that the fixed height of your navigation bar is taken into account. More info [here](https://css-tricks.com/almanac/properties/s/scroll-padding/)
 
 ```css
-.celebrate {
-  background-image: url(balloons.jpg);
+html {
+  /*
+   * This height needs to be the same as the navigation bar height
+   * More on this here https://css-tricks.com/almanac/properties/s/scroll-padding/
+   */
+  scroll-padding-top: 50px;
 }
 
-body {
-  background: url(sweet_texture.jpg);
-}
-
-.section {
-  background: no-repeat url("../../media/examples/lizard.png");
-}
-.fancy {
-  /* You can also set multiple images */
-  background-image: url("sparkles.png"), url("balloons.jpg");
+/*
+This sets a smooth scrolling behavior when scrolling is triggered by the navigation
+Read more here: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+*/
+* {
+  scroll-behavior: smooth;
 }
 ```
 
-## 3. Background Gradients
+## 2. CSS Icons
 
-You can use CSS to create a gradient with different colors and apply that as a background image.
-There are different types of gradients available, e.g. radial, linear, repeating. See examples below.
+Icons can easily be added to your HTML page by using an icon library. This is the simplest way and does not require a lot of work. Some famous libraries are
 
-```css
-div {
-  background: radial-gradient(black, red);
-}
+- [Font Awesome](https://fontawesome.com/v6.0)
+- [Google Fonts](https://developers.google.com/fonts/)
 
-p {
-  background: linear-gradient(45deg, black, transparent);
-}
+Every font library contains instructions on how to add fonts or icons to your page. Generally, this happens by attaching a script link to your HTML page such as:
 
-.comic {
-  background-image: conic-gradient(#ff8, #e71);
-}
-
-.gradient {
-  background-image: repeating-linear-gradient(
-    45deg,
-    #af002d,
-    #131417 10px,
-    #373c49 10px,
-    #6d2ee5 20px
-  );
-}
+```html
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
 ```
 
-## 4. Gradient generators
+Then if we want to use some icon we only have to add the name of the specified icon class to any inline HTML element (like `<i>` or `<span>`). For example:
 
-There are websites that makes it easy to create gradients, like <https://cssgradient.io/>
-Some websites also provide interface to generate the code for other CSS properties e.g <https://html-css-js.com/css/>.
-
-ETA: 40 mins
-
-## 5. background-blend-mode
-
-The `background-blend-mode` property is used to determine how a background image should blend with
-the element's background color, or blend into other background image(s) on the same element. Available blend-modes include
-`multiply`, `overlay` [and many others](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode).
-
-One use case is when trying to adjust how an image looks without creating and loading many versions of the image into the page. For example you can adjust the `background-blend-mode` when a user hovers over an image.
-
-```css
-.profile {
-  background-image: url(building.jpg);
-  background-color: blue;
-}
-
-.profile:hover {
-  background-blend-mode: multiply;
-}
+```html
+<i class="material-icons">cloud</i>
 ```
 
-## 6. Opacity
+All the icons in the icon libraries can be customized with additional CSS (size, color, shadow, etc.)
 
-Opacity is used to specify how transparent an element should be.
-The default value of `opacity` is `1`, where there is no transparency.
-`0` means completely transparent.
+_Exercise:_
 
-Take note that opacity applies to not just the background of an element.
-It also applies to the content of the element like text. So, you have to be careful when using it on elements with text (e.g `p`), as the text may become difficult to read.
+- Add the google font icons library to your website with
 
-```css
-div {
-  opacity: 0.5;
-}
+```html
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
 ```
 
-ETA: 30 mins
+> You can also use the Font Awesome library but it requires a personal registration their website. Please go their website and follow the instructions if you would like to access a bigger set of icons
 
-## 7. Other CSS Color Values
+- Change the footer of your website to contain icons from the google font icon library. Check the code in [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint21/checkpoint) to see how to do that
 
-In previous classes, we used color keywords like `red`, `tomato`. CSS offers more powerful ways of specifying colors. These include:
+## 3. Reach checkpoint 21
 
-- HEX e.g `#663399`
-- RGB e.g `rgb(255,0,153)` and RGBA e.g `rgb(255, 0, 153, 100%)`
-- HSL e.g `hsl(270,60%,70%)`
-- Other Color keywords (`currentcolor`, `inherit`, `transparent`)
+Another goal of this class is to make sure that students reach [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint21/checkpoint). We would also pay special attention to the implementation of the [background image](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson20/) in students personal project.
 
-ETA: 20 mins
+## 4. Extra exercises
+
+If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson14/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson18/), which we have not managed to cover.
 
 # Homework
 
-Review the changes in [Checkpoint 21](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint21/checkpoint) and try them out in your own projects.
-
-Read more about the topics below. You can start with the pages linked, but feel free to search the internet for more about them.
-
-- [CSS Border-Image](https://www.w3schools.com/css/css3_border_images.asp)
-- [CSS Box-Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
-- [CSS Outline](https://www.w3schools.com/css/css_outline.asp)
+Consider looking at the CSS Icons and fonts made available by https://fontawesome.com/. Make yourself familiar with the process of integrating that external library into your project. Try to find places where it would make sense to add icons or use a different font from the ones given by the library.
 
 # Resources
 
-- [A Complete Guide to CSS Gradients](https://css-tricks.com/a-complete-guide-to-css-gradients/)
-- [All blend-mode keyword values](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
-- [Basics of CSS Blend Modes](https://css-tricks.com/basics-css-blend-modes/)
-- [MDN background property page](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
-- [Repeating Gradients Background](https://www.youtube.com/watch?v=muE2B0Zylbw)
+- [CSS Scroll Padding](https://css-tricks.com/almanac/properties/s/scroll-padding/)
+- [Google Fonts](https://developers.google.com/fonts/)
+- [Font Awesome](https://fontawesome.com/v6.0)
+- [MDN Scroll Behaviour](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)

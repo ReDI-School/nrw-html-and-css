@@ -37,7 +37,7 @@ ETA: 20 mins
 
 ## 4. Formatting Text with CSS
 
-We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
+We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
 
 - Text Alignment (`text-align`)
 - Text Direction

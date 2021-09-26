@@ -7,7 +7,7 @@ nav_order: 8
 
 ## Class Agenda
 
-1. Recap of CSS Intro (from [lesson 2](https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson2/#2-introduction-to-css))
+1. Recap of CSS Intro (from [lesson 2](https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson2/#2-introduction-to-css))
 2. CSS Syntax
 3. CSS Selectors I
 4. How to add CSS to HTML

@@ -1,64 +1,59 @@
 ---
-title: Lesson 13 - CSS Layout - Part I
+title: Lesson 13 - CSS Layout 2 - Flexbox
 nav_order: 13
 ---
 
 ## Class Agenda
 
-1. Normal Flow
-1. The `display` Property
-1. Floats
+1. Introduction to Flexbox
+1. The Flex model
 
-## 1. Normal Flow
+## 1. Introduction to Flexbox
 
-This section will help the students to understand how webpage elements are laid out by default.
+Flexbox is a comparatively newer way to layout elements on the page without the limits and frustration of Floats like:
 
-- Last class introduced the idea that everything on the page is a box.
-- By default, these boxes can be stacked up on top of one another, or side by side
-- Revision: What does block level and inline elements mean?
-- Discuss `display: inline-block`. How is it similar/different to block and inline?
+- You have to clear Floats (when the containing element collapses).
+- Sometimes have to change the order of your HTML to achieve a Floats design.
 
+Flexbox layout makes it easier to design flexible responsive layout structure (hint: Flexbox = flexible boxes).
 
-## 2. The `display` Property
+With flexbox, you can align elements horizontally and vertically. Unlike floats, you can re-order flex items without needing to change the HTML.
 
-You can change how elements behave in normal flow with the `display` property.
+## 2. The Flex Model
 
-Exercise:
-1. Apply a border on all elements on your page.
-2. Using the dev tools, identify elements with display block and change them to inline (and vice versa)
-3. Observe how the flow of elements on the page changes
-
-
-## 3. Floats
-
-- Float was originally introduced to simple layouts like wrapping text around an image (borrowed from print design).
-- But it became used to achieve more complex layouts
-- Exercises:
-  - We will restructure our HTML a little bit
-    - Pull out the `nav` content out of the header, so it is a direct child of the `body`
-    - Copy and paste the `nav` across the other HTML files
-    - In index.html,  the `header` should now be below the `nav` and should contain then `h1` and `img`
-    - Check Checkpoint 13 for example with completed steps
-  - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
-  
-- In the exercises, we'll learn:
-  - `float: left`
-  - `float: right`
-  - Clearing floats
-
+- `flex` is the value for the display property that activates the Flexbox layout on an element.
+- What is a flex container?
+- What are flex items?
+- What are the most common properties that can be used on a flex container?
+  - `flex-direction` (default `row`)
+  - `flex-wrap` (default `nowrap`)
+  - `justify-content` (default: `flex-start`)
+  - `align-items` (default: `stretch`)
+  - `align-content` (default: `stretch`)
+  - `flex-flow`
+- What are the most common properties that can be used on a flex item?
+  - `align-self` is similar to `align-items` on the container, but applies to a single flex item.
+  - `flex`: shorthand property for the `flex-grow`, `flex-shrink`, and `flex-basis`
+  - `flex-grow`: specifies how an item grows when it is allowed to take extra space available in the container (default: 0)
+  - `flex-shrink` specifies how an item shrinks when there is not enough space available in the container (default: 1)
+  - flex-basis
+  - order
 
 # Exercise Description
 
-Exercises are listed as part of each section.
-
+1. Use Flexbox instead of float to style the navigation bar on the portfolio in [this CodeSandbox](https://codesandbox.io/s/flex1-vkyi2)
+2. Use Flexbox to style the HTML form provided in [this CodeSandbox](https://codesandbox.io/s/flexbox2-ymdfj?file=/index.html) (see attached image for expected result)
+3. Style the Flexbox Pricing Grid in [this CodeSandbox](https://codesandbox.io/s/flexbox3-w8vqk) (see attached image for expected look)
 
 # Homework
 
-- Checkpoint 13
+- Bring your website to Checkpoint 13.
 
+# Glossary
+
+- Flexbox - Flexible box
 
 # Resources
 
-- [Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
-- [CSS Display Property](https://www.w3schools.com/cssref/pr_class_display.asp)
-- [CSS Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)

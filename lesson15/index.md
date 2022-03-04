@@ -52,7 +52,7 @@ ETA: 10min
 
 # 6. Fixed Positioning
 
-Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint15/checkpoint/css/main.css#L110)
+Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars, as can be seen in our [Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css/blob/checkpoint15/checkpoint/css/main.css#L110)
 
 ETA: 20min
 
@@ -73,8 +73,8 @@ ETA: 10min
 
 Go over checkpoint 15 and try to apply the new styles in it into your personal portfolio projects. The main aim here should be to make your navigation bar fixed. Below you can find the links to:
 
-- [Portfolio Project - Checkpoint 15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint15/checkpoint)
-- [What has changed between Checkpoint 15 and Checkpoint 13?](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint13...checkpoint15). Use this link to see the differences between two checkpoints. The left panel shows the things which are removed from Checkpoint 13, whereas the right side shows the things which are added with Checkpoint 15.
+- [Portfolio Project - Checkpoint 15](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint15/checkpoint)
+- [What has changed between Checkpoint 15 and Checkpoint 13?](https://github.com/ReDI-School/nrw-html-and-css/compare/checkpoint13...checkpoint15). Use this link to see the differences between two checkpoints. The left panel shows the things which are removed from Checkpoint 13, whereas the right side shows the things which are added with Checkpoint 15.
 
 Make sure to ask questions!
 
@@ -82,7 +82,7 @@ Make sure to ask questions!
 
 # Resources
 
-- [Example of fixed navigation bar in the Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint15/checkpoint/css/main.css#L110)
+- [Example of fixed navigation bar in the Portfolio Project - Checkpoint15](https://github.com/ReDI-School/nrw-html-and-css/blob/checkpoint15/checkpoint/css/main.css#L110)
 - [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
 - [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
 - [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)

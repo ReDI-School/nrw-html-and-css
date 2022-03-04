@@ -50,7 +50,7 @@ If time allows it, we would look into browser code inspection via the dev tools.
 
 - Open a webpage and look in the dev tools, and identify tags discussed above.
 - Make sure you have set up your environment as we are about to start working more often with code.
-- Try reaching [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint2/checkpoint/index.html), which contains the new things taught in class. Add the following tags also:
+- Try reaching [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css/blob/checkpoint2/checkpoint/index.html), which contains the new things taught in class. Add the following tags also:
   - Add a Doctype tag to the page
   - Add a meta tag
 
@@ -72,7 +72,7 @@ If time allows it, we would look into browser code inspection via the dev tools.
 
 - Read about at least ten [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements) and when to use them
 - Read about the different [HTML metadata elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#metadata_the_%3Cmeta%3E_element)
-- Finish [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/checkpoint2/checkpoint/index.html) if you haven't already done so
+- Finish [checkpoint 3](https://github.com/ReDI-School/nrw-html-and-css/blob/checkpoint2/checkpoint/index.html) if you haven't already done so
 
 # Resources
 

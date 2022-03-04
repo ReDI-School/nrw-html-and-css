@@ -9,7 +9,7 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18/checkpoint)
+1. Reach [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint18/checkpoint)
 1. Do extra exercises
 
 ## 1. Reach Checkpoint 17
@@ -26,11 +26,11 @@ If a student has reached checkpoint 17 then they can start doing extra exercises
 
 ### Easy
 
-- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson18/exercises/overflow/template)
+- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson18/exercises/overflow/template)
 
 ### Medium
 
-- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson18/exercises/position-redi-logo/template)
+- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson18/exercises/position-redi-logo/template)
 
 ## Homework
 

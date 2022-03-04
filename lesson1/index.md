@@ -28,7 +28,7 @@ ETA: ~50min
 
 In this section we would like to cover the organizational topics around our course. This includes:
 
-- Presentation of the website we have - <https://redi-school.github.io/nrw-html-and-css-2021-fall/lesson1//>
+- Presentation of the website we have - <https://redi-school.github.io/nrw-html-and-css/lesson1//>
 - The framework of lesson notes
   - Class Agenda
   - Content Sections
@@ -73,11 +73,11 @@ Almost every lesson contains a corresponding checkpoint related to it. For examp
 
 ### 1. By using a direct link
 
-You can find the code for each checkpoint inside our github repository using a direct link to it. For example, if you would like to see the code for checkpoint 12 you can go to <https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint12/checkpoint>. If you would like to visit checkpoint 17 instead then you should simply change the checkpoint number in the link above and use the following link instead - <https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint17/checkpoint>
+You can find the code for each checkpoint inside our github repository using a direct link to it. For example, if you would like to see the code for checkpoint 12 you can go to <https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint12/checkpoint>. If you would like to visit checkpoint 17 instead then you should simply change the checkpoint number in the link above and use the following link instead - <https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint17/checkpoint>
 
 ### 2. By manually navigating to the page
 
-- Visit the course's [GitHub page](https://github.com/ReDI-School/nrw-html-and-css-2021-fall). You should see something similar to the screenshot below.
+- Visit the course's [GitHub page](https://github.com/ReDI-School/nrw-html-and-css). You should see something similar to the screenshot below.
 - Click on the Branch dropdown (shown in the screenshot)
 
 ![GitHub branch dropdown](../checkpoint-step1.png)
@@ -94,7 +94,7 @@ Comparing checkpoints is very useful when checking what things have been added, 
 
 The easiest way to compare branches with each other is to use the following link and adjust the checkpoint numbers accordingly. For example, if you would like to compare checkpoint 17 with checkpoint 16 you can use. This link opens a code diff in GitHub. There is no need to do any further action than simply looking at the code difference.
 
-- <https://github.com/ReDI-School/nrw-html-and-css-2021-fall/compare/checkpoint16...checkpoint17>
+- <https://github.com/ReDI-School/nrw-html-and-css/compare/checkpoint16...checkpoint17>
 
 The page shown by the url given above can also be reached by manually navigating to it via the GitHub UI. Nevertheless, this option is more cumbersome so we suggest using the direct link instead. If you have any difficulties consider consulting a teacher.
 
@@ -113,7 +113,7 @@ In this project we are going to use [Code Sandbox](https://codesandbox.io) for w
 ![Codesandbox Main Page](./CodeSandboxMainPage.png)
 
 4. A pop-up window would appear. Please click on `Import Project`.
-5. We need to import from GitHub. Therefore, please copy the following link <https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint1/checkpoint> and paste it into the field called `GitHub Repository URL`
+5. We need to import from GitHub. Therefore, please copy the following link <https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint1/checkpoint> and paste it into the field called `GitHub Repository URL`
 
 ![Import Project](./ImportProject.png)
 

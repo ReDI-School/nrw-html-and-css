@@ -9,7 +9,7 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 13](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint13/checkpoint)
+1. Reach [Checkpoint 13](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint13/checkpoint)
 1. Do extra exercises
 
 ## 1. Reach Checkpoint 13
@@ -22,15 +22,15 @@ If a student has reached checkpoint 13 then they can start doing extra exercises
 
 ### Easy
 
-- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson14/exercises/nested-flex/template)
+- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/nested-flex/template)
 
-- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson14/exercises/ig-stories/template)
+- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/ig-stories/template)
 
 ### Medium
 
-- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson14/exercises/flex-app-layout/template)
+- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/flex-app-layout/template)
 
-- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/master/lesson14/exercises/dropdown-navigation/template)
+- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/dropdown-navigation/template)
 
 ## Homework
 

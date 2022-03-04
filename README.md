@@ -1,6 +1,6 @@
 ![ReDI](redi_banner.png)
 
-# Welcome to HTML & CSS course of NRW (2021 Fall)
+# Welcome to HTML & CSS course of NRW
 
 In this course we will learn how websites are made and teach you how to build your own.
 
@@ -21,7 +21,7 @@ Checkpoints are stages of work that use topics you are taught in class to achiev
 
 ### How to find the Checkpoint for a Lesson (For Students)
 
-- Visit the course's [GitHub page](https://github.com/ReDI-School/nrw-html-and-css-2021-fall). You should see something similar to the screenshot below.
+- Visit the course's [GitHub page](https://github.com/ReDI-School/nrw-html-and-css). You should see something similar to the screenshot below.
 - Click on the Branch dropdown (shown in the screenshot)
 
 ![GitHub branch dropdown](./checkpoint-step1.png)

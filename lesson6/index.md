@@ -99,7 +99,7 @@ Students should complete Checkpoint 6 as described above.
 
 - Go over everything we have covered for HTML so far. The next class will be on CSS, so make sure you understand what has been taught so far.
 - Review your copy of the Portfolio Project and make sure that you are at a similar structure with Checkpoint 6.
-- **(Optional) Bonus Lecture - HTML Tags 3** - If you would like to learn about even more HTML Tags to further increase your HTML knowledge before diving into CSS you can take a look at a bonus lecture material we have composed for you. In this [bonus lecture](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/blob/master/teacher/intermediate_lesson5-7/index.md) you are expected to teach yourself different HTML Multimedia tags and other interesting HTML tags and character entities.
+- **(Optional) Bonus Lecture - HTML Tags 3** - If you would like to learn about even more HTML Tags to further increase your HTML knowledge before diving into CSS you can take a look at a bonus lecture material we have composed for you. In this [bonus lecture](https://github.com/ReDI-School/nrw-html-and-css/blob/master/teacher/intermediate_lesson5-7/index.md) you are expected to teach yourself different HTML Multimedia tags and other interesting HTML tags and character entities.
 
 # Resources
 

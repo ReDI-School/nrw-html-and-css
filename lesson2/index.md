@@ -11,7 +11,7 @@ nav_order: 2
 2. Introduction to CSS
 3. Comparison between HTML and CSS (could also be homework)
 4. Difference between Static and Dynamic Web Pages
-5. How does the web work?
+5. How does the World Wide Web work?
 
 ## 1. Introduction to HTML
 
@@ -70,9 +70,9 @@ This section teaches students the difference between static and dynamic web page
 
 ETA: ~1-2min
 
-## 5. How does the web work?
+## 5. How does the world wide web work?
 
-This section reveals the "magic" behind the world wide web. Students should get familiar with how browsers get information from servers and turn it into websites.
+This section reveals the "magic" behind the [world wide web](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web). Students should get familiar with how browsers get information from servers and turn it into websites.
 
 ETA: ~15min
 
@@ -113,3 +113,4 @@ The following articles are good starting point for reading about HTML and CSS. P
 - <https://www.w3schools.com/css/css_intro.asp>
 - <https://developer.mozilla.org/en-US/docs/Web/CSS>
 - [Brief History of CSS](https://www.w3.org/Style/CSS20/history.html)
+- [What is the World Wide Web?](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)

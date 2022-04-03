@@ -83,7 +83,7 @@ ul.main-menu {
  * is not going to get triggered anymore unless you to clear your browser history.
  * - In our case we use the same styles for both visited and unvisited links.
  *
- * More on CSS Pseudo-Classes: https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#3-css-pseudo-classes
+ * More on CSS Pseudo-Classes: https://redi-school.github.io/nrw-html-and-css/lesson19/#3-css-pseudo-classes
  */
 .main-menu a:link,
 .main-menu a:visited {
@@ -100,7 +100,7 @@ ul.main-menu {
  * :active MUST come after :hover (if present) in the CSS definition in order to be effective!
  * More info at https://www.w3schools.com/cssref/sel_active.asp
  * 
- * More on CSS Pseudo-Classes: https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#3-css-pseudo-classes
+ * More on CSS Pseudo-Classes: https://redi-school.github.io/nrw-html-and-css/lesson19/#3-css-pseudo-classes
  */
 .main-menu a:hover,
 .main-menu a:active {
@@ -194,7 +194,7 @@ header {
 /**
  * This is a CSS Child Selector (>). Selection all div(s) which are direct children
  * of a header element. More info can be seen here
- * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
+ * https://redi-school.github.io/nrw-html-and-css/lesson19/#2-css-combinator-selectors
  */
 header > div {
   flex: 1;
@@ -233,7 +233,7 @@ header img {
 
 /**
  * Using e CSS Pseudo-Element Selector
- * Check: https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#4-css-pseudo-elements
+ * Check: https://redi-school.github.io/nrw-html-and-css/lesson19/#4-css-pseudo-elements
 p::first-line {
   font-family: Verdana;
 }

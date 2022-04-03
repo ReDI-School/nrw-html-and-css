@@ -1,3 +1,10 @@
+html {
+  /*
+   * This height needs to be the same as the navigation bar height
+   * More on this here https://css-tricks.com/almanac/properties/s/scroll-padding/
+   */
+  scroll-padding-top: 50px;
+}
 body {
   /* Note about Inheritance: The font-family is inherited by
   the child elements in the body */
@@ -34,7 +41,13 @@ body {
 }
 
 footer {
-  text-align: end;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background: #546e7a;
+  padding: 6px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -289,4 +302,26 @@ header img {
 
 .nus {
   background-image: url("../images/nus-logo.png");
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.material-icons:first-child {
+  margin-right: 10px;
+}
+
+.icon-link {
+  color: unset;
+  text-decoration: none;
+}
+.icon-lin:visited {
+  text-decoration: none;
+  color: unset;
+}
+.icon-link:hover {
+  opacity: 0.7;
 }

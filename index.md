@@ -4,7 +4,9 @@ nav_order: 0
 ---
 
 ![ReDI School](redi_banner.png)
+
 # HTML&CSS
+
 {: .fs-10 }
 
 Welcome to the homepage of the HTML & CSS course of NRW at [ReDI School](https://www.redi-school.org).
@@ -16,11 +18,7 @@ In this course we will learn how websites are made and teach you how to build yo
 
 ## Teachers
 
-* Angel
-* Donald
-* Emmanuel
-* Hemanta
-* Rachid
-* Naz
-* Shilpa
-* Ahmet (Teaching Assistant)
+- [Syntia](https://github.com/sintijab)
+- [Flo](https://github.com/flobarndt)
+- [Matt](https://github.com/mdole)
+- [Flaco](https://github.com/flacozacarias)

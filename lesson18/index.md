@@ -17,11 +17,11 @@ During the class, there will be a quiz to review CSS Cascade, Specificity & Inhe
 
 ### Easy
 
-- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson18/exercises/overflow/template)
+- **Overflow:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson18/exercises/overflow/template)
 
 ### Medium
 
-- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson18/exercises/position-redi-logo/template)
+- **Positioning:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target More instructions are found inside the exercise. [Resource - Copy this link if you want this exercise](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson18/exercises/position-redi-logo/template)
 
 ## Homework
 

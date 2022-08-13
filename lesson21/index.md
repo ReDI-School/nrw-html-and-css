@@ -84,7 +84,7 @@ _Exercise:_
 
 ## 3. Extra exercises
 
-If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/nrw-html-and-css/lesson14/) and [Exercise Class II](https://redi-school.github.io/nrw-html-and-css/lesson18/), which we have not managed to cover.
+If there is enough time we can also do all exercises from the previous exercise classes, i.e. [Exercise Class I](https://redi-school.github.io/berlin-html-and-css/lesson14/) and [Exercise Class II](https://redi-school.github.io/berlin-html-and-css/lesson18/), which we have not managed to cover.
 
 # Homework
 

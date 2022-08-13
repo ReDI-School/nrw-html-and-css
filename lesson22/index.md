@@ -38,7 +38,7 @@ The story behind why this line is needed is very interesting and is worth readin
 
 ## 4. Flexbox behaviour
 
-We learned about flexbox in [lecture 14](https://redi-school.github.io/nrw-html-and-css/lesson13/). One of the key aspects associated with flexbox is that it is very useful for responsive designs. This is because the flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for `flex-grow` and `flex-shrink` you can indicate how you want the items to behave when they encounter more or less space around them.
+We learned about flexbox in [lecture 14](https://redi-school.github.io/berlin-html-and-css/lesson13/). One of the key aspects associated with flexbox is that it is very useful for responsive designs. This is because the flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for `flex-grow` and `flex-shrink` you can indicate how you want the items to behave when they encounter more or less space around them.
 
 ## 5. Media queries
 

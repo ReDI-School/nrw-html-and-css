@@ -13,15 +13,15 @@ TKTK
 
 ### Easy
 
-- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/nested-flex/template)
+- **Nested Flex:** Look at the template and the target result and try to apply the corresponding HTML and CSS in order to reach the target. [Resource](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson14/exercises/nested-flex/template)
 
-- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/ig-stories/template)
+- **Instagram Stories:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson14/exercises/ig-stories/template)
 
 ### Medium
 
-- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/flex-app-layout/template)
+- **Flex App Layout:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson14/exercises/flex-app-layout/template)
 
-- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/nrw-html-and-css/tree/master/lesson14/exercises/dropdown-navigation/template)
+- **Dropdown Navigation:** Look at the template and the target result and try to apply the corresponding CSS in order to reach the target. [Resource](https://github.com/ReDI-School/berlin-html-and-css/tree/master/lesson14/exercises/dropdown-navigation/template)
 
 ## Homework
 

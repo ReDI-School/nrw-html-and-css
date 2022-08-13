@@ -25,7 +25,7 @@ We have written a decent amount of CSS rules for our website so far. While the a
 - the CSS universal Selector
 - and others
 
-We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/nrw-html-and-css/lesson7/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/nrw-html-and-css/lesson8/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
+We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/berlin-html-and-css/lesson7/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/berlin-html-and-css/lesson8/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
 
 # 2. CSS Combinator Selectors
 
@@ -48,7 +48,7 @@ For example, it can be used to:
 - Style visited and unvisited links differently
 - Style an element when it gets focus
 
-We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/nrw-html-and-css/lesson9/)
+We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/berlin-html-and-css/lesson9/)
 The most important pseudo-classes which this section covers are:
 
 - `:first-child`

@@ -28,7 +28,7 @@ ETA: ~50min
 
 In this section we would like to cover the organizational topics around our course. This includes:
 
-- Presentation of the website we have - <https://redi-school.github.io/nrw-html-and-css/lesson1//>
+- Presentation of the website we have - <https://redi-school.github.io/berlin-html-and-css/>
 - The framework of lesson notes
   - Class Agenda
   - Content Sections

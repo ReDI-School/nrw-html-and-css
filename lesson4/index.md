@@ -9,7 +9,7 @@ nav_order: 4
 
 The class must not have a strict separation of theory and exercise. Instead the whole class must be one big exercise with theory in between.
 
-At the end of the class students would need to have written their own HTML document which follows the example given in the [HTML Checkpoint4 file](./Checkpoint4.html).
+At the end of the class students would need to have written their own HTML document
 
 1. Headings
 2. HTML paragraphs
@@ -69,7 +69,7 @@ ETA: 10min
 
 # Exercise Description
 
-The exercise should be done along presenting all tags. If there is time at the end of the session, students can also fill in content of inside their website following the structure of the [HTML Checkpoint4 file](./Checkpoint4.html).
+The exercise should be done along presenting all tags. If there is time at the end of the session, students can also fill in content of inside their website.
 
 # Glossary & Terminology
 

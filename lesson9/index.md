@@ -39,8 +39,6 @@ Exercises should be done along each section and should help students add their o
 
 This lesson can add new content to the CV website since all these are expected to be consumed within it.
 
-Therefore, Checkpoint 9 will be used in the beginning of lesson 10.
-
 # Glossary & Terminology
 
 - ***

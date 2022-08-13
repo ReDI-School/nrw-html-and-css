@@ -9,20 +9,11 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint18/checkpoint)
-1. Do extra exercises
+TKTK
 
-## 1. Reach Checkpoint 17
-
-The goal of this class is to make sure that every student has reached checkpoint 17 in their own portfolio projects. Teachers would help students if they have not reached the checkpoint yet.
-
-## 2. Quiz
+## 1. Quiz
 
 During the class, there will be a quiz to review CSS Cascade, Specificity & Inheritance. The questions for the quiz are in [quiz.md](./quiz/quiz.md) (SPOILER ALERT: Please do not open this link before the quiz is over). A Slido link will be shared in the class to facilitate the quiz.
-
-## 3. Extra exercises
-
-If a student has reached checkpoint 17 then they can start doing extra exercises from the following list. Students can choose whatever exercise they want because there is no order. The list is solely categorized based on difficulty.
 
 ### Easy
 

@@ -56,7 +56,6 @@ Example CV Websites:
 - <https://ethanmarcotte.com/>
 - <https://laurieontech.com/>
 - <https://rachelandrew.co.uk/>
-- Example of the checkpoint website
 - An example [student website](https://julietchuks.github.io/Portfolio/) presented during the [demo day](https://youtu.be/upP5NuMLCGU?t=146) in 2020 Spring semester
 
 ETA: 30min

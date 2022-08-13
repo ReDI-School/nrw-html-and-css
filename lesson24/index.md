@@ -44,8 +44,7 @@ Modern browsers provide an automated way for checking whether your website follo
 
 # Homework
 
-1. Checkout the [Checkpoint24](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint24/checkpoint) branch and apply the changes to your project
-2. Look at your own code and think about whether it satisfies the basic accessibility guidelines. Also, test your websites with the help of Google Chrome's Lightroom
+1. Look at your own code and think about whether it satisfies the basic accessibility guidelines. Also, test your websites with the help of Google Chrome's Lightroom
 
 # Resources
 

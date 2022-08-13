@@ -97,7 +97,7 @@ ETA: ~15min
 
 # Homework
 
-1. Reach checkpoint2 if you haven't done so in class. Please use your own website title including your own name.
+1. TKTK
 2. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
 3. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
 4. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>

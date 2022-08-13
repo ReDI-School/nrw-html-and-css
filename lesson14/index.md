@@ -9,16 +9,7 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 13](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint13/checkpoint)
-1. Do extra exercises
-
-## 1. Reach Checkpoint 13
-
-The goal of this class is to make sure that every student has reached checkpoint 13 in their own portfolio projects. Teachers would help students if they have not reached the checkpoint yet.
-
-## 2. Extra exercises
-
-If a student has reached checkpoint 13 then they can start doing extra exercises from the following list. Students can choose whatever exercise they want because there is no order. The list is solely categorized based on difficulty.
+TKTK
 
 ### Easy
 

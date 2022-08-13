@@ -59,10 +59,7 @@ ETA: 20min
 
 1. The usage of overflow and text effects is more situational. Please practice using these rules on W3Schools or MDN. You can find examples to practice on the respective pages there.
 
-2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width. This feature is the new thing which we add with checkpoint 16. Here are the respective links to compare your solution
-
-   - [Portfolio Project - Checkpoint 16](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint16/checkpoint)
-   - [What has changed between Checkpoint 16 and Checkpoint 15?](https://github.com/ReDI-School/nrw-html-and-css/compare/checkpoint15...checkpoint16). Use this link to see the differences between two checkpoints. The right side shows the things which are added with Checkpoint 16.
+2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width
 
 3. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
 

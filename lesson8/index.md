@@ -62,7 +62,7 @@ ETA: 30 mins
 
 # Exercise Description
 
-Exercises should be done along with the content of the lecture. After completing the Tasks, you should have content similar to `checkpoint8`. Checkpoint 8 adds the following things on top of Checkpoint 7:
+Exercises should be done along with the content of the lecture. Your website should include...
 
 - Applying font on the page
 - Text aligning the content of the footer

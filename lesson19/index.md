@@ -84,8 +84,6 @@ It is possible to style HTML elements that have specific attributes or attribute
 # Homework
 
 - Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
-- In [Checkpoint 19](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint19), we have changed some CSS rules definition to show you how different selectors can make more sense in some cases. Please take inspiration from it for your personal project.
-  - [What has changed between Checkpoint 19 and Checkpoint 18?](https://github.com/ReDI-School/nrw-html-and-css/compare/checkpoint18...checkpoint19). Use this link to see the differences between two checkpoints. The green highlight (#e5ffec) shows the things which are added with Checkpoint 19.
 - Practice your selector skills with this game: ["CSS Diner - the fun way to practice selectors"](http://cssdiner.com). Share a screenshot of your completed levels in the Classroom channel.
 
 # Resources

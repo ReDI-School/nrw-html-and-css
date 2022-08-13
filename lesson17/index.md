@@ -153,7 +153,6 @@ It is useful to know that `!important` exists, however, you are strongly advised
 # Homework
 
 - Look in your project and review how specific your CSS selectors are. See if you can find places you could be using lower specificity while still achieving your styling.
-- In [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint17), we added comments to our CSS file regarding inheritance and specificity. Take a look at it, and try to find other similar places in your code and label them.
 
 # Resources
 

@@ -59,7 +59,7 @@ Responsive design was only able to emerge due to the media query. Media Queries 
 # Homework
 
 1. Open the browser dev tools and checkout how your website looks on mobile devices.
-2. Identify places which can look bad and try to use the learned techniques to make them look better. If you have difficulties, feel free to ask around for help. Meanwhile checkout our [Checkpoint 22](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint22/checkpoint) to get some inspiration and look at examples of what you can do.
+2. Identify places which can look bad and try to use the learned techniques to make them look better. If you have difficulties, feel free to ask around for help
 3. (Optional) Learn about a more advanced layout concept called [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). The CSS Grid is very useful for responsive design but it can be more difficult to master.
 
 # Resources

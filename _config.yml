@@ -30,5 +30,4 @@ exclude:
   - node_modules
   - vendor
   - teacher
-  - checkpoints
 # Add directories to exclude after the ones above

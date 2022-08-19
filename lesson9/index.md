@@ -26,7 +26,7 @@ ETA: 50min
 
 An important aspect of a webpage design is styling lists. Therefore this section teaches students how to create lists using CSS. Moreover, students learn how to design an already created HTML list. In particular the section covers the following points:
 
-- Recap of [HTML Lists](https://redi-school.github.io/nrw-html-and-css/lesson5/#2-lists)
+- Recap of [HTML Lists](https://redi-school.github.io/berlin-html-and-css/lesson5/#2-lists)
 - Using the `list-style-type` css rule to apply different list item makers such as circle, square, upper-roman, etc.
 - Customizing list item makers with image (using `list-style-image`)
 - Changing list styles such as positioning of the list item marker, changing the default style, using different list colours and others.
@@ -38,8 +38,6 @@ ETA: 45mins
 Exercises should be done along each section and should help students add their own styles.
 
 This lesson can add new content to the CV website since all these are expected to be consumed within it.
-
-Therefore, Checkpoint 9 will be used in the beginning of lesson 10.
 
 # Glossary & Terminology
 

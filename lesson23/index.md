@@ -128,8 +128,7 @@ a:hover {
 
 # Homework
 
-1. Checkout the Checkpoint23 branch and apply similar styles to your project.
-2. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
+1. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
 
 # Resources
 

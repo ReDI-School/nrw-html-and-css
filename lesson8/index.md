@@ -37,7 +37,7 @@ ETA: 20 mins
 
 ## 4. Formatting Text with CSS
 
-We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/nrw-html-and-css/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
+We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/berlin-html-and-css/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
 
 - Text Alignment (`text-align`)
 - Text Direction
@@ -62,7 +62,7 @@ ETA: 30 mins
 
 # Exercise Description
 
-Exercises should be done along with the content of the lecture. After completing the Tasks, you should have content similar to `checkpoint8`. Checkpoint 8 adds the following things on top of Checkpoint 7:
+Exercises should be done along with the content of the lecture. Your website should include...
 
 - Applying font on the page
 - Text aligning the content of the footer

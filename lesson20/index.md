@@ -136,8 +136,6 @@ ETA: 20 mins
 
 # Homework
 
-Review the changes in [Checkpoint 20](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint20/checkpoint) and try them out in your own projects.
-
 Read more about the topics below. You can start with the pages linked, but feel free to search the internet for more about them.
 
 - [CSS Border-Image](https://www.w3schools.com/css/css3_border_images.asp)

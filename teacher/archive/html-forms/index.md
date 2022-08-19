@@ -67,10 +67,6 @@ ETA: 10 mins
 
 - Task: Make time for students to try out the introduced tags.
 - Task: Show this [image](./form-quiz.png) of a contact form, and let students identify tags to be used for creating it.
-- Task: Checkpoint 6:
-
-  - Take a few mins to explain the concept of Checkpoints to the students and how we are using it to build the Portfolio Project, and ensure they are up to date
-
 - Create a "Contact Me" Page for the Portfolio Project.
   - Students are to create a contact form similar to [this](./form-sketch.png)
   - The page should use the introduced tags
@@ -87,10 +83,6 @@ ETA: 40 mins
 - `<select>`
 - `<option>`
 
-# Exercise Description
-
-Students should complete Checkpoint 6 as described above.
-
 # Glossary & Terminology
 
 - HTML form - An HTML form is used to collect user input. [Source](https://www.w3schools.com/html/html_forms.asp)
@@ -98,8 +90,7 @@ Students should complete Checkpoint 6 as described above.
 # Homework
 
 - Go over everything we have covered for HTML so far. The next class will be on CSS, so make sure you understand what has been taught so far.
-- Review your copy of the Portfolio Project and make sure that you are at a similar structure with Checkpoint 6.
-- **(Optional) Bonus Lecture - HTML Tags 3** - If you would like to learn about even more HTML Tags to further increase your HTML knowledge before diving into CSS you can take a look at a bonus lecture material we have composed for you. In this [bonus lecture](https://github.com/ReDI-School/nrw-html-and-css/blob/master/teacher/intermediate_lesson5-7/index.md) you are expected to teach yourself different HTML Multimedia tags and other interesting HTML tags and character entities.
+- **(Optional) Bonus Lecture - HTML Tags 3** - If you would like to learn about even more HTML Tags to further increase your HTML knowledge before diving into CSS you can take a look at a bonus lecture material we have composed for you. In this [bonus lecture](https://github.com/ReDI-School/berlin-html-and-css/blob/master/teacher/intermediate_lesson5-7/index.md) you are expected to teach yourself different HTML Multimedia tags and other interesting HTML tags and character entities.
 
 # Resources
 

@@ -47,7 +47,7 @@ With flexbox, you can align elements horizontally and vertically. Unlike floats,
 
 # Homework
 
-- Bring your website to Checkpoint 13.
+TKTK
 
 # Glossary
 

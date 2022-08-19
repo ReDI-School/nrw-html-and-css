@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: HTML&CSS
-description: This is the homepage of the "NRW HTML & CSS" course at ReDI School
-footer_content: 'Made with ❤ by teachers at <a href="https://www.redi-school.org">ReDI School NRW</a>.'
+description: This is the homepage of the "Berlin HTML & CSS" course at ReDI School
+footer_content: 'Made with ❤ by teachers at <a href="https://www.redi-school.org">ReDI School Berlin</a>.'
 
 # Build settings
 markdown: kramdown
@@ -30,5 +30,4 @@ exclude:
   - node_modules
   - vendor
   - teacher
-  - checkpoints
 # Add directories to exclude after the ones above

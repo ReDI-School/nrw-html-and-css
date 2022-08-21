@@ -1,5 +1,5 @@
 ---
-title: Lesson 2 - Introduction
+title: Lesson 2 - Introduction to HTML & CSS
 nav_order: 2
 ---
 

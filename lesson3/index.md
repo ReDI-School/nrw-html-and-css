@@ -48,16 +48,7 @@ If time allows it, we would look into browser code inspection via the dev tools.
 
 # Exercise Description
 
-- Open a webpage and look in the dev tools, and identify tags discussed above.
-- Make sure you have set up your environment as we are about to start working more often with code.
-- Write a simple HTML file which contains the new things taught in class. Your file should have:
-  - A `DOCTYPE` tag
-  - An opening and closing `html` tag that wraps everything except the `DOCTYPE` tag
-  - An opening and closing `head` tag
-  - An opening and closing `title` tag inside your `head` tag
-  - An opening and closing `body` tag
-  - An opening and closing `h1` tag insdie your `body` tag
-  - An opening and closing `p` tag inside your `body` tag
+- Open a webpage and look in the dev tools, and identify tags discussed above
 
 # Glossary & Terminology
 
@@ -75,11 +66,16 @@ If time allows it, we would look into browser code inspection via the dev tools.
 
 # Homework
 
-- Read about at least ten [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements) and when to use them
-- Read about the different [HTML metadata elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#metadata_the_%3Cmeta%3E_element)
+- Write a simple HTML file which contains the new things taught in class. Your file should have:
+  - A `DOCTYPE` tag
+  - An opening and closing `html` tag that wraps everything except the `DOCTYPE` tag
+  - An opening and closing `head` tag
+  - An opening and closing `title` tag inside your `head` tag
+  - An opening and closing `body` tag
+  - An opening and closing `h1` tag insdie your `body` tag
+  - An opening and closing `p` tag inside your `body` tag
 
 # Resources
 
 - [MDN Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
-- [Other types of metadata in head](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#other_types_of_metadata)
 - [Semantic HTML Elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements)

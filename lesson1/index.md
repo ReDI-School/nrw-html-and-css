@@ -22,7 +22,7 @@ This is the first lesson in our HTML & CSS course. We would like to use this opp
 - What inspires you about tech? Did you have any technical background?
 - What do you expect from this course?
 
-ETA: ~50min
+Estimated time: ~50min
 
 ## 2. Organizational
 
@@ -44,39 +44,54 @@ Apart from that we would like to describe the process of feedback and homework c
 - Once some homework task is done students can share and compare with each other via the Classroom channel which is highly advised. You learn the most through sharing!
 - If students would like they can also consult with a teacher via the Classroom channel. We would try responding in timely manner.
 
-ETA: 10min
+Estimated time: 10min
 
-## 3. Project Website
+## 3. Course structure
 
-The practical part of this course is covered by a project which is built throughout the whole semester in parallel to the lessons. The project is about building an own personal website. The website is a personal portfolio (CV) website built with HTML & CSS only.
+We will have one homework assignment per week, assigned on Thursdays and due on Thursdays. That means that you can ask questions about the homework on Tuesday if you have issues.
 
-Example CV Websites:
+Each homework assignment will ask you to start from scratch and create a new HTML and/or CSS file. This will help you get into the habit of quickly and easily creating these new files. Think of yourself like a potter: they start with fresh clay every time, and it takes lots of repetition before their hands know what to do!
 
-- <https://www.sesanosanyinbi.com/>
-- <https://ethanmarcotte.com/>
-- <https://laurieontech.com/>
-- <https://rachelandrew.co.uk/>
-- An example [student website](https://julietchuks.github.io/Portfolio/) presented during the [demo day](https://youtu.be/upP5NuMLCGU?t=146) in 2020 Spring semester
+![Image of hands shaping a ceramic pot on a spinning wheel](./potter.jpg)
 
-ETA: 30min
+We will also have two larger projects during the semester, one halfway through and the other at the end. These will give you a chance to combine multiple things you have learned throughout the semester.
+
+Estimated time: 5min
 
 ## 4. Working environment
 
-TKTK
+We will use Visual Studio Code to create and edit HTML and CSS files for this course.
 
-1. Download VS Code
+If you haven't created files and folders on a computer before, that's totally OK! We're here to learn! We've linked to some videos with an overview in the "homework" section below.
+
+1. Download [Visual Studio Code](https://code.visualstudio.com/download) (also known as VS Code)
 2. Set up [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+Estimated time: 10min
+
+## 5. Exercise
+
+If we have time, let's all create a folder for all of our class work and make sure we know how and where to find it in the future.
+
+Estimated time: 30min
 
 # Glossary & Terminology
 
-TKTK
+- File: a chunk of data of a certain type. All data on your computer (or phone!) is stored as files. Example file types include video, audio, photo, and text
+- Folder: a place you can put files to separate them into groups
+- File name: the name of the file, which should tell you what is in the file
+- File extension: tells the computer what kind of file this is, so that it knows how to open the file. Examples include `.html`, `.css`, `.jpg`, `.mp3`, and many more!
 
 # Homework
 
-TKTK
+1. Make sure you are comfortable creating files and folders on your computer. Watch [Computer Skills Course: File Management, Part 1](https://www.youtube.com/watch?v=k-EID5_2D9U) and [Computer Skills Course: File Management, Part 2](https://www.youtube.com/watch?v=DGd48PGbnBs) if you are unsure or would like to review. Note that you can turn on subtitles if you're having a hard time understanding him or hear some new words you're not familiar with!
+2. If you didn't do it during class, create a new folder for this class where you will store all of your work
+3. Create a new file called `my-first-project.html` within your class folder
+4. Open your new file in VS Code!
 
 # Resources
 
 The following articles are good starting point for reading about HTML and CSS. Please keep in mind that some of the articles might go too much into details and cover topics that you would learn in upcoming sessions:
 
-TKTK
+- FreeCodeCamp has a lot of hands-on examples, such as this course that covers much of what we'll work on this semester. If you're eager to get started, try it out! https://www.freecodecamp.org/learn/2022/responsive-web-design/
+- Mozilla Developer Network, or MDN, is a very helpful resource that we will reference throughout the semester. Here is a good article on HTML basics - and you can change the language if that's easier for you! Click where it says `English (US)` in the top-right corner of the page: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics

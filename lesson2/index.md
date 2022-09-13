@@ -7,25 +7,26 @@ nav_order: 2
 
 ## _Class Agenda_
 
+1. Introduction to web browsers
 1. Introduction to HTML
-2. Introduction to CSS
-3. Comparison between HTML and CSS (could also be homework)
-4. Difference between Static and Dynamic Web Pages
-5. How does the World Wide Web work?
+1. Introduction to CSS
+1. Comparison between HTML and CSS (could also be homework)
+1. Difference between Static and Dynamic Web Pages
 
-## 1. Introduction to HTML
+## 1. Introduction to web browsers
+
+Web browsers like Chrome, Safari, Firefox, and Edge are how we use the internet.
+
+Every time we visit a page like [https://google.com](https://google.com) or [https://redi-school.github.io/berlin-html-and-css/](https://redi-school.github.io/berlin-html-and-css/), the page we see in our browser is _structured_ using HTML and _styled_ using CSS.
+
+## 2. Introduction to HTML
 
 This section covers the introduction to HTML and should give understanding of basic questions such as:
 
 - What is HTML?
 - What does HTML stand for?
 - Why do we need HTML?
-- Who and when created HTML?
-- Who maintains HTML?
-- What is the latest HTML version?
-- What is the difference between a Programming Language and a Markup Language?
-- What is the meaning of the word Hyper Text in the context of HTML
-- How do HTML rules and language look like?
+- What do HTML rules and language look like?
 
 Moreover, this section mentions basic HTML characteristics. HTML is an `easy-to-use` `markup language` that is `platform independent` and can be integrated with other web languages such as `CSS` and `JavaScript`.
 
@@ -33,18 +34,15 @@ A good linker between sections 1. and 2. is the question `What cannot be done by
 
 ETA: ~40min
 
-## 2. Introduction to CSS
+## 3. Introduction to CSS
 
 This sections introduces CSS and it's purpose is also to give a solid foundational understanding of the following questions around CSS:
 
 - What is CSS?
-- Who created CSS, and when was CSS created?
-- Who maintains CSS?
 - What is CSS used for? See example explanation below.
-- What is the latest CSS version?
 - What does Style Sheet in CSS stand for?
 - What does Cascading in CSS stand for?
-- How does CSS rules and language looks like?
+- What do CSS rules and language look like?
 
 Furthermore, this section shows examples of how CSS can be used to apply different type of styling - `apply colors`, `increasing font sizes`, `changing positioning`.
 
@@ -58,23 +56,35 @@ Also this section shortly mentions the topic of Browser compatibility, describin
 
 ETA: ~45min
 
-## 3. Comparison between HTML / CSS
+## 4. Comparison between HTML / CSS
 
-This section is a natural follower to section 1 and 2. This sections does not contain extra information but is is used as a summary of the previous ones. Therefore, it is a good candidate for homework
+Summary:
 
-> Homework: Create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS.
+- HTML:
+  - Good for the structure and layout of web pages
+  - All websites use HTML
+  - Each HTML file is a single page on a website, and vice versa
+  - HTML allows us to link from one website to another - in other words, from one HTML file to another!
+- CSS:
+  - Allows us to make websites look nice
+  - Helps whole websites look the same, instead of one page looking very different from another page
 
-## 4. Difference between Static and Dynamic Web Pages
+## 5. Difference between Static and Dynamic Web Pages
 
-This section teaches students the difference between static and dynamic web pages without going into too many details such as server rendering, database usage, etc. The idea behind is that students understand the difference between a static HTML website which always remains the same and a website which changes during execution time or is different from user to user (e.g. Facebook). The goal of the section is to set the right expectation to students about what they are going to learn about and about the Project CV website that their going to build.
+This section teaches students the difference between static and dynamic web pages without going into too many details such as server rendering, database usage, etc. The idea behind is that students understand the difference between a static HTML website which always remains the same and a website which changes during execution time or is different from user to user (e.g. Facebook). The goal of the section is to set the right expectation to students about what they are going to learn about.
 
 ETA: ~1-2min
 
-## 5. How does the world wide web work?
+## Exercise: website analysis
 
-This section reveals the "magic" behind the [world wide web](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web). Students should get familiar with how browsers get information from servers and turn it into websites.
+All websites have structure - but we often don't think about it! Common website features:
 
-ETA: ~15min
+- Navigation bar or nav bar
+- Search bar
+- Tabs
+- Blocks with image + text together (like an item and its name on an online shopping page, or an article headline and image on a news site)
+
+Working in pairs, visit the following websites and take turns pointing out "sections" of content. Pay attention to patterns - what is similar with the sites you visit? What is different?
 
 # Glossary & Terminology
 
@@ -97,10 +107,9 @@ ETA: ~15min
 
 # Homework
 
-1. TKTK
-2. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
-3. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
-4. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>
+1. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
+2. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
+3. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>
 
 # Resources
 

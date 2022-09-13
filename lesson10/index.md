@@ -1,61 +1,61 @@
 ---
-title: Lesson 10 - CSS Units
+title: Lesson 10 - CSS Flexbox
 nav_order: 10
 ---
 
-# CSS Units
+# CSS Flexbox
 
 ## Class Agenda
 
-1. Introduction to CSS Units
-2. CSS Font Size
-3. CSS Height & Width
-4. CSS Max-width
+1. Introduction to Flexbox
+1. The Flex model
 
-## 1. Introduction to CSS Units
+## 1. Introduction to Flexbox
 
-- What are CSS Units used for?
-- What are Absolute Length Units (cm, px, in etc.) ?
-- What are Relative Length Units (em, % etc.) ?
-- What do we mean by "absolute"? What do we mean by "relative"?
-- What are the most used units and what are the differences between them? (px vs em vs rem)
+Flexbox is a comparatively newer way to layout elements on the page without the limits and frustration of Floats like:
 
-ETA: 40mins
+- You have to clear Floats (when the containing element collapses).
+- Sometimes have to change the order of your HTML to achieve a Floats design.
 
-## 2. CSS Font Size
+Flexbox layout makes it easier to design flexible responsive layout structure (hint: Flexbox = flexible boxes).
 
-- `font-size` - using some of the units
-  - Practice sizing text size using absolute unit (px)
-  - Practice sizing text size using relative unit (em or rem)
+With flexbox, you can align elements horizontally and vertically. Unlike floats, you can re-order flex items without needing to change the HTML.
 
-ETA: 15mins
+## 2. The Flex Model
 
-## 3. Height & Width
-
-- cover sizing with units
-- cover sizing with non-numeric CSS values (e.g auto)
-
-ETA: 30mins
-
-## 4. CSS Max-Width
-
-- What is the difference between max-width and width?
-
-ETA: 15mins
+- `flex` is the value for the display property that activates the Flexbox layout on an element.
+- What is a flex container?
+- What are flex items?
+- What are the most common properties that can be used on a flex container?
+  - `flex-direction` (default `row`)
+  - `flex-wrap` (default `nowrap`)
+  - `justify-content` (default: `flex-start`)
+  - `align-items` (default: `stretch`)
+  - `align-content` (default: `stretch`)
+  - `flex-flow`
+- What are the most common properties that can be used on a flex item?
+  - `align-self` is similar to `align-items` on the container, but applies to a single flex item.
+  - `flex`: shorthand property for the `flex-grow`, `flex-shrink`, and `flex-basis`
+  - `flex-grow`: specifies how an item grows when it is allowed to take extra space available in the container (default: 0)
+  - `flex-shrink` specifies how an item shrinks when there is not enough space available in the container (default: 1)
+  - flex-basis
+  - order
 
 # Exercise Description
 
-- Increase the font-size of the "About Me", "Education" and "Language Profiencicy" headers in your portfolio website
-- Align your profile image at the center of the page and make it 20% of the screen size (the image size should adjust on different screen-sizes)
-
-ETA: 10mins
+1. Use Flexbox instead of float to style the navigation bar on the portfolio in [this CodeSandbox](https://codesandbox.io/s/flex1-vkyi2)
+2. Use Flexbox to style the HTML form provided in [this CodeSandbox](https://codesandbox.io/s/flexbox2-ymdfj?file=/index.html) (see attached image for expected result)
+3. Style the Flexbox Pricing Grid in [this CodeSandbox](https://codesandbox.io/s/flexbox3-w8vqk) (see attached image for expected look)
 
 # Homework
 
-- Practice how to use at least 5 CSS units each for relative and absolute length units
+TKTK
+
+# Glossary
+
+- Flexbox - Flexible box
 
 # Resources
 
-- [CSS Units](https://www.w3schools.com/css/css_units.asp)
-- [CSS Layout - width and max-width](https://www.w3schools.com/css/css_max-width.asp)
-- [Differences between main CSS units px,em and rem](https://chiamakaikeanyi.dev/sizing-in-css-px-vs-em-vs-rem/)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)

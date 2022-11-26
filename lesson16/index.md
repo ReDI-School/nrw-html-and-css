@@ -1,75 +1,138 @@
 ---
-title: Lesson 16 - CSS Overflow and Text Effects
+title: Lesson 16 - CSS Animations & Transitions
 nav_order: 16
 ---
 
-# CSS Overflow and Text Effects
+# CSS Animations & Transitions
 
-## Class Agenda
+## Agenda
 
-1. CSS Overflow
-2. CSS Text Effects
-3. CSS White Space
+1. Introduction
+1. Animations
+1. Transitions
+1. Transform
 
-# 1. Overflow
+## 1. Introduction
 
-There are many scenarios in which the content of an html tag is simply bigger than the size of the html tag container itself. This makes the content overflow.
+An animation lets an element gradually change from one style to another.
+You can create nice animations with CSS on properties such as color, background-color, height, or width.
+See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
+In this lesson, we cover a few CSS properties to achieve animations.
 
-Students would learn about the default `overflow` behaviour and the principle which CSS applies to ["avoid data loss"](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content#css_tries_to_avoid_data_loss).
+## 2. Animations
 
-Apart from that, the section covers the CSS `overflow` property. Students would learn about the different values possible to be added to overflow:
+The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
+To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.
 
-- `visible`
-- `hidden`
-- `clip`
-- `scroll`
-- `auto`
+- `animation-name`: Specifies the name of the `@keyframes` rule describing the animation.
+- `animation-duration`: Sets the length of time that the animation should take.
+- `animation-delay`: Sets a time before the animation starts
+- `animation-iteration-count`: Sets the number of times the animation should run
+- `animation-timing-function`: Configures the timing or speed of the animation.
 
-Furthermore, this section covers the different directions an overflow can happen. These are `overflow-x` and `overflow-y`. Additionally, the students would learn the requirements for the `overflow` property to work properly. All of this would be taught with practical examples.
+Each keyframe rule defines what should happen at specific moments during the animation.
+For example, 0% is the start and 100% is the end,
 
-ETA: 40 min
+```css
+.element {
+  height: 200px;
+  /* animation-name must match @keyframes value */
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
 
-# 2. Text Effects
+/* @keyframes <animation-name> with <percentage> steps */
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  40% {
+    background-color: #0e1;
+  }
+  100% {
+    background-color: #ff4136;
+  }
+}
+```
 
-What should we do when we have long words? Should we use scrolling with `overflow-x` ? In this section students would learn alternative and perhaps better approaches to deal with the former problem. This includes covering the [CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp) and the respective CSS rules associated with them. These are:
+You can also use keywords `from` and `to` with @keyframes.
 
-- `text-overflow`
-- `overflow-wrap` (`word-wrap`)
-- `word-break`
-- `line-break`
-- `writing-mode`
+```css
+h1 {
+  font-size: 20px;
+  animation-name: size-increase;
+  animation-duration: 5s;
+}
 
-Some of these rules are very similar but yet distinct enough. The lecture would cover in details the differences between:
+@keyframes size-increase {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+```
 
-- `word-break: break-all` versus `overflow-wrap: break-word` in CSS
-- `word-wrap` and `overflow-wrap`
-- `line-break` and `word-break`
+## 3. Transitions
 
-ETA: 40min
+Transitions are typically applied when a user interacts with an element (e.g when a user hovers or clicks on an element).
 
-# 3. CSS White Space
+- `transition-property`: used to define what property, or properties, you want to apply a transition effect to. You can also use the keyword `all` to transition all properties possible to transition on the element.
+- `transition-duration`: used to define the duration of a specified transition.
+- `transition-delay`: used to define a length of time to delay the start of a transition
+- `transition-timing-function`: used to define a function that describes how a transition will proceed over its duration
 
-Apart from all the above CSS rules there is one additional one which also deals with how content is displayed inside a container. This section teaches the CSS `white-space` rule.
+```css
+div {
+  transition: all 0.5s ease;
+  background: red;
+  padding: 10px;
+}
 
-ETA: 20min
+div:hover {
+  background: green;
+  padding: 20px;
+}
+```
 
----
+## 4. Transform
+
+The `transform` property is usually used alongside animations. It allows you to visually manipulate an element by skewing, rotating, translating, or scaling. You can set transform on an element without animations e.g
+
+```css
+div {
+  width: 20px;
+  height: 20px;
+  transform: scale(20);
+}
+```
+
+but works well with transitions and animations e.g
+
+```css
+a {
+  font-size: 2em;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+}
+
+a:hover {
+  /* this lifts up the link on hover */
+  transform: translate(0, -5px);
+}
+```
+
+# Glossary & Terminology
+
+- `Animatable CSS properties` - List of CSS properties can be animated using CSS Animations or CSS Transitions. More info [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
 
 # Homework
 
-1. The usage of overflow and text effects is more situational. Please practice using these rules on W3Schools or MDN. You can find examples to practice on the respective pages there.
-
-2. Try to make the menu items (links) in the navigation bar of your website scrollable on the horizontal axis when the page is viewed on a very small screen width
-
-3. Read the following [article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) which is a recap of different ways to size items in CSS
-
-Make sure to ask questions!
+1. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
 
 # Resources
 
-- [How to create a horizontal scrollable menu?](https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp)
-- [How to deal with long words?](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
-- [MDN CSS Overflowing Content Tutorial](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
-- [MDN CSS Overflow rule](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
-- [MDN White Space rule](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
-- [W3S CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp)
+- [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+- [Transition property](https://css-tricks.com/almanac/properties/t/transition/)

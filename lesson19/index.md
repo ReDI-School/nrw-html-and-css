@@ -1,95 +1,58 @@
 ---
-title: Lesson 19 - CSS Selectors II
+title: Lesson 19 - Web Accessibility
 nav_order: 19
 ---
 
-# CSS Selectors II
+# Web Accessibility
 
-This lesson teaches various CSS Selectors which are not so often used but still important. The theory would be accompanied with practical examples for each selector case.
+## Agenda
 
-## Class Agenda
+1. Introduction to Accessibility
+1. Classification of disabilities and assistive technologies
+1. Accessibility guidelines
+1. WAI-ARIA
+1. Accessibility checkers
 
-1. Recap of the CSS Selectors I
-2. CSS Combinator Selectors
-3. CSS Pseudo-classes
-4. CSS Pseudo Elements
-5. CSS Attribute Selectors
+## 1. Introduction to Accessibility
 
-# 1. Recap of the CSS Selectors I
+Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it, especially if they are physically or cognitively impaired. In this section we are going to cover the main aspects of accessibility together with the biggest benefits it provides to you and to your users.
 
-We have written a decent amount of CSS rules for our website so far. While the amount of CSS rules is high, we have not used too many different CSS Selectors for our rules. We have mainly used the Simple CSS Selectors such as
+## 2. Classification of disabilities and assistive technologies
 
-- the CSS element Selector
-- the CSS id Selector
-- the CSS class Selector
-- the CSS universal Selector
-- and others
+The topic of accessibility is very huge. There are many different disabilities and impairments which need to be considered in order to provide corresponding technical solutions. Therefore, we would try to classify the most common impairments which potential users could have so that we also try to apply a better designed solution for those cases. We would learn how we as developers can help people with:
 
-We have covered those selectors during our [introduction CSS lecture](https://redi-school.github.io/berlin-html-and-css/lesson7/#3-css-selectors-i). Apart from that, we have also covered the CSS Descendant Selector which belongs to the group of Combinator Selector during another one of our [CSS lectures](https://redi-school.github.io/berlin-html-and-css/lesson8/#1-css-descendant-selector). The main goal of this lesson is to cover the rest of the CSS Selectors, so that the we learn more possibilities to style our websites.
+- visual impairments
+- hearing impairments
+- mobility impairments
+- cognitive impairments
 
-# 2. CSS Combinator Selectors
+## 3. Accessibility guidelines
 
-A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+Without going into too many concrete details, we would look at some top level accessibility guidelines which we should be aware of. These are important to keep in mind and try to follow in our projects. We would also look at some examples of good and bad HTML code and how it can affect the results of a Screen Reader, for example.
 
-There are four different combinators in CSS:
+## 4. WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications)
 
-- descendant selector (space)
-- child selector (>)
-- adjacent sibling selector (+)
-- general sibling selector (~)
+WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications) is a specification written by the W3C, defining a set of additional HTML attributes that can be applied to elements to provide additional semantics and improve accessibility wherever it is lacking. We would learn about the three main features defined by the specification: `roles`, `properties` and `states`
 
-# 3. CSS Pseudo-classes
+## 5. Accessibility checkers
 
-A pseudo-class is used to define a special state of an element.
-
-For example, it can be used to:
-
-- Style an element when a user mouses over it
-- Style visited and unvisited links differently
-- Style an element when it gets focus
-
-We have worked with some of these during our [CSS Links and Lists Lesson](https://redi-school.github.io/berlin-html-and-css/lesson9/)
-The most important pseudo-classes which this section covers are:
-
-- `:first-child`
-- `:last-child`
-- `:nth-child()`
-
-If times allow it we would cover some additional pseudo-classes.
-
-# 4. CSS Pseudo Elements
-
-Apart from pseudo-classes there are also pseudo-elements which can be styled with a certain CSS Pseudo-elements Selectors. A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
-
-- Style the first letter, or line, of an element
-- Insert content before, or after, the content of an element
-
-The most important Pseudo-elements we would cover are:
-
-- `::first-line`
-- `::first-letter`
-- `::before`
-- `::after`
-- `::selection`
-
-# 5. CSS Attribute Selectors
-
-It is possible to style HTML elements that have specific attributes or attribute values. This section covers how to do that.
+Modern browsers provide an automated way for checking whether your website follows a certain set of standardized accessibility rules. We would look at Google Chrome Lightroom and use it with our own website
 
 # Glossary & Terminology
 
-- `Pseudo-class` - A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to change a button's color when the user's pointer hovers over it.
-- `Pseudo-element` - A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, `::first-line` can be used to change the font of the first line of a paragraph.
+- `Accessibility` - Accessibility means that **any** user can use all the features and the content of a particular software, regardless of how the user accesses it
+- `WAI-ARIA` - Web Accessibility Initiative - Accessible Rich Internet Applications is a technology that can help with such problems by adding in further semantics that browsers and assistive technologies can recognize and use to let users know what is going on. [Read more about this technology here.](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
+- `WCAG` - Web Content Accessibility Guidelines is developed by W3C and covers a wide range of recommendations for making Web content more accessible.
 
 # Homework
 
-- Look in your project and review CSS selectors. Think about cases where you can use a different CSS Selector version so that you decrease the number of CSS rules you use and make your CSS file more structured and maintainable.
-- Practice your selector skills with this game: ["CSS Diner - the fun way to practice selectors"](http://cssdiner.com). Share a screenshot of your completed levels in the Classroom channel.
+1. Look at your own code and think about whether it satisfies the basic accessibility guidelines. Also, test your websites with the help of Google Chrome's Lightroom
 
 # Resources
 
-- [Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
-- [Categorization of CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
-- [Combinator Selectors](https://www.w3schools.com/css/css_combinators.asp)
-- [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
-- [Pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
+- [MDN Accessibility Tutorial](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [Screen Reader Demo](https://www.youtube.com/watch?v=dEbl5jvLKGQ)
+- [Using an IPhone with screen readers](https://www.youtube.com/watch?v=wueLXCbm_KY)
+- [WAI-ARIA basics](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
+- [WCAG - Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WCAG - Cheat sheet](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)

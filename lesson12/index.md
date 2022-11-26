@@ -1,58 +1,70 @@
 ---
-title: Lesson 12 - CSS Layout - Part I
+title: Lesson 12 - Responsive Design
 nav_order: 12
 ---
 
-## Class Agenda
+# Responsive Design
 
-1. Normal Flow
-1. The `display` Property
-1. Floats
+In this lesson, we will learn the basics of responsive web design. This is a fundamental concept in the modern web development and deserves special attention.
 
-## 1. Normal Flow
+## Agenda
 
-This section will help the students to understand how webpage elements are laid out by default.
+1. Introduction
+2. Dev Tools inspection
+3. The viewport meta tag
+4. Flexbox behaviour
+5. Media Queries
 
-- Last class introduced the idea that everything on the page is a box.
-- By default, these boxes can be stacked up on top of one another, or side by side
-- Revision: What does block level and inline elements mean?
-- Discuss `display: inline-block`. How is it similar/different to block and inline?
+## 1. Introduction
 
-## 2. The `display` Property
+Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust for different screen sizes and viewports. That is achieved by using such HTML and CSS that makes the web elements shrink, resize or enlarge themselves on different screen sizes. It is important to understand that responsive web design isn't a separate technology — it is a term used to describe an approach to web design or a set of best practices, used to create a layout that can respond to the device being used to view the content. These approaches can include
 
-You can change how elements behave in normal flow with the `display` property.
+- Making containers fluid by setting `max-width: 100%`
+- Using relative units for typography
+- Using CSS Flexbox or CSS Grid to create responsive layouts
+- Using media queries to change styles on different viewports
 
-Exercise:
+## 2. Dev Tools inspection
 
-1. Apply a border on all elements on your page.
-2. Using the dev tools, identify elements with display block and change them to inline (and vice versa)
-3. Observe how the flow of elements on the page changes
+It is extremely important to look at the result of your implementation directly in the browser. As you have already learned, the browser Dev Tools are an excellent way to check and debug your html and css code. What's more the browser Dev Tools allow you to check how your page is going to look on different devices such as tablets or mobile phones. Sometimes you can even select from a few built-in device sizes. Use the Dev Tools to check out how your website looks on mobile devices.
 
-## 3. Floats
+## 3. The viewport meta tag
 
-- Float was originally introduced to simple layouts like wrapping text around an image (borrowed from print design).
-- But it became used to achieve more complex layouts
-- Exercises:
-  - We will restructure our HTML a little bit
-    - Pull out the `nav` content out of the header, so it is a direct child of the `body`
-    - Copy and paste the `nav` across the other HTML files
-    - In index.html, the `header` should now be below the `nav` and should contain then `h1` and `img`
-  - We will use Float to layout our header contain (logo on the right, navigation bar on the left)
-- In the exercises, we'll learn:
-  - `float: left`
-  - `float: right`
-  - Clearing floats
+One of the first steps towards responsive design is setting a special HTML meta tag inside the head of your html file.
 
-# Exercise Description
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+```
 
-Exercises are listed as part of each section.
+The story behind why this line is needed is very interesting and is worth reading [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag).
+
+## 4. Flexbox behaviour
+
+We learned about flexbox in [lecture 14](https://redi-school.github.io/berlin-html-and-css/lesson13/). One of the key aspects associated with flexbox is that it is very useful for responsive designs. This is because the flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for `flex-grow` and `flex-shrink` you can indicate how you want the items to behave when they encounter more or less space around them.
+
+## 5. Media queries
+
+Responsive design was only able to emerge due to the media query. Media Queries allow us to run a series of tests (e.g. whether the user's screen is greater than a certain width, or a certain resolution) and apply CSS selectively to style the page appropriately for the user's needs.
+
+```
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+```
+
+# Glossary & Terminology
+
+- `Responsive Web Design` - Responsive web design (RWD) is an approach to web design that makes web pages look well on a variety of devices and window or screen sizes from minimum to maximum display size. More info [here](https://en.wikipedia.org/wiki/Responsive_web_design).
 
 # Homework
 
-TKTK
+1. Open the browser dev tools and checkout how your website looks on mobile devices.
+2. Identify places which can look bad and try to use the learned techniques to make them look better. If you have difficulties, feel free to ask around for help
+3. (Optional) Learn about a more advanced layout concept called [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). The CSS Grid is very useful for responsive design but it can be more difficult to master.
 
 # Resources
 
-- [Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
-- [CSS Display Property](https://www.w3schools.com/cssref/pr_class_display.asp)
-- [CSS Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+- [MDN Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [W3S Responsive Design](https://www.w3schools.com/html/html_responsive.asp)

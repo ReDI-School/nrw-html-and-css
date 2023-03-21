@@ -19,7 +19,7 @@ Every time we visit a page like [https://google.com](https://google.com) or [htt
 
 Since 1993 it was decided that the Web should act as an open standard accessible worldwide.
 
-How did the first website look like? http://info.cern.ch/ 
+How did the first website look like? [http://info.cern.ch/](http://info.cern.ch/)
 
 ETA: ~15min
 

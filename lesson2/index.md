@@ -1,23 +1,27 @@
 ---
-title: Lesson 2 - Introduction to HTML & CSS
+title: Lesson 2 - Introduction to HTML
 nav_order: 2
 ---
 
-# Introduction to HTML and CSS
+# Introduction to HTML
 
 ## _Class Agenda_
 
 1. Introduction to web browsers
 1. Introduction to HTML
-1. Introduction to CSS
-1. Comparison between HTML and CSS (could also be homework)
-1. Difference between Static and Dynamic Web Pages
+1. Exercise: creating a list of website elements
 
 ## 1. Introduction to web browsers
 
 Web browsers like Chrome, Safari, Firefox, and Edge are how we use the internet.
 
 Every time we visit a page like [https://google.com](https://google.com) or [https://redi-school.github.io/berlin-html-and-css/](https://redi-school.github.io/berlin-html-and-css/), the page we see in our browser is _structured_ using HTML and _styled_ using CSS.
+
+Since 1993 it was decided that the Web should act as an open standard accessible worldwide.
+
+How did the first website look like? http://info.cern.ch/ 
+
+ETA: ~15min
 
 ## 2. Introduction to HTML
 
@@ -26,54 +30,23 @@ This section covers the introduction to HTML and should give understanding of ba
 - What is HTML?
 - What does HTML stand for?
 - Why do we need HTML?
+- What HTML is limited to?
 - What do HTML rules and language look like?
+
+ETA: ~40min
+
+This section will also cover how to start working with HTML:
+- How does HTML work?
+- Basic elements of HTML
+
 
 Moreover, this section mentions basic HTML characteristics. HTML is an `easy-to-use` `markup language` that is `platform independent` and can be integrated with other web languages such as `CSS` and `JavaScript`.
 
 A good linker between sections 1. and 2. is the question `What cannot be done by HTML`?
 
-ETA: ~40min
+ETA: ~20min
 
-## 3. Introduction to CSS
-
-This sections introduces CSS and it's purpose is also to give a solid foundational understanding of the following questions around CSS:
-
-- What is CSS?
-- What is CSS used for? See example explanation below.
-- What does Style Sheet in CSS stand for?
-- What does Cascading in CSS stand for?
-- What do CSS rules and language look like?
-
-Furthermore, this section shows examples of how CSS can be used to apply different type of styling - `apply colors`, `increasing font sizes`, `changing positioning`.
-
-Special attention is given to the CSS characteristics.
-
-- `separation of concern` - Allowing for different teams and people to write HTML / CSS
-- `ease of use` - saves time
-- `reusability` - One style rule or sheet can be used on multiple websites. Useful for company branding.
-
-Also this section shortly mentions the topic of Browser compatibility, describing that one piece of CSS might not work on all browser and devices. A useful example is the MDN browser compatibility table.
-
-ETA: ~45min
-
-## 4. Comparison between HTML / CSS
-
-Summary:
-
-- HTML:
-  - Good for the structure and layout of web pages
-  - All websites use HTML
-  - Each HTML file is a single page on a website, and vice versa
-  - HTML allows us to link from one website to another - in other words, from one HTML file to another!
-- CSS:
-  - Allows us to make websites look nice
-  - Helps whole websites look the same, instead of one page looking very different from another page
-
-## 5. Difference between Static and Dynamic Web Pages
-
-This section teaches students the difference between static and dynamic web pages without going into too many details such as server rendering, database usage, etc. The idea behind is that students understand the difference between a static HTML website which always remains the same and a website which changes during execution time or is different from user to user (e.g. Facebook). The goal of the section is to set the right expectation to students about what they are going to learn about.
-
-ETA: ~1-2min
+Break: ~5min
 
 ## Exercise: website analysis
 
@@ -84,42 +57,43 @@ All websites have structure - but we often don't think about it! Common website 
 - Tabs
 - Blocks with image + text together (like an item and its name on an online shopping page, or an article headline and image on a news site)
 
-Working in pairs, visit the following websites and take turns pointing out "sections" of content. Pay attention to patterns - what is similar with the sites you visit? What is different?
+An example of HTML with this structure is [Mozilla Docs](https://developer.mozilla.org/en-US/) or [Redi School website](https://www.redi-school.org/)
 
+ETA: ~10min
+### Working in groups: inspect HTML and list basic elements
+1. By working in groups or individually, visit any website (e.g. [Mozilla Docs](https://developer.mozilla.org/en-US/) or [Redi School website](https://www.redi-school.org/)) and inspect what elements the web page consist of.
+1. Create a file in Codepen and write down what elements web page consist of in HTML [unordered list <ul>](https://www.w3schools.com/tags/tag_ul.asp) tags.
+1. Pay attention to patterns - what is similar with the sites you visit? What is different?
+
+ETA: ~30min
 # Glossary & Terminology
 
 - `Browser compatibility` - Browser compatibility is the ability of a certain website to work on different browser types and versions. In other words, when asking the following question, for example: "_Is this CSS rule compatible with Internet Explorer 9?_" we want to know whether the CSS rule will work on the Internet Explorer 9 browser
 - `Cascading` - The term _"cascading"_ in the context of CSS describes the process of combining several style sheets and resolving conflicts between them.
-- `CSS` - Cascading Style Sheets is a language for styling web pages
-- `Dynamic web page` - A dynamic web page is a web page that can change its content when running in the browsers or show different content to different users.
-- `HTML` - Hyper Text Markup Language is a language for creating web pages
-- `Hyper Text` - Hyper text is a special text that just forms a link, that allows a user to click on it and get redirected to a new page referenced by that link.
-  So it is a special text that just forms a link
+- `CSS` - Cascading Style Sheets is a language for styling web pages.
+- `Programming language` - A Programming language is language to create a certain software program. Any software program is followed by certain instructions, for instance- receive input data and compute some output.
+- `JavaScript` is the programming language of the Web to create a dynamic web applications.
+- `Dynamic web page` - A dynamic page is a web page that can change its content and display it dynamically based on conditional rules. 
+- `Static web page` - is a web page created with HTML language with a purpose to present structured data on web. A static web page always remains the same based on its structure.
+- `HTML` - is a markup language for creating web pages. Word HTML is an acronym for Hyper Text Markup Language.
 - `Markup language` - A Markup language is a simple human-readable language which is used to make the so-called "notes" to the computer program (e.g. the browser)
-- `MDN` Web Docs - MDN stands for Mozilla Developer Network. The MDN Web Docs is a website which provides information and documentation about Open Web technologies such as HTML and CSS.
-- `Programming language` - A Programming language is language in which we have set of instructions that are combined together in different ways in order to create a certain software program, for example. When we start this program it will follow our instructions and will receive input and compute some output.
+- `Hyper Text` - Hyper text is a special text that just forms a link, that allows a user to click on it and get redirected to a new page referenced by that link.
 - `Specification` - A specification is a collection of rules and requirements that form a certain technical standard. For example, W3C maintains the specification of HTML. In other words, W3C defines how HTML looks like and what its rules are.
-- `Static web page` - A static web page is a web page that always remains the same. All users in all browsers will see the same page and the functionality of the page cannot be changed when the web page is running in the browser.
 - `W3C` - W3C stands for World Wide Web Consortium, which is the main international standards organization for the World Wide Web. It maintains HTML and CSS specification (i.e. rules)
 - `W3Schools` - W3Schools is another useful website which provides documentation for HTML and CSS
+- `MDN` Web Docs - MDN stands for Mozilla Developer Network. The MDN Web Docs is a website which provides information and documentation about Open Web technologies such as HTML and CSS.
 
 ---
 
 # Homework
 
-1. For next session please create a table in which you compare HTML and CSS. The table should contain the similarities and differences between HTML and CSS. It could be in written form or in digital form.
+1. For next session please create a [HTML table](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics) from the list elements created during the class. The table should contain the list of HTML elements of the analyzed web page.
 2. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
-3. (Optional) Read the story behind creating CSS at <https://www.w3.org/Style/CSS20/history.html>
 
 # Resources
 
-The following articles are good starting point for reading about HTML and CSS. Please keep in mind that some of the articles might go too much into details and cover topics that you would learn in upcoming sessions:
+The following resources are good starting point for learning HTML. Please keep in mind that some of the topics we will cover in upcoming lessons:
 
-- <https://www.w3schools.com/html>
-- <https://www.geeksforgeeks.org/html-introduction>
-- <https://developer.mozilla.org/en-US/docs/Web/HTML>
-- <https://en.wikipedia.org/wiki/Static_web_page/>
-- <https://www.w3schools.com/css/css_intro.asp>
-- <https://developer.mozilla.org/en-US/docs/Web/CSS>
-- [Brief History of CSS](https://www.w3.org/Style/CSS20/history.html)
-- [What is the World Wide Web?](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)
+- Books: Adaptive Web Design: Crafting Rich Experiences With Progressive Enhancement, by Aaron Gustafson, first two chapters, available online [Adaptive-Web-Design.pdf](https://kammerkunst.de/data/Adaptive-Web-Design.pdf)
+- Conference JSConf EU 2015: Ryan Seddon: So how does the browser actually render a website, available online with the [link](https://youtu.be/SmE4OwHztCc)
+- Firefox and Chorme DevTools[Fireforx DevTools](https://firefox-source-docs.mozilla.org/devtools-user/) and [Chrome DevTools](https://developer.chrome.com/docs/devtools/)

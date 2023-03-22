@@ -1,9 +1,9 @@
 ---
-title: Lesson 3 - HTML Structure
+title: Lesson 3 - HTML Building Blocks
 nav_order: 3
 ---
 
-# HTML Structure
+# HTML Building Blocks
 
 ## Class Agenda
 

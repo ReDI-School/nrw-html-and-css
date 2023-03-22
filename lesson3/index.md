@@ -162,7 +162,7 @@ When an element contains another element, the **child element** is **nested** wi
 
   More text content of the parent element.
 
-</div><!-- closing tag of the parent element>
+</div><!-- closing tag of the parent element -->
 ```
 
 In this case, the content of the parent element consists of three lines of text (including the child element's content).

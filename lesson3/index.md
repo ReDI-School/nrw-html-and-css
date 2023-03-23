@@ -202,10 +202,10 @@ When you structure your document, you can nest elements infinitely and put them 
 
 ## Pens
 
-* [Simple HTML elements: Find and fix all mistakes](https://codepen.io/redi-school/pen/VwGVVNJ)
+* [Simple HTML elements: Find and fix all mistakes](https://codepen.io/redi-school/pen/VwGVVNJ) ([Solution](https://codepen.io/redi-school/pen/xxaQoWz))
 * [Wheel of Fortune](https://codepen.io/redi-school/pen/VwGVqKw)
-* [Updating a simple blog page](https://codepen.io/redi-school/pen/ZEMmVmw)
-* [Comments](https://codepen.io/redi-school/pen/QWVJPjM)
+* [Updating a simple blog page](https://codepen.io/redi-school/pen/ZEMmVmw) ([Solution](https://codepen.io/redi-school/pen/mdGQNmP))
+* [Comments](https://codepen.io/redi-school/pen/QWVJPjM) ([Solution](https://codepen.io/redi-school/pen/rNZQXRg))
 
 Bonus Pens we didn't cover:
 * [Bold and italic text in one line](https://codepen.io/redi-school/pen/MWqzxdO)

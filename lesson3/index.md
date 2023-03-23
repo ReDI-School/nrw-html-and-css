@@ -1,81 +1,214 @@
 ---
-title: Lesson 3 - HTML Structure
+title: Lesson 3 - HTML Building Blocks
 nav_order: 3
 ---
 
-# HTML Structure
+# HTML Building Blocks
 
 ## Class Agenda
 
-1. HTML Structure
-2. Anatomy of an HTML element
-3. HTML Page Structure
+* Elements
+* Whitespace
+* Comments
+* Combining elements
+* Quiz
 
-## 1. HTML Structure
+## Elements
 
-"At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document". [[1](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)]
+HTML documents consist of a set of elements. In order to define elements and how they relate to each other, we mark up text content using tags.
 
-HTML is composed of elements. e.g a paragraph element looks like:
+### Anatomy of a typical HTML element
 
+A simple HTML element - in this case a paragraph - looks like this:
+
+```html
+  <p>Text contents</p>
 ```
-<p>Hello world!</p>
+
+#### Opening tag
+
+The part `<p>` is the **opening tag**. it gives the browser information about the element's type, in this case `p`, which represents a paragraph, surrounded by angle brackets (`<` and `>`). We also use the term "tag name" for `p` in this case. The browser will consider everything following the opening tag up to the point where it finds a closing tag (of the matching type/name) to be the element's content.
+
+#### Content
+
+The **content** of an element is everything between its opening and closing tag. The content can consist of text, other HTML elements or nothing at all. In our example, the content is `Text contents`.
+
+An empty element - in this case a table cell - could look like this:
+
+```html
+<td></td>
 ```
 
-## 2. Anatomy of an HTML element
+#### Closing tag
 
-- What is an HTML tag?
-- What is the opening tag?
-- What is the content?
-- What is the closing tag?
-- Do all elements contain a closing tag?
-- What is an Attribute?
-- What is a Semantic Tag?
-- What is an inline element and what is a block element? What is the [difference](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#block_versus_inline_elements) between them?
+Just like the opening tag, the **closing tag** also contains the type of the element. It is written with an additional `/`. In our first example, our closing tag is `</p>`, because our element is of the type `p`, representing a paragraph.
 
-## 3. HTML Page Structure
+#### Attributes
 
-- What is DOCTYPE tag?
-- What is the `<html>` tag?
-- What goes in the `<head>` tag?
-- What is the `<body>`?
-- What goes in the `<body>` tag?
-- What is the `<title>` tag
-- What is the common meta tag usage `<meta name="description">`, `<meta charset="">`.
+While closing tags always look the same, opening tags can contain extra information in the form of **attributes**.
 
-## 4. Browser DevTools
+```html
+<p class="my-class">Text contents</p>
+<a href="https://www.redi-school.org">To the ReDI Website</a>
+```
 
-If time allows it, we would look into browser code inspection via the dev tools. This is a useful way of debugging our html and css code. Therefore, we would need to know how to open the dev tools and work with the basic `Elements` tab of tools.
+You can put as many attributes into an opening tag as you like.
 
-# Exercise Description
+```html
+<a href="https://www.redi-school.org" class="featured-link" title="Click me!">To the ReDI Website</a>
+```
 
-- Open a webpage and look in the dev tools, and identify tags discussed above
+Some attributes don't even need a value, but are complete as a single word.
 
-# Glossary & Terminology
+```html
+<p hidden>The browser will not display this element.</p>
+```
 
-- `Block HTML Element` - A Block Element always starts on a new line and take up the entire width.
-- `Browser Viewport` - The browser viewport is the size of the rectangle that a web page fills on your screen
-- `Charset Encoding` - Character encoding is used to represent a repertoire of characters by some encoding system that assigns a number to each character for digital representation, you can read more about it [here](https://en.wikipedia.org/wiki/Character_encoding)
-- `Empty HTML Element` - An Empty HTML Element has no child or text content
-- `HTML Attribute` - An HTML attribute is used to change the behavior of an HTML element or to provide metadata for that element
-- `HTML Element` - An HTML element is the fundamental functional unit in an HTML document
-- `HTML Tag` - An HTML tag is a word/text surrounded by angle brackets, they are used to create HTML elements
-- `Inline HTML Element` - An Inline Element does not start on a new line and take up as much width as necessary
-- `Semantic HTML Element` - A Semantic HTML Element describes its meaning to both the browser and the developer. In other words, the html tag of a semantic element is very easy to understand by developers. For example, `<table>` is a semantic element that would create a table on the page.
+### Anatomy of a void element
 
----
+A void element is special type of element that must not contain anything. No text, no HTML elements. This is why a void element also **must not** have a closing tag.
 
-# Homework
+The following code inserts three different void elements:
 
-- Write a simple HTML file which contains the new things taught in class. Your file should have:
-  - A `DOCTYPE` tag
-  - An opening and closing `html` tag that wraps everything except the `DOCTYPE` tag
-  - An opening and closing `head` tag
-  - An opening and closing `title` tag inside your `head` tag
-  - An opening and closing `body` tag
-  - An opening and closing `h1` tag insdie your `body` tag
-  - An opening and closing `p` tag inside your `body` tag
+```html
+<hr>
+<br>
+<img src="dog.jpeg">
+```
 
-# Resources
+Never do this:
 
-- [MDN Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
-- [Semantic HTML Elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements)
+```html
+<hr></hr>
+<br></br>
+<img src="dog.jpeg"></img>
+```
+
+You might encounter void elements that contain a trailing `/`, e.g.
+
+```html
+<br />
+<hr/>
+```
+
+Some developers prefer to write void elements like this, so they're easier to recognize. In modern HTML, any opening tag can contain a trailing `/`, which will just be ignored by the browser.
+
+## Whitespace
+
+You might think that space characters, line breaks and tabs in HTML are displayed in an unexpected way. The following two code examples are equivalent:
+
+```html
+<p>HTML is so much fun!</p>
+```
+
+```html
+    <p   >       HTML   
+  is  so     
+
+        
+      much
+  fun!
+</p>
+```
+
+Generally, the browser will interpret every number of so-called **whitespace** characters (spaces, tabs or line breaks) as one single space character, as long as it's greater than 0.
+
+This is why whitespace is perfect for formatting, i.e. making our code more readable. Instead of just something like...
+
+```html
+<ul><li>Lorem</li><li>Ipsum</li><li>Dolor</li></ul>
+```
+
+...we can make our code nice and readable:
+
+```html
+<ul>
+  <li>Lorem</li>
+  <li>Ipsum</li>
+  <li>Dolor</li>
+</ul>
+```
+
+## Comments
+
+**Comments** are parts of the code that are always ignored by the browser. There are numerous reasons why you as a developer might want to use them, with the most common ones being:
+
+* Explaining your code to your future self or other developers
+* Increasing the readability of your code
+* Temporarily deactivating some of your code
+
+Comments are not HTML elements, although they look quite similar:
+
+```html
+<!-- This is a comment -->
+<p>This sentence contains five <!-- and not eight --> words</p>
+<p>This is one <!-- </p>
+<p> --> single paragraph</p>
+```
+
+## Combining elements
+
+Elements can't only contain text contents, but also other elements. Actually, every HTML page is just one single element (of the type `html`) that contains other elements. For now, we'll keep things simple and will concentrate on the visible parts of a document.
+
+When an element contains another element, the **child element** is **nested** within its **parent element**.
+
+```html
+<div><!-- opening tag of the parent element -->
+
+  Some text content of the parent element.
+
+  <div><!-- opening tag of the child element -->
+    Contents of the child element.
+  </div><!-- closing tag of the child element -->
+
+  More text content of the parent element.
+
+</div><!-- closing tag of the parent element -->
+```
+
+In this case, the content of the parent element consists of three lines of text (including the child element's content).
+
+When a child element is surrounded by a parent element, you could also say it is wrapped in it.
+
+When you structure your document, you can nest elements infinitely and put them next to each other almost any way you like.
+
+```html
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="home.html">
+          Home
+        </a>
+      <li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <!-- ... -->
+    </ul>
+  </nav>
+  <input type="text" placeholder="Search...">
+</header>
+<main>
+  <article><!-- ... --></article>
+  <article><!-- ... --></article>
+  <!-- ... -->
+</main>
+```
+
+## Pens
+
+* [Simple HTML elements: Find and fix all mistakes](https://codepen.io/redi-school/pen/VwGVVNJ)
+* [Wheel of Fortune](https://codepen.io/redi-school/pen/VwGVqKw)
+* [Updating a simple blog page](https://codepen.io/redi-school/pen/ZEMmVmw)
+* [Hi!](https://codepen.io/redi-school/pen/JjaexdX)
+* [Bold and italic text in one line](https://codepen.io/redi-school/pen/MWqzxdO)
+* [Comments](https://codepen.io/redi-school/pen/QWVJPjM)
+* [Line breaks - inline vs. block elements](https://codepen.io/redi-school/pen/oNPQOwN)
+
+## Quiz
+
+* [Quiz 1](https://create.kahoot.it/share/html-css-lesson-3-short-warm-up-quiz/fe0f52ca-e48b-42fe-aa46-bfd6e1963839)
+* [Quiz 2](https://create.kahoot.it/share/html-css-lesson-3-quiz-on-the-building-blocks-of-html/a432307c-be9b-472b-abc0-42d04751ffb2)

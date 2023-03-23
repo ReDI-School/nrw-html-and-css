@@ -19,9 +19,9 @@ In this course we will learn how websites are made and teach you how to build yo
 ## Teachers
 
 - [Syntia](https://github.com/sintijab)
-- [Flaco](https://github.com/flacozacarias)
-- [Elena](https://github.com/eporubin)
 - [Stephan](https://github.com/stephanLeece)
+- [Matthias](https://github.com/MattStaudinger)
 - [Matt](https://github.com/mdole)
 - [Flo](https://github.com/flobarndt)
-- [Matthias](https://github.com/MattStaudinger)
+- [Flaco](https://github.com/flacozacarias)
+- [Elena](https://github.com/eporubin)

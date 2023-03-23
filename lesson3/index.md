@@ -11,7 +11,9 @@ nav_order: 3
 * Whitespace
 * Comments
 * Combining elements
+* Pens
 * Quiz
+* Homework
 
 ## Elements
 
@@ -203,12 +205,21 @@ When you structure your document, you can nest elements infinitely and put them 
 * [Simple HTML elements: Find and fix all mistakes](https://codepen.io/redi-school/pen/VwGVVNJ)
 * [Wheel of Fortune](https://codepen.io/redi-school/pen/VwGVqKw)
 * [Updating a simple blog page](https://codepen.io/redi-school/pen/ZEMmVmw)
-* [Hi!](https://codepen.io/redi-school/pen/JjaexdX)
-* [Bold and italic text in one line](https://codepen.io/redi-school/pen/MWqzxdO)
 * [Comments](https://codepen.io/redi-school/pen/QWVJPjM)
+
+Bonus Pens we didn't cover:
+* [Bold and italic text in one line](https://codepen.io/redi-school/pen/MWqzxdO)
 * [Line breaks - inline vs. block elements](https://codepen.io/redi-school/pen/oNPQOwN)
 
 ## Quiz
 
-* [Quiz 1](https://create.kahoot.it/share/html-css-lesson-3-short-warm-up-quiz/fe0f52ca-e48b-42fe-aa46-bfd6e1963839)
-* [Quiz 2](https://create.kahoot.it/share/html-css-lesson-3-quiz-on-the-building-blocks-of-html/a432307c-be9b-472b-abc0-42d04751ffb2)
+* [Quiz 1](https://create.kahoot.it/share/html-css-lesson-3-short-warm-up-quiz/fe0f52ca-e48b-42fe-aa46-bfd6e1963839) / [live](https://kahoot.it/?pin=2630819&refer_method=link)
+* [Quiz 2](https://create.kahoot.it/share/html-css-lesson-3-quiz-on-the-building-blocks-of-html/a432307c-be9b-472b-abc0-42d04751ffb2) / [live](https://kahoot.it/?pin=9441788&refer_method=link)
+
+## Homework
+
+[You can find today's homework on CodePen: "Hi!"](https://codepen.io/redi-school/pen/JjaexdX)
+
+Assignment:
+1. Format the code, so you can get a better idea of its structure
+2. Try to display your initials (or two letters of your choice)

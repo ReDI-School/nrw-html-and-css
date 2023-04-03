@@ -1,95 +1,165 @@
 ---
-title: Lesson 4 - HTML Tags 1
+title: Lesson 4 - HTML Attributes & More Tags
 nav_order: 4
 ---
 
-# HTML Tags 1
+# HTML Attributes & More Tags
 
 ## Class Agenda
 
-The class must not have a strict separation of theory and exercise. Instead the whole class must be one big exercise with theory in between.
+- `<img>` and `<a>` elements
+- Common HTML attributes
+- Making tables with HTML
 
-At the end of the class students would need to have written their own HTML document
+# Images and Links
 
-1. Headings
-2. HTML paragraphs
-3. HTML text styling tags
-4. HTML Header and Footer
-5. Maintainable HTML
+Two of the most common HTML elements are the `<a></a>` element, used to create links between pages, and the `<img>` element, which is used to display images.
 
-# 1. Headings
+## The `<a>` element
 
-- What are the headings tags?
-- When do we use each heading and what are the differences between them?
+Every time we write HTML, we are creating a "page." https://developer.mozilla.org is a page. https://developer.mozilla.org/en-US/docs/Web/HTML is another page, and https://developer.mozilla.org/en-US/docs/Web/CSS is a third page.
 
-ETA: 20min
+A "link" between pages allows you to click and be taken to that page. In the previous paragraph, we reference https://developer.mozilla.org - but it's not a _link_, because you can't click on it. Here's a link that takes you to that site: [https://developer.mozilla.org](https://developer.mozilla.org).
 
-# 2. HTML paragraphs
+To construct a link, we need to know two things:
 
-Following the [HTML Paragraphs Tutorial on w3schools](https://www.w3schools.com/html/html_paragraphs.asp) we need to learn about:
+1. Where should the link take us when we click on it? This is called the _destination_.
+2. What should the text of the link say? This is the _content_ of the element.
 
-- What HTML `<p>` tag is?
-- How do we add line breaks `<br>` and thematic breaks `<hr>`? What are **Empty tags**?
-- What is the preformatted text tag `<pre>`
+For example, here's a link to that same site, but it says "Link to the Mozilla docs site" instead of "https://developer.mozilla.org":
 
-ETA: 30min
+[Link to the Mozilla docs site](https://developer.mozilla.org)
 
-# 3. HTML text styling tags
+Clicking the link takes you to the same place, but it says something different.
 
-This section covers basic HTML tags used for styling text. These tags include. Students should practice with a couple of these tags.
+To create a link, we have to use an **HTML attribute**.
 
+HTML attributes are added to the opening tag of an HTML element, and they modify the behavior of the element. The attribute we use to set the destination of the link is called `href`.
+
+Here's an example:
+
+<img width="500px" alt="Screenshot showing how a link works" src="link-breakdown.png" />
+
+By adding `href="https://developer.mozilla.org"` to the opening `<a>` tag, we set the destination of the link to be `https://developer.mozilla.org`. And by adding the text `Link to the Mozilla docs site` between the opening and closing `<a></a>` tags, we make the link say `Link to the Mozilla docs site`.
+
+If we did not add an `href` attribute to our link, it would not be a link! We would have no destination, so we could not click it. The `href` attribute is required to create a link.
+
+You can't add an `href` attribute to most other elements. For example, this does not create a link: `<p href="https://developer.mozilla.org">This is not a link!</p>`.
+
+Let's do another example of HTML attributes with `<img>` tags!
+
+## The `<img>` element
+
+Just like `<a>` elements, `<img>` elements require an HTML attribute to function.
+
+To display an image, we have to use the `src` attribute to set the _source_ of the image. In other words, we want to show an image - which image? Where does it come from?
+
+When we set the `src` attribute, we are saying, "display the image that is at this link."
+
+Here's an example:
+
+`<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg/2560px-M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg"
+/>`
+
+If you visit [https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/M%C3%BCnster%2C*Observantenkirche*--_2021_--_9112.jpg/2560px-M%C3%BCnster%2C_Observantenkirche_--_2021_--\_9112.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg/2560px-M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg), you will see a page with nothing but a single image.
+
+By setting our `src` attribute to that link, we display that image. **Note that it is only possible to use a link as a `src` if the link is for a page with nothing but an image!** For example, this will not work: `<img src="https://google.com">` because `https://google.com` is a page with lots of content, and not just an image on it.
+
+Note that images are _void elements_, as discussed in Lesson 3, which means they have no closing tag or contents. You simply create an `<img>` tag and add a `src` attribute to it, and you're done!
+
+### Finding images
+
+Here is how you can get a URL/link for an image to put in the `src` attribute:
+
+To get the link to the image, you can search for an image on Google and right-click on it. Then you can select "Copy image link" or "Open image in new tab." Here's an example:
+
+<img width="500px" alt="Screenshot showing how to copy an image URL" src="opening-image.png" />
+
+Note that depending on which browser you use, such as Chrome, Safari, Firefox, or Edge, the options in the menu may be slightly different.
+
+If you select "Open image in new tab," you should then copy the URL from the address bar in your browser by right-clicking and selecting "copy". Here's an example:
+
+<img width="500px" alt="Screenshot showing how to copy an image URL from the address bar" src="copying-url.png" />
+
+Either way, if you then use paste, you should see a URL like `https://media.nomadicmatt.com/maldivestop001.jpg`. You can put that in your src= attribute, and the image should appear.
+
+# Common HTML attributes
+
+`src` and `href` are two HTML attributes - what are some others?
+
+`class` and `id` are probably the two most widely-used HTML attributes. We're not going to talk about them yet because they are mostly used for CSS styling or JavaScript functionality.
+
+There are many other attributes ([here is a full list](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)), but those four are enough to create complex and beautiful websites. Memorize them and get lots of practice using them!
+
+```html
+<a href="https://google.com">Link to google</a>
+<img src="https://placekitten.com/200/300" />
+<div class="full-width-image-container">...</div>
+<div id="homepage-hero-carousel">...</div>
 ```
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Smaller text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
+
+# HTML Tables
+
+A table can be a helpful way to present information in _rows_ and _columns_, and creating them is good practice for using HTML nesting.
+
+To create a table, start with a `<table>` tag. _Inside_ that tag, you should then add `<tr>` (short for "table row") tags to create rows, a `<thead>` (short for "table header") to designate one of the rows as the header, `<th>` (also short for "table head") tags to create cells within your table header, and `<td>` (short for "table data") tags to create individual cells within your table.
+
+Here's an example:
+
+```html
+<table>
+  <caption>
+    Alien football stars
+  </caption>
+  <tr>
+    <th>Player</th>
+    <th>Gloobles</th>
+    <th>Za'taak</th>
+  </tr>
+  <tr>
+    <th>TR-7</th>
+    <td>7</td>
+    <td>4,569</td>
+  </tr>
+  <tr>
+    <th>Khiresh Odo</th>
+    <td>7</td>
+    <td>7,223</td>
+  </tr>
+  <tr>
+    <th>Mia Oolong</th>
+    <td>9</td>
+    <td>6,219</td>
+  </tr>
+</table>
+<!-- Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th -->
 ```
 
-ETA: 20min
+Which creates the following output:
 
-# 4. HTML Header and Footer
-
-We would introduce the semantic HTML tags `<header>` and `<footer>`.
-
-ETA: 10 min
-
-# 5. Maintainable HTML
-
-This section explains the importance of using comments. It also gives students a good understanding of why a coder / developer needs to help his future self by writing readable and maintainable code. Moreover, the section should teach students:
-
-- How to add HTML comments
-
-ETA: 10min
-
-# Exercise Description
-
-The exercise should be done along presenting all tags. If there is time at the end of the session, students can also fill in content of inside their website.
-
-# Glossary & Terminology
-
-- `Code Maintainability` - This is a characteristic of the code and specifies the level of ease with which a developer can make changes to the code in future. If your code has bad maintainability then it would be very difficult for you or other people to change parts of the code in future. Code with bad maintainability often leads to hidden bugs.
-- `Code Readability` - This is a characteristic of the code and specifies the level of ease with which a developer can read the code. If your code has bad readability then it would be very difficult for you and other people to understand what your code is doing.
-- `Empty tag` - An empty html tag is a tag which has no closing tag and no content. It simply stands on its own. Examples include, `<br>`, `<hr>`, `<meta>`
-
----
+<img width="300px" src="table-output.png" />
 
 # Homework
 
-1. Prepare a nice photo of yourself to be used in the CV Project in next class.
-2. Write more content inside of the different sections of your website.
-3. Feel free to personalize the content in any way you want. You can take the following examples as inspiration source:
+Write a recipe using HTML!
 
-- <https://www.sesanosanyinbi.com/>
-- <https://ethanmarcotte.com/>
-- <https://laurieontech.com/>
-- <https://rachelandrew.co.uk/>
+Do _not_ copy an existing CodePen and edit it. Instead, create a new one and get practice starting from scratch.
 
-# Resources
+Your recipe should include:
 
-- [HTML Paragraphs tutorial](https://www.w3schools.com/html/html_paragraphs.asp)
+- At least two headings (using `h1`, `h2`, `h3`, `h4`, `h5`, or `h6` tags)
+- A paragraph saying why you like the recipe (using `<p>`)
+- An unordered list of ingredients (using `<ul>` and `<li>`)
+- An ordered list of steps to follow (using `<ol>` and `<li>`)
+- An image of the food (using the `<img>` tag). You can follow the instructions in the [section on the img element](#the-img-element) to find an image to use
+- A link to someone else's version of the recipe (using `<a>`)
+
+Here is an image of what your recipe could look like:
+
+<img width="500px" alt="Image of a recipe page for Flaco's scrambled eggs" src="scrambled-eggs.png" />
+
+## Optional extra homework
+
+If you want more practice with HTML tables, complete this exercise:
+
+[https://codepen.io/redi-school/pen/WNgVQoE](https://codepen.io/redi-school/pen/WNgVQoE)

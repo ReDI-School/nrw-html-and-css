@@ -1,143 +1,267 @@
 ---
-title: Lesson 6 - Introduction to CSS
+title: Lesson 6 - Using CSS Selectors
 nav_order: 6
 ---
 
-# Introduction to CSS
+# Using CSS Selectors
 
 ## Class Agenda
 
-1. Recap of HTML tags & attributes
-2. 40 minutes: Create a new HTML file that uses all of the tags listed in the recap & ask questions
-3. Write our first CSS styles
+- Units of measurement in HTML & CSS
+- CSS class and ID selectors
+- Selector lists
+- Chaining CSS selectors
 
-## 1. Recap: HTML tags & attributes
+## Units of Measurement in HTML & CSS
 
-### HTML tags
+We measure most distances in centimeters, or cm. On a computer, the most common unit for measuring distances is _pixels_, or px.
 
-- `<html></html>`
-- `<head></head>`
-- `<body></body>`
-- `<h1></h1>, <h2></h2>...<h6></h6>`
-- `<p></p>`
-- `<div></div>`
-- `<ol></ol>, <ul></ul>, <li></li>`
-- `<img />`
-- `<a></a>`
-- …lots more!
+You have already used this a few times, such as setting an image to have `width: 400px;`. You can set the size of text this way as well, such as `font-size: 20px;`.
 
-### HTML attributes
+Another common way to resize elements using CSS is with _percentage sizing_ with the `%` symbol. This is most common when setting the width of elements.
 
-- Always inside the opening tag
-- Modifies the behavior of the element
-- Format: `attributename="attribute-value"`
-- Examples:
-  - `<a href="https://google.com">Link to google</a>`
-  - `<img src="https://placekitten.com/200/300" />`
-  - `<div hidden="true">I'm invisible!</div>`
-  - `<div class="full-width-image-container">...</div>`
-  - `<div id="homepage-hero-carousel">...</div>`
+Elements sized with a percent are sized _relative to their parent elements_. For example, if you have a box that is `400px` wide and you place an image in it, and you set the image width to be `50%`, the image will be `200px` wide.
 
-## 2. CSS Basics
-
-To use CSS to style your HTML, always follow four steps:
-
-1. _Create_ a .css file
-1. _Connect_ your .css file to your .html file
-1. _Select_ elements
-1. _Apply_ styles to those elements
-
-### Creating a CSS file
-
-The same way you have created .html files, create a new file called style.css.
-
-Make sure it is in the same folder as your .html file!
-
-### Connecting your CSS to your HTML
-
-Inside your .html file's `<head></head>` tag, add a new `<link />` tag:
+Here is the HTML for that example:
 
 ```html
-<head>
-  <link href="style.css" rel="stylesheet" />
-</head>
+<div>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg/2560px-M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg"
+  />
+</div>
 ```
 
-### Selecting HTML elements
-
-- We use CSS selectors to determine which HTML elements a style should apply to
-- There are many different types of CSS selectors. The ones we'll focus on today are elements (like `p`, `h1`, `div`, etc.), class name, and ID
-- The syntax of CSS is:
+And here is the CSS:
 
 ```css
-your-selector-goes-here {
-  property-name: property-value;
+div {
+  width: 400px;
+}
+
+img {
+  width: 50%;
 }
 ```
 
-- Example with element selector:
+There are several other CSS units that you may see and use (see the [Resources](#resources) section below for more), but these two are the most common. You can create complex and beautiful layouts just using `px` and `%`!
+
+## CSS Class and ID selectors
+
+Last class, we learned the _CSS type selector_ (also called the _element selector_). Here's an example:
 
 ```css
 h1 {
+  font-family: Arial;
+  color: powderblue;
+  font-size: 40px;
 }
 ```
 
-- Example with class selector:
+This CSS code means: "All h1 elements on the page should have the font family `Arial`, the color `powderblue`, and the size 40 pixels."
+
+That's great if we want a style to apply to every element of that type on our page. But what if we only want some elements of a specific type to have a certain style?
+
+For example, take this HTML:
+
+```html
+<h1>I want this heading to be red!</h1>
+<h1>And I want this heading to be blue!</h1>
+```
+
+If I write the following CSS:
 
 ```css
-.red-text {
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
 }
 ```
 
-- Example with ID selector:
+Both of my headings will now be blue! This is because when there are two conflicting styles, the one lower down in the CSS will always win. In other words, because `color: blue` comes after `color: red`, the color will always be blue.
+
+To make our two headings different colors, we need to use a different selector. Let's try the _CSS class selector_.
+
+### Class selectors
+
+Up until now, we've used the _type selector_, which selects ALL elements of a specific type (`h1`, `p`, `img`, etc.). A _class selector_ selects _all elements with a specific class attribute_.
+
+Here's an example:
+
+```html
+<h1 class="red-heading">I want this heading to be red!</h1>
+<h1 class="blue-heading">And I want this heading to be blue!</h1>
+```
 
 ```css
-#red-header {
+.red-heading {
+  color: red;
+}
+
+.blue-heading {
+  color: blue;
 }
 ```
 
-### Applying styles to the selected elements
+In our HTML, we have now set `class` attributes on both of our elements. Remember that `class` is a _global attribute_, which means it can be set on any element.
 
-- First you write the property you want to change, then a colon (`:`), then the value you want it to have, then a semicolon (`;`)
+In our CSS, we have then used a `.` and the name of the class we want to style. The `.` indicates that we are using a class selector.
+
+A class selector can have any name - the only thing required for it to work is that the name must match in the CSS and HTML.
+
+For example, take this code:
+
+```html
+<h1 class="asb0180g">I want this heading to be red!</h1>
+<h1 class="yellow-chair">And I want this heading to be blue!</h1>
+```
 
 ```css
-.red-header {
+.asb0180g {
+  color: red;
+}
+
+.yellow-chair {
+  color: blue;
+}
+```
+
+This code works _exactly the same_ as our previous code. Again, we set a `class` attribute in our HTML, and then we use a class selector to style those elements. The name of the class does not matter, as long as it matches in the HTML and CSS!
+
+### ID selectors
+
+ID selectors work exactly the same as `class` selectors, but using the `id` attribute and the `#` symbol instead of a `.`:
+
+```html
+<h1 id="red-heading">I want this heading to be red!</h1>
+<h1 id="blue-heading">And I want this heading to be blue!</h1>
+```
+
+```css
+#red-heading {
+  color: red;
+}
+
+#blue-heading {
+  color: blue;
+}
+```
+
+Just like with `class` selectors, our `id` selectors have to match the value in our `id` attribute in the HTML. The values can be anything, as long as they match.
+
+```html
+<h1 class="kjng0923jg">I want this heading to be red!</h1>
+<h1 class="chocolate-cake">And I want this heading to be blue!</h1>
+```
+
+```css
+#kjng0923jg {
+  color: red;
+}
+
+#chocolate-cake {
+  color: blue;
+}
+```
+
+### Class vs. ID selectors
+
+When should you use a class selector and when should you use an ID selector?
+
+Most of the time, you'll use a `class` attribute and the class selector (with `.`).
+
+That's because there are two important differences between the `class=""` attribute and the `id=""` attribute.
+
+First, you _cannot have more than one element with a specific ID attribute_ on your page! But it is perfectly acceptable to have multiple elements with the same class attribute in your HTML.
+
+Second, one element can have multiple classes by separating them with a space, but an element can _not_ have more than one ID.
+
+This is fine:
+
+```html
+<h1 class="red-heading large-text">
+  I want this heading to be red and have large text!
+</h1>
+<h1 class="red-heading">Another red heading!</h1>
+<h1 class="blue-heading">And I want this heading to be blue!</h1>
+<h1 class="blue-heading full-width">
+  This one too! And I want it to be extra wide!
+</h1>
+<h1 class="red-heading">Back to red!</h1>
+<h1 class="blue-heading">Back to blue!</h1>
+```
+
+Do **not** do this, it is not valid HTML because two elements have the same `id` attribute:
+
+```html
+<!-- Don't do this! -->
+<h1 id="red-heading">I want this heading to be red!</h1>
+<h1 id="red-heading">I should have used a class instead...</h1>
+<h1 id="blue-heading small-text">I should have used a class instead...</h1>
+<!-- Don't do this! -->
+```
+
+It is very useful to be able to have multiple elements with the same `class` attribute. That way, you can apply the same style to a whole group of elements at the same time!
+
+And adding multiple classes to an element means you can make your classes composable, meaning you can combine several classes to achieve a desired result (such as having separate `red-heading` and `large-text` classes, one of which sets a color and one of which sets a font-size).
+
+So what is the point of IDs if they are not reusable?
+
+Well, they are often used for Javascript or for linking to a specific part of a page. And sometimes they are useful for applying CSS styles as well, especially when chaining selectors. More on that topic in following lessons!
+
+## Exercise 1
+
+Fork this CodePen and follow the instructions to add styles using class and ID selectors: [https://codepen.io/redi-school/pen/poOMMJx](https://codepen.io/redi-school/pen/poOMMJx)
+
+## Selector lists
+
+It's possible to put a comma between CSS selectors and apply the same style to all elements matching those selectors.
+
+```html
+<h1 class="red-text">I want this heading to be red!</h1>
+<p>
+  This is a paragraph. I want it to be the same color as the heading. In fact, I
+  want ALL of my paragraphs to be the same color as my heading!
+</p>
+```
+
+```css
+.red-text,
+p {
   color: red;
 }
 ```
 
-- In this case, we have:
-  - Selected all elements with `class="red-header"`
-  - Chosen the `color` property
-  - Set the `color` property to be `red`
+In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
 
-# Exercise Description
+## Exercise 2
 
-1. _Create_ a .css file
-1. _Connect_ your .css file to your .html file
-1. _Select_ elements
-1. _Apply_ styles to those elements
+Create your own personal biography page!
 
-# Glossary & Terminology
+20 minutes: write as much HTML as possible. Try to use multiple different headings, multiple paragraphs (you can use lorem\*5 to quickly fill with placeholder text), lists, and images
 
-- CSS Selector: A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. More on this [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#what_is_a_selector).
+20 minutes: add CSS styles to your page. Try to use everything we learned today!
 
-# Homework
+## Homework
 
-1. Create new HTML and CSS files
-1. Link them together
-1. Visit this page: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page
-1. Copy the CSS from the interactive editor (bottom of page) into your .css file
-1. Copy the HTML from the interactive editor into your .html file
-1. Update the CSS until your page looks like the image below
+Keep adding to your personal biography page until it has all of the following elements, attributes, selectors, and styles:
 
-<img width="400px" alt="Scrennshot of what your page should look like at the end" src="final-product.png" />
+- HTML elements: h1, h2, h3, p, img, ul, ol, li, a
+- HTML attributes: class, id, src, href
+- CSS selectors: type (h1, h2, p, etc.), class (`.`), id (`#`), selector list (like `h1, 2 {...}`)
+- CSS styles: color, font-size, font-family, background-color, border, padding, margin
 
-# Resources
+If part of this feels repetitive, that's because it is! Repetition helps us remember material and get faster at accessing it in our brains :)
 
-- [How to add CSS to HTML](https://www.w3schools.com/css/css_howto.asp)
-- [CSS selectors](https://www.w3schools.com/css/css_selectors.asp)
+Optional extra: try [CSS diner](https://flukeout.github.io). See if you can complete the first 12 levels!
 
-# Slides
+## Resources
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSu5nyjXiuL95InwXE2ut10Jnu9zqT9bFwmJYpjPI9ihblyIxFC48qr84iioeAYAZuNlkPDOZk1giOH/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+- [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+
+## Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS0VToNnFnH84r4nPbK9UBO7wOnI5hXH50JIe9IXa160FzQ7s2_JneBBSqYoNI-S8QN_6ZRZs2VnBII/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

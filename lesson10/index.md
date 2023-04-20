@@ -43,12 +43,14 @@ With flexbox, you can align elements horizontally and vertically. Unlike floats,
 
 ## [Example](https://codepen.io/redi-school/pen/eYPJzRY)
 
-# Exercises
+## Exercises
 
 1. Practice using Flexbox with this [codepen](https://codepen.io/redi-school/pen/jOeWrvj)
 2. [Flexbox Froggy](https://flexboxfroggy.com/)
 
-# Homework
+## [Quiz](https://create.kahoot.it/creator/aee4f0bd-34b4-451d-ae52-c6f7d1563dd8)
+
+## Homework
 
 Finish the above exercises, otherwise try and implement Flexbox into your project websites.
 

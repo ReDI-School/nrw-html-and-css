@@ -41,15 +41,16 @@ With flexbox, you can align elements horizontally and vertically. Unlike floats,
   - flex-basis
   - order
 
-# Exercise Description
+## [Example](https://codepen.io/redi-school/pen/eYPJzRY)
 
-1. Use Flexbox instead of float to style the navigation bar on the portfolio in [this CodeSandbox](https://codesandbox.io/s/flex1-vkyi2)
-2. Use Flexbox to style the HTML form provided in [this CodeSandbox](https://codesandbox.io/s/flexbox2-ymdfj?file=/index.html) (see attached image for expected result)
-3. Style the Flexbox Pricing Grid in [this CodeSandbox](https://codesandbox.io/s/flexbox3-w8vqk) (see attached image for expected look)
+# Exercises
+
+1. Practice using Flexbox with this [codepen](https://codepen.io/redi-school/pen/jOeWrvj)
+2. [Flexbox Froggy](https://flexboxfroggy.com/)
 
 # Homework
 
-TKTK
+Finish the above exercises, otherwise try and implement Flexbox into your project websites.
 
 # Glossary
 

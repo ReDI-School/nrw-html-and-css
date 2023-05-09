@@ -3,6 +3,10 @@ title: Lesson 13 - Selectors, Cascade, Specificity and Inheritance
 nav_order: 13
 ---
 
+# Heads up!
+
+In Spring 2023, lesson 13 was the mid-semester celebration, and this material was spread around to other lessons. Leaving it here for now in case you find it helpful!
+
 # Cascade, Specificity, Inheritance, and Advanced Selectors
 
 In this class, we want to improve our understanding of how CSS applies the styles we write on the HTML elements.

@@ -1,138 +1,81 @@
 ---
-title: Lesson 16 - CSS Animations & Transitions
+title: Lesson 16 - CSS Positioning
 nav_order: 16
 ---
 
-# CSS Animations & Transitions
+# CSS Positioning
 
-## Agenda
+## Class Agenda
 
-1. Introduction
-1. Animations
-1. Transitions
-1. Transform
+1. Introduction to Positioning
+2. Static Positioning
+3. Relative Positioning
+4. Absolute Positioning
+5. Z-Index
+6. Fixed Positioning
+7. Sticky Positioning
 
-## 1. Introduction
+# 1. Introduction to Positioning
 
-An animation lets an element gradually change from one style to another.
-You can create nice animations with CSS on properties such as color, background-color, height, or width.
-See full list of [Animatable properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
-In this lesson, we cover a few CSS properties to achieve animations.
+The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
 
-## 2. Animations
+ETA: 5-10min
 
-The first type of animation we describe below is one that starts immediately when the page loads even without user interaction.
-To create this, we need to know about the `animation` property (plus other related properties) and the `@keyframes` rule.
+# 2. Static Positioning
 
-- `animation-name`: Specifies the name of the `@keyframes` rule describing the animation.
-- `animation-duration`: Sets the length of time that the animation should take.
-- `animation-delay`: Sets a time before the animation starts
-- `animation-iteration-count`: Sets the number of times the animation should run
-- `animation-timing-function`: Configures the timing or speed of the animation.
+This is the default positioning which HTML elements are using.
 
-Each keyframe rule defines what should happen at specific moments during the animation.
-For example, 0% is the start and 100% is the end,
+ETA: 5min
 
-```css
-.element {
-  height: 200px;
-  /* animation-name must match @keyframes value */
-  animation-name: pulse;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
+# 3. Relative Positioning
 
-/* @keyframes <animation-name> with <percentage> steps */
-@keyframes pulse {
-  0% {
-    background-color: #001f3f;
-  }
-  40% {
-    background-color: #0e1;
-  }
-  100% {
-    background-color: #ff4136;
-  }
-}
-```
+Relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
 
-You can also use keywords `from` and `to` with @keyframes.
+ETA: 15min
 
-```css
-h1 {
-  font-size: 20px;
-  animation-name: size-increase;
-  animation-duration: 5s;
-}
+# 4. Absolute Positioning
 
-@keyframes size-increase {
-  from {
-    font-size: 20px;
-  }
-  to {
-    font-size: 80px;
-  }
-}
-```
+Absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
 
-## 3. Transitions
+- What is absolute positioning?
+- Where is it used?
+- How is the absolute positioning determined?
+- What are the positioning contexts?
 
-Transitions are typically applied when a user interacts with an element (e.g when a user hovers or clicks on an element).
+ETA: 40min
 
-- `transition-property`: used to define what property, or properties, you want to apply a transition effect to. You can also use the keyword `all` to transition all properties possible to transition on the element.
-- `transition-duration`: used to define the duration of a specified transition.
-- `transition-delay`: used to define a length of time to delay the start of a transition
-- `transition-timing-function`: used to define a function that describes how a transition will proceed over its duration
+# 5. Z-Index
 
-```css
-div {
-  transition: all 0.5s ease;
-  background: red;
-  padding: 10px;
-}
+An important aspect to CSS positioning is the concept of overlapping. We need to answer the question of would would happen when to elements overlap each other because of the special positioning? This section covers the CSS `z-index` rule.
 
-div:hover {
-  background: green;
-  padding: 20px;
-}
-```
+ETA: 10min
 
-## 4. Transform
+# 6. Fixed Positioning
 
-The `transform` property is usually used alongside animations. It allows you to visually manipulate an element by skewing, rotating, translating, or scaling. You can set transform on an element without animations e.g
+Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars
 
-```css
-div {
-  width: 20px;
-  height: 20px;
-  transform: scale(20);
-}
-```
+ETA: 20min
 
-but works well with transitions and animations e.g
+# 7. Sticky Positioning
 
-```css
-a {
-  font-size: 2em;
-  transition: transform 0.3s ease-out;
-  display: inline-block;
-}
+This positioning type is a combination between relative positioning and fixed positioning. We cover it in details during the class. Moreover, we would also cover the [differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning with practical examples
 
-a:hover {
-  /* this lifts up the link on hover */
-  transform: translate(0, -5px);
-}
-```
+ETA: 10min
 
 # Glossary & Terminology
 
-- `Animatable CSS properties` - List of CSS properties can be animated using CSS Animations or CSS Transitions. More info [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
+- `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
+- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+
+---
 
 # Homework
 
-1. Learn how to use the shorthand `animation` and `transition` properties. See resources below.
+TKTK
 
 # Resources
 
-- [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
-- [Transition property](https://css-tricks.com/almanac/properties/t/transition/)
+- [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
+- [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+- [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
+- [W3S CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)

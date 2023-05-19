@@ -5,77 +5,54 @@ nav_order: 16
 
 # CSS Positioning
 
-## Class Agenda
+## Introduction
 
-1. Introduction to Positioning
-2. Static Positioning
-3. Relative Positioning
-4. Absolute Positioning
-5. Z-Index
-6. Fixed Positioning
-7. Sticky Positioning
+The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values.
 
-# 1. Introduction to Positioning
+position: static - This is the default positioning which HTML elements are using.
 
-The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values. This section also covers use cases for the use of different CSS Positioning values.
+position: relative - takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`.
 
-ETA: 5-10min
+position: absolute - places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behavior based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type.
 
-# 2. Static Positioning
+position: fixed - fixes an element relative to the visible viewport.
 
-This is the default positioning which HTML elements are using.
+position: sticky - This positioning type is a combination between relative positioning and fixed positioning. [Differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning.
 
-ETA: 5min
+## Syntax
 
-# 3. Relative Positioning
+```css
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+```
 
-Relative positioning is a one which takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`. This section covers this topic with more practical examples.
+## Exercise
 
-ETA: 15min
+[Codepen](https://codepen.io/eporubin/pen/XWxBgPp)
 
-# 4. Absolute Positioning
-
-Absolute positioning places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behaviour based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type. This positioning type requires a careful explanation and analysis which would be done in class, which covers following points:
-
-- What is absolute positioning?
-- Where is it used?
-- How is the absolute positioning determined?
-- What are the positioning contexts?
-
-ETA: 40min
-
-# 5. Z-Index
-
-An important aspect to CSS positioning is the concept of overlapping. We need to answer the question of would would happen when to elements overlap each other because of the special positioning? This section covers the CSS `z-index` rule.
-
-ETA: 10min
-
-# 6. Fixed Positioning
-
-Fixed positioning fixes an element relative to the visible viewport. This section teaches this in details and shows practical examples of how we can use fixed positioning to create fixed navigation bars
-
-ETA: 20min
-
-# 7. Sticky Positioning
-
-This positioning type is a combination between relative positioning and fixed positioning. We cover it in details during the class. Moreover, we would also cover the [differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning with practical examples
-
-ETA: 10min
-
-# Glossary & Terminology
+## Glossary & Terminology
 
 - `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
+
 - `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
 ---
 
-# Homework
+## Homework
 
-TKTK
+[Codepen](https://codepen.io/eporubin/pen/BaqPZbg)
 
-# Resources
+## Resources
 
-- [Difference between fixed and sticky positioning?](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
-- [MDN CSS Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
-- [Positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
-- [W3S CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)
+- [Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
+- [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+- [fixed vs sticky](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What%27s%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
+- [w3 schools - positioning](https://www.w3schools.com/css/css_positioning.asp)
+
+## Slides
+
+<iframe src="https://docs.google.com/presentation/d/159gqnSTK9KfKxATmxguJBAHM-4Qb3lqR/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

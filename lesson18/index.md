@@ -9,7 +9,7 @@ Every student who enters the class should bring their implementation of their ow
 
 ## Agenda
 
-1. Reach [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18/checkpoint)
+1. Reach [Checkpoint 17]([https://github.com/ReDI-School/nrw-html-and-css-2021-fall/tree/checkpoint18/checkpoint](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint17/checkpoint))
 1. Do extra exercises
 
 ## 1. Reach Checkpoint 17

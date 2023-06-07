@@ -183,6 +183,10 @@ a:hover {
 
 Finish the exercises for CSS Transitions and CSS Animations
 
+# Slides
+
+[The slides of the course](https://docs.google.com/presentation/d/1PWFMZvMdZsPoXnNrIQFNV_KB3imKB2qPSfrmZBZBvZk)
+
 # Resources
 
 - [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)

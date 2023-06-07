@@ -181,15 +181,16 @@ a:hover {
 
 # Homework
 
-Finish the exercises for CSS Transitions and CSS Animations
+Finish the exercises for CSS Transitions and CSS Animations and continue working on your final project.
 
-# Slides
 
-[The slides of the course](https://docs.google.com/presentation/d/1PWFMZvMdZsPoXnNrIQFNV_KB3imKB2qPSfrmZBZBvZk)
 
 # Resources
 
+- [The slides of the course](https://docs.google.com/presentation/d/1PWFMZvMdZsPoXnNrIQFNV_KB3imKB2qPSfrmZBZBvZk)
 - [Animation on MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 - [Transition property](https://css-tricks.com/almanac/properties/t/transition/)
 - `Animatable CSS properties` - List of CSS properties can be animated using CSS Animations or CSS Transitions. More info [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
 - [Difference between CSS Animations and CSS Transitions](https://blog.hubspot.com/website/css-transition-vs-animation )
+- [Solution CSS Transitions Exercise](https://codepen.io/redi-school/pen/yLRWyKj)
+- [Solution CSS Animations Exercise](https://codepen.io/redi-school/pen/NWEKgaB)

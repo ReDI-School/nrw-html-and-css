@@ -71,6 +71,11 @@ For #1 - 4, see the slides linked below (there's additional info in the speaker 
 - `,` (Name: comma)
 - `#` (Name: pound sign, hashtag)
 - `%` (Name: percent sign)
+- `*` (Name: asterisk, star)
+- `~` (Name: tilde, squiggly)
+- `[` (Name: left square bracket)
+- `]` (Name: right square bracket)
+- `?` (Name: question mark)
 
 # Homework
 

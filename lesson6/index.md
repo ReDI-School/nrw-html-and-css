@@ -7,44 +7,10 @@ nav_order: 6
 
 ## Class Agenda
 
-- Units of measurement in HTML & CSS
 - CSS class and ID selectors
 - Selector lists
 - Chaining CSS selectors
-
-## Units of Measurement in HTML & CSS
-
-We measure most distances in centimeters, or cm. On a computer, the most common unit for measuring distances is _pixels_, or px.
-
-You have already used this a few times, such as setting an image to have `width: 400px;`. You can set the size of text this way as well, such as `font-size: 20px;`.
-
-Another common way to resize elements using CSS is with _percentage sizing_ with the `%` symbol. This is most common when setting the width of elements.
-
-Elements sized with a percent are sized _relative to their parent elements_. For example, if you have a box that is `400px` wide and you place an image in it, and you set the image width to be `50%`, the image will be `200px` wide.
-
-Here is the HTML for that example:
-
-```html
-<div>
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg/2560px-M%C3%BCnster%2C_Observantenkirche_--_2021_--_9112.jpg"
-  />
-</div>
-```
-
-And here is the CSS:
-
-```css
-div {
-  width: 400px;
-}
-
-img {
-  width: 50%;
-}
-```
-
-There are several other CSS units that you may see and use (see the [Resources](#resources) section below for more), but these two are the most common. You can create complex and beautiful layouts just using `px` and `%`!
+- CSS Descendant, Child and General selector
 
 ## CSS Class and ID selectors
 
@@ -237,6 +203,12 @@ p {
 
 In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
 
+## CSS Descendant, Child and General selector
+
+This section will teach how to match descendant elements by using the CSS Descendant Selector.
+
+ETA: 10mins
+
 ## Exercise 2
 
 Create your own personal biography page!
@@ -258,9 +230,15 @@ If part of this feels repetitive, that's because it is! Repetition helps us reme
 
 Optional extra: try [CSS diner](https://flukeout.github.io). See if you can complete the first 12 levels!
 
+# Glossary & Terminology
+
+- `Ancestor Element` - An ancestor refers to any element that is connected to another element in the HTML Tree but is placed further up the document tree - no matter how many levels higher. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
+- `Descendant Element` - A descendant refers to any element that is connected to another element in the HTML Tree but is placed lower down the document tree - no matter how many levels lower. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
+
 ## Resources
 
 - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+- [CSS Descendant Selector](https://www.w3schools.com/css/css_combinators.asp)
 
 ## Slides
 

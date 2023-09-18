@@ -1,5 +1,5 @@
 ---
-title: Lesson 2 - Introduction to HTML
+title: Lesson 2 - Website Structure & Introduction to HTML
 nav_order: 2
 ---
 
@@ -8,8 +8,10 @@ nav_order: 2
 ## _Class Agenda_
 
 1. Introduction to web browsers
+1. The structure of a website
 1. Introduction to HTML
-1. Exercise: creating a list of website elements
+1. Exercise: website analysis
+1. Helpful terms to know / Terminology
 
 ## 1. Introduction to web browsers
 
@@ -23,7 +25,25 @@ How did the first website look like? [http://info.cern.ch/](http://info.cern.ch/
 
 ETA: ~15min
 
-## 2. Introduction to HTML
+## 2. The structure of a website
+
+Most websites share common structural elements. This makes it easy for people to use new websites quickly, as they have already learned what to expect.
+
+Most websites have a "homepage." This is where you might begin when you browse content on the website. For example, the homepage of ReDI is [https://www.redi-school.org/](https://www.redi-school.org/). From there, you can _navigate_ (change pages) to several other pages by clicking _links_.
+
+Almost all websites feature some text. This text is usually broken up into sections with _headers_ (large/bold text) and _paragraphs_ (multiple setences) or _lists_.
+
+Text is often set in several different sizes on a single page to make it easy for users to quickly view and understand. A user can usually make sense of what a section will be about simply by reading the heading.
+
+Most websites also have a _navigation bar_ or _navbar_. This is a collection of links to other pages, often at the very top of the page. This makes it easy to go from one page to another. The section at the top of the page, which often includes a navbar, is called a _header_.
+
+Websites have space between different pieces of content. This makes pages easier to read and nicer to look at. There's no real reason content needs to be spaced apart besides that our brains like it.
+
+Most websites also have a _footer_ at the bottom. Footers usually have a few important or legally required links in them and not much else.
+
+Many websites feature images, such as photos or drawings. These images are often grouped together with text. That text might describe the image, or the image could lend feeling to the text.
+
+## 3. Introduction to HTML
 
 This section covers the introduction to HTML and should give understanding of basic questions such as:
 
@@ -35,20 +55,9 @@ This section covers the introduction to HTML and should give understanding of ba
 
 ETA: ~40min
 
-This section will also cover how to start working with HTML:
-- How does HTML work?
-- Basic elements of HTML
-
-
-Moreover, this section mentions basic HTML characteristics. HTML is an `easy-to-use` `markup language` that is `platform independent` and can be integrated with other web languages such as `CSS` and `JavaScript`.
-
-A good linker between sections 1. and 2. is the question `What cannot be done by HTML`?
-
-ETA: ~20min
-
 Break: ~5min
 
-## Exercise: website analysis
+## 4. Exercise: website analysis
 
 All websites have structure - but we often don't think about it! Common website features:
 
@@ -57,43 +66,36 @@ All websites have structure - but we often don't think about it! Common website 
 - Tabs
 - Blocks with image + text together (like an item and its name on an online shopping page, or an article headline and image on a news site)
 
-An example of HTML with this structure is [Mozilla Docs](https://developer.mozilla.org/en-US/) or [Redi School website](https://www.redi-school.org/)
-
-ETA: ~10min
-### Working in groups: inspect HTML and list basic elements
-1. By working in groups or individually, visit any website (e.g. [Mozilla Docs](https://developer.mozilla.org/en-US/) or [Redi School website](https://www.redi-school.org/)) and inspect what elements the web page consist of.
-1. Create a file in Codepen and write down what elements web page consist of in HTML [unordered list <ul>](https://www.w3schools.com/tags/tag_ul.asp) tags.
-1. Pay attention to patterns - what is similar with the sites you visit? What is different?
+1. Work with your team, pick out a website and list as many different elements and groups of elements as you can (navigation bar, link, large/medium/small heading, paragraph, image...). Navigate to many different pages and find more patterns!
+1. Create a file in Codepen and write down those elements and groups of elements, using an [unordered list `<ul>`](https://www.w3schools.com/tags/tag_ul.asp) and [list item `<li>`](https://www.w3schools.com/tags/tag_li.asp) tags.
 
 ETA: ~30min
-# Glossary & Terminology
 
-- `Browser compatibility` - Browser compatibility is the ability of a certain website to work on different browser types and versions. In other words, when asking the following question, for example: "_Is this CSS rule compatible with Internet Explorer 9?_" we want to know whether the CSS rule will work on the Internet Explorer 9 browser
-- `Cascading` - The term _"cascading"_ in the context of CSS describes the process of combining several style sheets and resolving conflicts between them.
-- `CSS` - Cascading Style Sheets is a language for styling web pages.
-- `Programming language` - A Programming language is language to create a certain software program. Any software program is followed by certain instructions, for instance- receive input data and compute some output.
-- `JavaScript` is the programming language of the Web to create a dynamic web applications.
-- `Dynamic web page` - A dynamic page is a web page that can change its content and display it dynamically based on conditional rules. 
-- `Static web page` - is a web page created with HTML language with a purpose to present structured data on web. A static web page always remains the same based on its structure.
-- `HTML` - is a markup language for creating web pages. Word HTML is an acronym for Hyper Text Markup Language.
-- `Markup language` - A Markup language is a simple human-readable language which is used to make the so-called "notes" to the computer program (e.g. the browser)
-- `Hyper Text` - Hyper text is a special text that just forms a link, that allows a user to click on it and get redirected to a new page referenced by that link.
-- `Specification` - A specification is a collection of rules and requirements that form a certain technical standard. For example, W3C maintains the specification of HTML. In other words, W3C defines how HTML looks like and what its rules are.
-- `W3C` - W3C stands for World Wide Web Consortium, which is the main international standards organization for the World Wide Web. It maintains HTML and CSS specification (i.e. rules)
-- `W3Schools` - W3Schools is another useful website which provides documentation for HTML and CSS
-- `MDN` Web Docs - MDN stands for Mozilla Developer Network. The MDN Web Docs is a website which provides information and documentation about Open Web technologies such as HTML and CSS.
+## 5. Helpful terms to know / Terminology
 
----
+- **Page/webpage**: a single hypertext document
+- **URL/address**: think of it like a physical address - it's how you travel to a specific web page. It consists of a domain followed by a path (there's some other stuff too like `https://` which you need at the front. We won't go into it now, but you can research on your own if you like!)
+- **Domain**: the root "name" of a website, such as redi-school.org, wikipedia.org, google.com, etc. https://www.redi-school.org/course-finder and https://www.redi-school.org/redi-school-berlin are URLs/addresses that share the redi-school.org domain
+- **Path**: the root "name" of a website, such as redi-school.org, wikipedia.org, google.com, etc. https://www.redi-school.org/course-finder and https://www.redi-school.org/redi-school-berlin are URLs/addresses that share the redi-school.org domain
+- **Navigate**: travel from one web page to another by clicking a link or typing a URL in the address bar
+- **Website**: a collection of web pages on the same domain
+- **Navigation bar (browser)**: the part of the browser you use to navigate the web. Includes the address bar and forward/back buttons
+- **Address bar**: the part of the browser you use to type in a URL so you can navigate to it
+- **Navigation bar (HTML)**: part of a webpage used to navigate within the website. Usually includes several links to important pages within a site
+- **Page header**: the top part of the page, usually including a navigation bar
+- **Text header**: large text, used to declare the content of a section
+- **Sidebar**: a collection of content on the left or right side of a webpage, usually a list of links to other content
+- **Footer**: content at the very bottom of a page, often including links
+- **Hyper Text**: a link to another webpage
+- **Markup Language**: something you can write that tells a computer "treat this content a specific way". It'll make more sense as the semester goes on :)
+- **Nesting**: putting something inside something else, like a bird and eggs inside a nest. We'll use "nesting" a lot to refer to HTML elements being inside other HTMl elements
 
 # Homework
 
-1. For next session please create a [HTML table](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics) from the list elements created during the class. The table should contain the list of HTML elements of the analyzed web page.
-2. Make yourself familiar with the [MDN Web Docs website](https://developer.mozilla.org/en-US/) and with the [W3Schools website](https://www.w3schools.com/) as they are good source of documentation
+1. Create a wireframe of a simple restaurant website. Be as detailed as possible! Where would there be text? Images? What information is important to include on a restaurant website? How would you structure it? Include all of the elements that you would like to have/think are important in a good website. You can use Excalidraw ([https://excalidraw.com/](https://excalidraw.com/)) or use pencil and paper and take a picture with your phone
+2. Make yourself familiar with the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/HTML) website and with the [W3Schools](https://www.w3schools.com/html/default.asp) website as they are good sources of information
+3. Test out Inspect on some websites!
 
-# Resources
+# Slides
 
-The following resources are good starting point for learning HTML. Please keep in mind that some of the topics we will cover in upcoming lessons:
-
-- Books: Adaptive Web Design: Crafting Rich Experiences With Progressive Enhancement, by Aaron Gustafson, first two chapters, available online [Adaptive-Web-Design.pdf](https://kammerkunst.de/data/Adaptive-Web-Design.pdf)
-- Conference JSConf EU 2015: Ryan Seddon: So how does the browser actually render a website, available online with the [link](https://youtu.be/SmE4OwHztCc)
-- Firefox and Chorme DevTools[Fireforx DevTools](https://firefox-source-docs.mozilla.org/devtools-user/) and [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpi-UrN2u3u0CylI44GEMYtkKq04_9EPl16hXjyjrTImR6d5RtSWm3X85wLZL0SRQvPTSF0OJOmRrc/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

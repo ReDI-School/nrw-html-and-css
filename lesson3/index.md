@@ -11,6 +11,9 @@ nav_order: 3
 * Whitespace
 * Comments
 * Combining elements
+* Overview of some basic html tags
+* Paragraph tag
+* Heading tags
 * Pens
 * Quiz
 * Homework
@@ -199,6 +202,104 @@ When you structure your document, you can nest elements infinitely and put them 
   <!-- ... -->
 </main>
 ```
+## Overview of some basic html tags
+
+* `<!DOCTYPE html>`: This declaration defines the document type and version of HTML you are using, typically HTML5.
+* `<html>`: Root element that contains all other HTML elements on the page.
+* `<head>`: Contains meta-information about the document, such as the title of the page and links to external resources like stylesheets and scripts.
+* `<title>`: Sets the title of the web page, which appears in the browser's title bar or tab.
+* `<meta>`: Provides metadata about the HTML document, like character encoding and viewport settings.
+* `<link>`: Specifies external resources like stylesheets (CSS) to be used with the HTML document.
+* `<style>`: Used to define inline CSS styles for specific elements on the page.
+* `<script>`: Includes JavaScript code or references an external JavaScript file.
+* `<body>`: Contains the content that is displayed on the web page, such as text, images, and other HTML elements.
+* `<h1>, <h2>, ..., <h6>`: Headings from 1 (largest and most important) to 6 (smallest and least important).
+* `<p>`: Defines a paragraph of text.
+* `<a>`: Creates hyperlinks to other web pages or resources.
+* `<img>`: Embeds images on the page.
+* `<ul>`: Defines an unordered (bulleted) list.
+* `<ol>`: Defines an ordered (numbered) list.
+* `<li>`: Used within `<ul>` or `<ol>` to define list items.
+* `<div>`: A generic container element used to group and style content.
+* `<span>`: A generic inline container element for styling or scripting purposes.
+* `<br>`: Inserts a line break within text.
+* `<hr>`: Creates a horizontal line or thematic break.
+* `<form>`: Defines a form to collect user input.
+* `<input>`: A form element for various types of input, like text fields, checkboxes, and radio buttons.
+* `<textarea>`: Defines a multiline text input field.
+* `<button>`: Creates clickable buttons within forms or web pages.
+* `<table>`: Defines an HTML table.
+* `<tr>`: Defines a table row.
+* `<td>`: Defines a table cell.
+
+## Paragraph tag
+
+The `<p>` tag stands for "paragraph" in HTML. It is used to structure and format text content on a web page. When you want to separate text into distinct paragraphs, you use the `<p>` tag to indicate the beginning and end of each paragraph.
+
+Basic Syntax:
+```html
+<p>This is a paragraph of text.</p>
+```
+The basic syntax of the `<p>` tag is as follows:
+
+- `<p>` is the opening tag.
+- `</p>` is the closing tag.
+- The text content you want to display as a paragraph goes between the opening and closing tags.
+
+Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paragraphs Example</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the first paragraph. It contains some text.</p>
+    <p>This is the second paragraph. More text here.</p>
+    <p>And here's a third paragraph. You can keep adding more as needed.</p>
+</body>
+</html>
+```
+
+Key Points:
+1. **Opening and Closing Tags**: The `<p>` tag always comes in pairs. The opening tag `<p>` marks the beginning of a paragraph, and the closing tag `</p>` marks the end of the paragraph.
+2. **Whitespace**: HTML ignores extra white spaces (like spaces, tabs, and line breaks) within the `<p>` tags. It automatically formats the text to display as a block of text with appropriate spacing.
+3. **Nesting**: Paragraphs can contain other HTML elements, such as links, images, or lists. You can nest other HTML elements within `<p>` tags to create rich content.
+4. **Semantic Meaning**: The `<p>` tag is a way to give semantic meaning to your content. It tells browsers and search engines that the enclosed text is a separate paragraph, which can be useful for accessibility and SEO.
+
+## Heading tags
+HTML heading tags, denoted by `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`, are used to define headings and subheadings on a web page. These tags represent a hierarchical structure, where `<h1>` is the most important and usually represents the main title of the page, while `<h6>` is the least important and represents a minor heading or sub-subheading.
+
+Example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>This is some content of the page.</p>
+    <h2>Subheading 1</h2>
+    <p>This is some content under Subheading 1.</p>
+    <h3>Sub-subheading 1.1</h3>
+    <p>Content under Sub-subheading 1.1.</p>
+    <h2>Subheading 2</h2>
+    <p>Content under Subheading 2.</p>
+</body>
+</html>
+```
+
+Key Points:
+
+1. **Hierarchy**: Use heading tags in a hierarchical order, starting with `<h1>` for the main title and descending to `<h6>` for less important headings.
+2. **Semantic Meaning**: Headings provide semantic meaning to your content, helping search engines and screen readers understand the structure of your page.
+3. **Styling**: By default, browsers render headings with different font sizes, making them stand out. You can further style them with CSS (Cascading Style Sheets).
+4. **Accessibility**: Properly structured headings improve accessibility for users with disabilities. Screen readers can announce headings, aiding navigation.
+5. **SEO**: Search engines use headings to understand the content of a page. Properly structured headings can positively affect your site's search engine ranking.
+6. **Use as Needed**: Use the appropriate heading level for the importance of the content. Don't skip levels (e.g., going from `<h2>` to `<h4>` without using `<h3>`).
 
 ## Pens
 
@@ -215,6 +316,16 @@ Bonus Pens we didn't cover:
 
 * [Quiz 1](https://create.kahoot.it/share/html-css-lesson-3-short-warm-up-quiz/fe0f52ca-e48b-42fe-aa46-bfd6e1963839) / [live](https://kahoot.it/?pin=2630819&refer_method=link)
 * [Quiz 2](https://create.kahoot.it/share/html-css-lesson-3-quiz-on-the-building-blocks-of-html/a432307c-be9b-472b-abc0-42d04751ffb2) / [live](https://kahoot.it/?pin=9441788&refer_method=link)
+
+* Match the HTML tags on the left with their descriptions on the right.  
+  `<p>`:            a. Used for creating lists with numbered points.  
+  `<h1>`:           b. Defines a paragraph of text.  
+  `<div>`:          c. Used for creating lists with bullet points.  
+  `<ul>`:           d. Creates a large, top-level heading.  
+  `<li>`:           e. A generic container for styling or scripting.  
+  `<ol>`:           f. Defines a subheading or lower-level heading.  
+  `<h2>`:           g. Represents a list item.  
+
 
 ## Homework
 

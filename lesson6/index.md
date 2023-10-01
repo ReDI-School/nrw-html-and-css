@@ -1,16 +1,19 @@
 ---
-title: Lesson 6 - Using CSS Selectors
+title: Lesson 6 - Units of Measurement in HTML & CSS; Formatting Text with CSS; CSS Basic Colors
 nav_order: 6
 ---
 
-# Using CSS Selectors
+# CSS Text Formatting
 
 ## Class Agenda
 
-- Units of measurement in HTML & CSS
-- CSS class and ID selectors
-- Selector lists
-- Chaining CSS selectors
+1. Welcome & icebreaker (15min)
+2. Units of Measurement in HTML & CSS (5min)
+3. CSS Comments
+4. Formatting Text with CSS (5min)
+5. CSS Fonts (10min)
+6. CSS Basic Colors (Borders & Backgrounds) (5min)
+   Total: 40min
 
 ## Units of Measurement in HTML & CSS
 
@@ -46,222 +49,80 @@ img {
 
 There are several other CSS units that you may see and use (see the [Resources](#resources) section below for more), but these two are the most common. You can create complex and beautiful layouts just using `px` and `%`!
 
-## CSS Class and ID selectors
+## CSS Comments
 
-Last class, we learned the _CSS type selector_ (also called the _element selector_). Here's an example:
+Just like we can add HTML comments to our html files we can also add CSS comments to our CSS code. This section will cover how to do that.
 
-```css
-h1 {
-  font-family: Arial;
-  color: powderblue;
-  font-size: 40px;
-}
-```
+## Formatting Text with CSS
 
-This CSS code means: "All h1 elements on the page should have the font family `Arial`, the color `powderblue`, and the size 40 pixels."
+We have learned how to apply basic text formatting on a website by using some [HTML text formatting tags](https://redi-school.github.io/berlin-html-and-css/lesson4/#3-html-text-styling-tags). However, most of the text formatting is done via abundant CSS text formatting rules. Therefore, this section will cover some of those CSS rules including:
 
-That's great if we want a style to apply to every element of that type on our page. But what if we only want some elements of a specific type to have a certain style?
+- Text Alignment (`text-align`)
+- Text Decoration
 
-For example, take this HTML:
+There are another sections that you can check in the respective resources:
 
-```html
-<h1>I want this heading to be red!</h1>
-<h1>And I want this heading to be blue!</h1>
-```
+- Text Direction
+- Text Indentation
+- Text-Shadow
 
-If I write the following CSS:
+## CSS Fonts
 
-```css
-h1 {
-  color: red;
-}
+A crucial role on all websites plays the font. It can give a totally different look and feel on your website.
 
-h1 {
-  color: blue;
-}
-```
+This section will cover:
 
-Both of my headings will now be blue! This is because when there are two conflicting styles, the one lower down in the CSS will always win. In other words, because `color: blue` comes after `color: red`, the color will always be blue.
+- Font-families
+- Font-style [`font-style`](https://www.w3schools.com/css/css_font_style.asp)
 
-To make our two headings different colors, we need to use a different selector. Let's try the _CSS class selector_.
+## CSS Basic Colors
 
-### Class selectors
+This section will cover some basic CSS colors [standard color names](https://www.w3schools.com/colors/colors_names.asp) (e.g. Tomato, Azure, DodgerBlue, etc.). It will also practice the usage of those color names together with the following CSS Rules, which students will learn:
 
-Up until now, we've used the _type selector_, which selects ALL elements of a specific type (`h1`, `p`, `img`, etc.). A _class selector_ selects _all elements with a specific class attribute_.
+- Background Color
+- Text Color
+- Border Color (keep in mind that this only covers the border color without the border style and sizes. We can use `2px solid` without going into details)
 
-Here's an example:
+# Exercise Description
 
-```html
-<h1 class="red-heading">I want this heading to be red!</h1>
-<h1 class="blue-heading">And I want this heading to be blue!</h1>
-```
+1. Practice using CSS styles with this [codepen](https://codepen.io/redi-school/pen/bGxywzN)
 
-```css
-.red-heading {
-  color: red;
-}
+2. Create your own personal biography page, including:
 
-.blue-heading {
-  color: blue;
-}
-```
+- multiple different headings,
+- multiple paragraphs (you can use lorem\*5 to quickly fill with placeholder text)
+- lists,
+- images
+  Ad CSS styles to your page. Try to use everything we learned today!
 
-In our HTML, we have now set `class` attributes on both of our elements. Remember that `class` is a _global attribute_, which means it can be set on any element.
+---
 
-In our CSS, we have then used a `.` and the name of the class we want to style. The `.` indicates that we are using a class selector.
+# Homework
 
-A class selector can have any name - the only thing required for it to work is that the name must match in the CSS and HTML.
-
-For example, take this code:
-
-```html
-<h1 class="asb0180g">I want this heading to be red!</h1>
-<h1 class="yellow-chair">And I want this heading to be blue!</h1>
-```
-
-```css
-.asb0180g {
-  color: red;
-}
-
-.yellow-chair {
-  color: blue;
-}
-```
-
-This code works _exactly the same_ as our previous code. Again, we set a `class` attribute in our HTML, and then we use a class selector to style those elements. The name of the class does not matter, as long as it matches in the HTML and CSS!
-
-### ID selectors
-
-ID selectors work exactly the same as `class` selectors, but using the `id` attribute and the `#` symbol instead of a `.`:
-
-```html
-<h1 id="red-heading">I want this heading to be red!</h1>
-<h1 id="blue-heading">And I want this heading to be blue!</h1>
-```
-
-```css
-#red-heading {
-  color: red;
-}
-
-#blue-heading {
-  color: blue;
-}
-```
-
-Just like with `class` selectors, our `id` selectors have to match the value in our `id` attribute in the HTML. The values can be anything, as long as they match.
-
-```html
-<h1 class="kjng0923jg">I want this heading to be red!</h1>
-<h1 class="chocolate-cake">And I want this heading to be blue!</h1>
-```
-
-```css
-#kjng0923jg {
-  color: red;
-}
-
-#chocolate-cake {
-  color: blue;
-}
-```
-
-### Class vs. ID selectors
-
-When should you use a class selector and when should you use an ID selector?
-
-Most of the time, you'll use a `class` attribute and the class selector (with `.`).
-
-That's because there are two important differences between the `class=""` attribute and the `id=""` attribute.
-
-First, you _cannot have more than one element with a specific ID attribute_ on your page! But it is perfectly acceptable to have multiple elements with the same class attribute in your HTML.
-
-Second, one element can have multiple classes by separating them with a space, but an element can _not_ have more than one ID.
-
-This is fine:
-
-```html
-<h1 class="red-heading large-text">
-  I want this heading to be red and have large text!
-</h1>
-<h1 class="red-heading">Another red heading!</h1>
-<h1 class="blue-heading">And I want this heading to be blue!</h1>
-<h1 class="blue-heading full-width">
-  This one too! And I want it to be extra wide!
-</h1>
-<h1 class="red-heading">Back to red!</h1>
-<h1 class="blue-heading">Back to blue!</h1>
-```
-
-Do **not** do this, it is not valid HTML because two elements have the same `id` attribute:
-
-```html
-<!-- Don't do this! -->
-<h1 id="red-heading">I want this heading to be red!</h1>
-<h1 id="red-heading">I should have used a class instead...</h1>
-<h1 id="blue-heading small-text">I should have used a class instead...</h1>
-<!-- Don't do this! -->
-```
-
-It is very useful to be able to have multiple elements with the same `class` attribute. That way, you can apply the same style to a whole group of elements at the same time!
-
-And adding multiple classes to an element means you can make your classes composable, meaning you can combine several classes to achieve a desired result (such as having separate `red-heading` and `large-text` classes, one of which sets a color and one of which sets a font-size).
-
-So what is the point of IDs if they are not reusable?
-
-Well, they are often used for Javascript or for linking to a specific part of a page. And sometimes they are useful for applying CSS styles as well, especially when chaining selectors. More on that topic in following lessons!
-
-## Exercise 1
-
-Fork this CodePen and follow the instructions to add styles using class and ID selectors: [https://codepen.io/redi-school/pen/poOMMJx](https://codepen.io/redi-school/pen/poOMMJx)
-
-## Selector lists
-
-It's possible to put a comma between CSS selectors and apply the same style to all elements matching those selectors.
-
-```html
-<h1 class="red-text">I want this heading to be red!</h1>
-<p>
-  This is a paragraph. I want it to be the same color as the heading. In fact, I
-  want ALL of my paragraphs to be the same color as my heading!
-</p>
-```
-
-```css
-.red-text,
-p {
-  color: red;
-}
-```
-
-In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
-
-## Exercise 2
-
-Create your own personal biography page!
-
-20 minutes: write as much HTML as possible. Try to use multiple different headings, multiple paragraphs (you can use lorem\*5 to quickly fill with placeholder text), lists, and images
-
-20 minutes: add CSS styles to your page. Try to use everything we learned today!
-
-## Homework
-
-Keep adding to your personal biography page until it has all of the following elements, attributes, selectors, and styles:
+1. Keep working in your personal biography page until it has all of the following elements, attributes, selectors, and styles:
 
 - HTML elements: h1, h2, h3, p, img, ul, ol, li, a
 - HTML attributes: class, id, src, href
-- CSS selectors: type (h1, h2, p, etc.), class (`.`), id (`#`), selector list (like `h1, 2 {...}`)
+- CSS selectors: type (h1, h2, p, etc.), class (.), id (#), selector list (like h1, p {...})
 - CSS styles: color, font-size, font-family, background-color, border, padding, margin
 
-If part of this feels repetitive, that's because it is! Repetition helps us remember material and get faster at accessing it in our brains :)
+If part of this feels repetitive, that’s because it is! Repetition helps us remember material and get faster at accessing it in our brains. Practice is your bestfriend.
 
-Optional extra: try [CSS diner](https://flukeout.github.io). See if you can complete the first 12 levels!
+- Read more about different web font families [here](https://www.hostinger.com/tutorials/best-html-web-fonts). Get to know what the different companies are using
+- Make sure to use your own image / photo on your websites
+- (Optional) Try CSS diner [CSS Diner](https://flukeout.github.io/). See if you can complete the first 12 levels!
+- (Optional) Check out the nice [CSS tricks](https://css-tricks.com/almanac/properties/t/text-shadow/) with text shadow
 
-## Resources
+# Resources
 
+- [Recap of HTML Tree](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html)
 - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+- [CSS Basic Colors](https://www.w3schools.com/css/css_colors.asp)
+- [CSS Standard Names](https://www.w3schools.com/colors/colors_names.asp)
+- [CSS Text](https://www.w3schools.com/css/css_text.asp)
+- [CSS Font](https://www.w3schools.com/css/css_font.asp)
+- [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)
 
-## Slides
+# Slides
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS0VToNnFnH84r4nPbK9UBO7wOnI5hXH50JIe9IXa160FzQ7s2_JneBBSqYoNI-S8QN_6ZRZs2VnBII/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/10OmFwXbrmZFZ1n65YscQxQPJL4lfeH40EF2beaJr5Kg/edit" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

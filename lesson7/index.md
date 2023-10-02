@@ -1,24 +1,26 @@
 ---
-title: Lesson 6 - Using CSS Selectors
-nav_order: 6
+title: Lesson 7 - Using CSS Selectors
+nav_order: 7
 ---
 
-# Using CSS Selectors
+# CSS Text Formatting
 
 ## Class Agenda
 
-- CSS Descendant Selector
-- CSS class and ID selectors
-- Selector lists
-- Chaining CSS selectors
+1. CSS Descendant selector
+2. CSS class and ID selectors
+3. Selector lists
+4. Chaining CSS selectors
 
 ## CSS Descendant selector
 
 This section will teach how to match descendant elements by using the CSS Descendant Selector.
 
+ETA: 10mins
+
 ## CSS Class and ID selectors
 
-In the previous topic, we learned the _CSS type selector_ (also called the _element selector_). Here's an example:
+Last class, we learned the _CSS type selector_ (also called the _element selector_). Here's an example:
 
 ```css
 h1 {
@@ -207,36 +209,40 @@ p {
 
 In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
 
-## Exercise 2
+# Exercise Description
 
-Create your own personal biography page!
+Fork this CodePen and follow the instructions to add styles using class and ID selectors:
+https://codepen.io/redi-school/pen/poOMMJx
 
-20 minutes: write as much HTML as possible. Try to use multiple different headings, multiple paragraphs (you can use lorem\*5 to quickly fill with placeholder text), lists, and images
+Exercises should be done along with the content of the lecture. Your website should include...
 
-20 minutes: add CSS styles to your page. Try to use everything we learned today!
-
-## Homework
-
-Keep adding to your personal biography page until it has all of the following elements, attributes, selectors, and styles:
-
-- HTML elements: h1, h2, h3, p, img, ul, ol, li, a
-- HTML attributes: class, id, src, href
-- CSS selectors: type (h1, h2, p, etc.), class (`.`), id (`#`), selector list (like `h1, 2 {...}`)
-- CSS styles: color, font-size, font-family, background-color, border, padding, margin
-
-If part of this feels repetitive, that's because it is! Repetition helps us remember material and get faster at accessing it in our brains :)
-
-Optional extra: try [CSS diner](https://flukeout.github.io). See if you can complete the first 12 levels!
+- Applying font on the page
+- Text aligning the content of the footer
+- Adding a dedicated class for our `<a>` tags which are placed withing the navigation via a `descendant selector`. Also applying `text-decoration` and `color` css rules
+- Applying a CSS comment on the `nav a` selector
+- Adding basic border coloring on the `section`
+- Adding text indentation to our section paragraphs
+- Adding text shadow in our `#greeting` element
 
 # Glossary & Terminology
 
 - `Ancestor Element` - An ancestor refers to any element that is connected to another element in the HTML Tree but is placed further up the document tree - no matter how many levels higher. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
 - `Descendant Element` - A descendant refers to any element that is connected to another element in the HTML Tree but is placed lower down the document tree - no matter how many levels lower. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
 
-## Resources
+---
 
+# Homework
+
+- Read more about different web font families [here](https://www.hostinger.com/tutorials/best-html-web-fonts). Get to know what the different companies are using
+- Make sure to use your own image / photo on your websites
+- (Optional) Check out the nice [CSS tricks](https://css-tricks.com/almanac/properties/t/text-shadow/) with text shadow
+
+# Resources
+
+- [Recap of HTML Tree](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html)
 - [CSS Descendant Selector](https://www.w3schools.com/css/css_combinators.asp)
-
-## Slides
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS0VToNnFnH84r4nPbK9UBO7wOnI5hXH50JIe9IXa160FzQ7s2_JneBBSqYoNI-S8QN_6ZRZs2VnBII/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+- [CSS Basic Colors](https://www.w3schools.com/css/css_colors.asp)
+- [CSS Standard Names](https://www.w3schools.com/colors/colors_names.asp)
+- [CSS Text](https://www.w3schools.com/css/css_text.asp)
+- [CSS Font](https://www.w3schools.com/css/css_font.asp)
+- [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)

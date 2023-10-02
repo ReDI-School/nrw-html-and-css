@@ -130,6 +130,13 @@ This section will cover some basic CSS colors [standard color names](https://www
 
 2. Create your own personal biography page, including:
 
+- Applying font on the page
+- Text aligning the content of the footer
+- Adding a dedicated class for our <a> tags and text-decoration and color css rules
+- Applying a CSS comment
+- Adding basic border coloring
+- Adding text indentation
+- Adding text shadow
 - multiple different headings,
 - multiple paragraphs (you can use lorem\*5 to quickly fill with placeholder text)
 - lists,

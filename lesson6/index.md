@@ -8,12 +8,53 @@ nav_order: 6
 ## Class Agenda
 
 1. Welcome & icebreaker (15min)
-2. Units of Measurement in HTML & CSS (5min)
-3. CSS Comments
-4. Formatting Text with CSS (5min)
-5. CSS Fonts (10min)
-6. CSS Basic Colors (Borders & Backgrounds) (5min)
-   Total: 40min
+2. Recap (10min)
+3. Units of Measurement in HTML & CSS (5min)
+4. CSS Comments
+5. Formatting Text with CSS (5min)
+6. CSS Fonts (5min)
+7. CSS Basic Colors (Borders & Backgrounds) (5min)
+   Total: 45min
+
+## Recap Class Attributes
+
+Review what we’ve learned about HTML Attributes.
+Last class, we learned the CSS type selector (also called the element selector). Here’s an example:
+
+```css
+h1 {
+  font-family: Arial;
+  color: powderblue;
+  font-size: 40px;
+}
+```
+
+This CSS code means: “All h1 elements on the page should have the font family Arial, the color powderblue, and the size 40 pixels.”
+
+That’s great if we want a style to apply to every element of that type on our page. But what if we only want some elements of a specific type to have a certain style?
+
+For example, take this HTML:
+
+```html
+<h1>I want this heading to be red!</h1>
+<h1>And I want this heading to be blue!</h1>
+```
+
+If I write the following CSS:
+
+```css
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+```
+
+Both of my headings will now be blue! This is because when there are two conflicting styles, the one lower down in the CSS will always win. In other words, because color: blue comes after color: red, the color will always be blue.
+
+[Quizz Recap](https://create.kahoot.it/details/9f2ed971-6d30-491d-8060-33bb2fbc9cd7)
 
 ## Units of Measurement in HTML & CSS
 

@@ -1,24 +1,17 @@
 ---
-title: Lesson 7 - Using CSS Selectors
+title: Lesson 7 - CSS Class and ID Selectors
 nav_order: 7
 ---
 
-# CSS Text Formatting
-
 ## Class Agenda
 
-1. CSS Descendant selector
-2. CSS class and ID selectors
-3. Selector lists
-4. Chaining CSS selectors
+1. Review CSS Type/Element Selector
+2. Selector lists
+3. CSS class and ID selectors
 
-## CSS Descendant selector
-
-This section will teach how to match descendant elements by using the CSS Descendant Selector.
-
-ETA: 10mins
-
-## CSS Class and ID selectors
+## Review of CSS type/element selector
+quick check in to see if everyone understands/remembers concept
+5 mins
 
 Last class, we learned the _CSS type selector_ (also called the _element selector_). Here's an example:
 
@@ -31,6 +24,8 @@ h1 {
 ```
 
 This CSS code means: "All h1 elements on the page should have the font family `Arial`, the color `powderblue`, and the size 40 pixels."
+
+## CSS Class and ID selectors
 
 That's great if we want a style to apply to every element of that type on our page. But what if we only want some elements of a specific type to have a certain style?
 
@@ -210,6 +205,8 @@ p {
 In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
 
 # Exercise Description
+Group breakout rooms (3/4 people)
+15 minutes
 
 Fork this CodePen and follow the instructions to add styles using class and ID selectors:
 https://codepen.io/redi-school/pen/poOMMJx
@@ -224,14 +221,10 @@ Exercises should be done along with the content of the lecture. Your website sho
 - Adding text indentation to our section paragraphs
 - Adding text shadow in our `#greeting` element
 
-# Glossary & Terminology
-
-- `Ancestor Element` - An ancestor refers to any element that is connected to another element in the HTML Tree but is placed further up the document tree - no matter how many levels higher. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
-- `Descendant Element` - A descendant refers to any element that is connected to another element in the HTML Tree but is placed lower down the document tree - no matter how many levels lower. Check out this [guide](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
-
----
 
 # Homework
+
+Create your own personal profile page using everything we have learned so far
 
 - Read more about different web font families [here](https://www.hostinger.com/tutorials/best-html-web-fonts). Get to know what the different companies are using
 - Make sure to use your own image / photo on your websites

@@ -9,10 +9,15 @@ In this lesson, we'll continue to build our grid skills, learning new ways to po
 
 ## Agenda
 
+
 1. `grid-template-areas` and `grid-area`
 2. Overlapping items in a grid using `z-index`
 3. `grid-auto-rows` and `grid-auto-columns`
 4. Final project intro
+
+1. Reach [Checkpoint 17](https://github.com/ReDI-School/nrw-html-and-css/tree/checkpoint17/checkpoint)
+1. Do extra exercises
+
 
 ## Slides
 

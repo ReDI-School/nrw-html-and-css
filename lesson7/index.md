@@ -246,3 +246,7 @@ Exercises should be done along with the content of the lecture. Your website sho
 - [CSS Text](https://www.w3schools.com/css/css_text.asp)
 - [CSS Font](https://www.w3schools.com/css/css_font.asp)
 - [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)
+
+# Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbsiMhh-u4zUQBlAsgoV4rllJv1i1fzCV3oUTXt9W6ybIGNGRm2MD25YEfbNwDJVLul9WyOn4Aul1u/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

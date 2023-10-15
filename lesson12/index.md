@@ -1,6 +1,6 @@
 ---
-title: Lesson 12 - Linking and Filepaths
+title: Lesson 12 - Mid-semester demo & celebration
 nav_order: 12
 ---
 
-No content here yet, sorry!
+Today in class we'll demo our first projects for the class and celebrate the progress we've made so far!

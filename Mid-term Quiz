@@ -1,0 +1,50 @@
+1. Do all HTML elements require a closing tag?
+a) Yes, all HTML elements must have a closing tag
+b) No, some HTML elements do not have a closing tag
+c) It depends on the version of HTML being used
+Answer: b
+2. What is the primary difference between static and dynamic web pages?
+a) Static web pages are easier to maintain than dynamic web pages
+b) Dynamic web pages are faster to load than static web pages
+c) Static web pages are pre-built and do not change, while dynamic web pages are built on-the-fly and can be customized for each user
+Answer: c
+3. .Which HTML tag is used to define an internal CSS style sheet?
+a) < css >
+b) < script >
+c) <style>
+Answer: c
+4. What’s the purpose of the margin Property in CSS?
+a. To specify the space between an element’s border and its content
+b. To specify the space between an element’s content and it’s padding
+c. To specify the space between an element and the other elements
+Answer: c
+5. Which property is used to align items across the page from left to right in a flex container?
+a. align-items
+b. justify-content
+c. Align-content
+Answer : b
+6. How to create an input field to upload a file?
+a. <input upload=”abc.txt”>
+b. <input type=”file”>
+c. <input name=”file”>
+Answer: b
+7. What are the valid states that a link can have?
+a. Visited, Hover, Focus, AcHve
+b. unvisited, Fixed, Pointer, inacHve
+c. unvisited, Focus, inacHve, pointer
+Answer: a
+8. What is a valid absolute unit?
+a. %
+b. Px
+c. None of the above
+Answer: b
+9. Which of the following statements is most accurate for the CSS property "text-align: justify;"?
+a) It aligns text to the center of the container
+b) It justifies the text to both the left and right margins of the container
+c) It aligns text to the left of the container
+Answer: b
+10. Which of the following statements best describes the difference between inline block and inline elements in HTML?
+a) Inline-block elements can have a width and height, while inline elements cannot.
+b) Inline-block elements cannot have padding or margin properties, while inline elements can.
+c) Inline-block elements disrupt the flow of text, while inline elements display elements side by side.
+Answer: a

@@ -6,6 +6,16 @@ nav_order: 7
 2. Selector lists
 3. CSS class and ID selectors
 
+CHECKIN
+- - - -
+Before we start the lesson:
+You’ll be put into two-person breakout rooms. Share what
+you are finding most difficult about
+class so far, and ask if they have ideas!
+
+When we return, we will share some things that came up during the chats
+5-10min
+
 ## Review of CSS type/element selector
 quick check in to see if everyone understands/remembers concept
 5 mins
@@ -21,6 +31,26 @@ h1 {
 ```
 
 This CSS code means: "All h1 elements on the page should have the font family `Arial`, the color `powderblue`, and the size 40 pixels."
+
+## Selector lists
+
+It's possible to put a comma between CSS selectors and apply the same style to all elements matching those selectors.
+
+```html
+<h1>I want this heading to be red!</h1>
+<p>
+  This is a paragraph. I want it to be the same color as the heading. In fact, I
+  want ALL of my paragraphs to be the same color as my heading!
+</p>
+```
+
+```css
+h1, p {
+  color: red;
+}
+```
+
+In this case, our CSS means "all elements h1` and all `p` elements should have the style `color: red`."
 
 ## CSS Class and ID selectors
 
@@ -170,52 +200,34 @@ Well, they are often used for Javascript or for linking to a specific part of a 
 
 ## Exercise 1
 
-Fork this CodePen and follow the instructions to add styles using class and ID selectors: [https://codepen.io/redi-school/pen/poOMMJx](https://codepen.io/redi-school/pen/poOMMJx)
-
-## Selector lists
-
-It's possible to put a comma between CSS selectors and apply the same style to all elements matching those selectors.
-
-```html
-<h1 class="red-text">I want this heading to be red!</h1>
-<p>
-  This is a paragraph. I want it to be the same color as the heading. In fact, I
-  want ALL of my paragraphs to be the same color as my heading!
-</p>
-```
-
-```css
-.red-text,
-p {
-  color: red;
-}
-```
-
-In this case, our CSS means "all elements with the class `red-text` and all `p` elements should have the style `color: red`."
+Fork this CodePen and follow the instructions to add styles using class and ID selectors: https://codepen.io/EsYetsko/pen/abPXPmR?editors=1100
 
 # Exercise Description
 Group breakout rooms (3/4 people)
 15 minutes
-Fork this CodePen and follow the instructions to add styles using class and ID selectors:
-https://codepen.io/redi-school/pen/poOMMJx
+Fork this CodePen and follow the instructions:
+Include the following:
+1 ID (minimum):
+HTML:    id= “id-name”
+CSS:    #id-name { }
+2 Classes (minimum):
+HTML:    class= “class-name”
+CSS:    .class-name {  }
+1 selector list (minimum):
+CSS: h1, h2, p { }
+Remember that there is no right answer but each element should have CSS!
 
-ETA: 20 mins
-Exercises should be done along with the content of the lecture. Your website should include...
+# HOMEWORK:
+Create your personal biography page until it has all of the following elements, attributes, selectors, and styles:
+HTML elements: h1, h2, h3, p, img, ul, ol, li, a
+HTML attributes: class, id, src, href
+CSS selectors: type (h1, h2, p, etc.), class (.), id (#), selector list (like h1, p {...})
+CSS styles: color, font-size, font-family, background-color, border, padding, margin
 
-# Glossary & Terminology
-- Applying font on the page
-- Text aligning the content of the footer
-- Adding a dedicated class for our `<a>` tags which are placed withing the navigation via a `descendant selector`. Also applying `text-decoration` and `color` css rules
-- Applying a CSS comment on the `nav a` selector
-- Adding basic border coloring on the `section`
-- Adding text indentation to our section paragraphs
-- Adding text shadow in our `#greeting` element
+If part of this feels repetitive, that’s because it is! Repetition helps us remember material and get faster at accessing it in our brains :)
 
-- Use internal CSS and Inline CSS to achieve the same result from the exercise in this class.
-Create your own personal profile page using everything we have learned so far
 
 - Read more about different web font families [here](https://www.hostinger.com/tutorials/best-html-web-fonts). Get to know what the different companies are using
-- Make sure to use your own image / photo on your websites
 - (Optional) Check out the nice [CSS tricks](https://css-tricks.com/almanac/properties/t/text-shadow/) with text shadow
 
 - [Recap of HTML Tree](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html)
@@ -225,3 +237,8 @@ Create your own personal profile page using everything we have learned so far
 - [CSS Text](https://www.w3schools.com/css/css_text.asp)
 - [CSS Font](https://www.w3schools.com/css/css_font.asp)
 - [Web Safe Fonts](https://www.w3schools.com/css/css_font_websafe.asp)
+
+
+Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbsiMhh-u4zUQBlAsgoV4rllJv1i1fzCV3oUTXt9W6ybIGNGRm2MD25YEfbNwDJVLul9WyOn4Aul1u/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

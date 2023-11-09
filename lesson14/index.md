@@ -15,7 +15,6 @@ nav_order: 14
 1. Introducing the `<!DOCTYPE html>`, `<html>`, `<head>`. and `<body>` Tags
 1. Linking HTML and CSS files together
 1. Viewing Your New Page
-1. The Next Project
 
 ## Introduction
 
@@ -188,28 +187,20 @@ To make changes to your HTML and view them, follow these steps:
 
 That's it!
 
-## The Next Project
+# Exercise
 
-For the next project, we'll create an e-commerce website! Your website should have:
-
-- A homepage
-- At least 1 product page
-- Links between the pages
-- A navigation bar (good opportunity to use flexbox!)
-
-Today in class, we'll use pencil and paper to sketch out the layout for at least two pages. You can create a product page for any product you like. We recommend you choose something you use and like - it could be your phone, a piece of jewelry, a food you eat, a piece of clothing, a pair of shoes...use your imagination!
-
-You should use this as an opportunity to put together all of the concepts we've learned in class so far! Try to make use of:
-
-- Font styles
-- Flexbox for layout
-- A variety of HTML tags
-- CSS class and element selectors
+- [Change your theme](https://code.visualstudio.com/docs/getstarted/themes)
+- Install the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for automatic code formatting
+- Create a second set of HTML + CSS files and link them
+- Can you link multiple CSS stylesheets to one HTML file? Try it!
+- Can you link multiple HTML files to one stylesheet? Try it!
+- Can you download an image and display it locally? Try it!
 
 # Homework
 
 1. Make sure you are comfortable creating files and folders on your computer. Watch [Computer Skills Course: File Management, Part 1](https://www.youtube.com/watch?v=k-EID5_2D9U) and [Computer Skills Course: File Management, Part 2](https://www.youtube.com/watch?v=DGd48PGbnBs) if you are unsure or would like to review. Note that you can turn on subtitles if you're having a hard time understanding him or hear some new words you're not familiar with!
-1. Start working on the project!
+1. Watch [this YouTube](https://www.youtube.com/watch?v=BMT3JUWmqYY) video on file paths and write down notes/questions. If you prefer reading to watching, read [this article](https://medium.com/@Linda_Ikechukwu/understanding-file-paths-165c07ec5cf0). Or do both!
+   It’s OK if this does not fully make sense yet! We’ll practice in class next week, and it takes time. Just get a start!
 
 # Slides
 

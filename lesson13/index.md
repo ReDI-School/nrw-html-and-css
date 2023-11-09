@@ -3,10 +3,6 @@ title: Lesson 13 - Selectors, Cascade, Specificity and Inheritance
 nav_order: 13
 ---
 
-# Heads up!
-
-In Spring 2023, lesson 13 was the mid-semester celebration, and this material was spread around to other lessons. Leaving it here for now in case you find it helpful!
-
 # Cascade, Specificity, Inheritance, and Advanced Selectors
 
 In this class, we want to improve our understanding of how CSS applies the styles we write on the HTML elements.
@@ -234,3 +230,7 @@ It is useful to know that `!important` exists, however, you are strongly advised
 - [Combinator Selectors](https://www.w3schools.com/css/css_combinators.asp)
 - [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
 - [Pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
+
+# Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRX-gnYL6fEBnENE_Lvp1k88pAbA3i8bIijUCzOwfrxkJOagHH9RsV8kq5dPQouWZ99l7ozlvJyArK4/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

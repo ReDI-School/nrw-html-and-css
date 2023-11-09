@@ -1,58 +1,79 @@
 ---
-title: Lesson 16 - CSS Positioning
+title: Lesson 16 - CSS Media Queries
 nav_order: 16
 ---
 
-# CSS Positioning
+# CSS Media Queries
 
-## Introduction
+## 1. Introduction
 
-The positioning of elements can be controlled via the CSS `position` rule. It allows you to take elements out of their normal flow. This section briefly introduces CSS Positioning and available values.
+Media queries are a fundamental aspect of creating responsive web designs, which allow websites to adapt to different devices and screen sizes.
 
-position: static - This is the default positioning which HTML elements are using.
+In this lesson, we'll explore how media queries work and how you can use them to create layouts that look great on both desktop and mobile devices.
 
-position: relative - takes an element out of its normal flow and places it relative to its normal flow. To do this relative placement one needs to use the following CSS rules: `top`, `right`, `bottom`, `left`.
+While desktop computers were once the primary way people connected to the internet, the rise of smartphones has dramatically changed the game. Today, most people use their smartphones to access the internet. Mobile internet usage has surpassed desktop usage in recent years, and this trend is only expected to continue.
 
-position: absolute - places elements with respect to their parent or ancestor containers. It is used to create more complex layouts and features. Absolute positioning is a very special one because it can introduce different behavior based on the [positioning context](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts) of the element on which we apply this position type.
+Your job, as a web developer, is to develop websites that work seamlessly across a variety of devices, including smartphones and tablets. We’re going to look at a concept called Media Queries, which will help us to do this.
 
-position: fixed - fixes an element relative to the visible viewport.
+## 2. Using Media Queries
 
-position: sticky - This positioning type is a combination between relative positioning and fixed positioning. [Differences](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.) between fixed and sticky positioning.
+A media query is a conditional statement that checks certain conditions (such as screen size, device orientation, or aspect ratio) and applies a set of CSS styles based on those conditions.
 
-## Syntax
+For example, a media query could apply different font sizes or layout styles to a website when viewed on a smartphone device versus a laptop.
+
+Media queries work by using the "@media" rule in CSS, which specifies a set of styles to apply when certain conditions are met.
+
+Developers can use a variety of conditions to trigger a media query, such as "max-width", "min-width", "orientation", and "device-pixel-ratio".
+
+## 3. Syntax
 
 ```css
-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
 }
 ```
 
-## Exercise
+## 4. Example
 
-[Codepen](https://codepen.io/eporubin/pen/XWxBgPp)
+[CSS Media Queries Demo](https://codepen.io/redi-school/pen/QWZaeJP)
 
-## Glossary & Terminology
+## 5. The viewport tag
 
-- `Positioning` - The characteristic of elements, which defines where exactly on the webpage they are placed. Whether that is with a normal flow or taken out of the normal flow.
+The viewport HTML meta tag is important for accurate media queries because it helps the browser determine the size of the viewport (the visible area of the webpage).
+Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once.
 
-- `Z-Index` - The `z-index` CSS property sets the z-order (i.e. z-axis placement) of a positioned element and its descendant items. Overlapping elements with a larger z-index cover those with a smaller one. More on this can be seen [here](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
----
+Without this tag, the browser may use a default viewport size, which can cause media queries to work incorrectly.
 
-## Homework
+## 6. Exercise
 
-[Codepen](https://codepen.io/eporubin/pen/BaqPZbg)
+Start a new project in your IDE. you’ll need at least one HTML file, and a CSS file. For your HTML, create a simple page layout. For example:
 
-## Resources
+A title section with some links
+3-4 sections containing text and images
 
-- [Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#positioning_contexts)
-- [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
-- [fixed vs sticky](https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What%27s%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.)
-- [w3 schools - positioning](https://www.w3schools.com/css/css_positioning.asp)
+Next use some Media queries to make some changes across different breakpoints.
 
-## Slides
+If making a whole page responsive feels overwhelming, try just laying out some divs with different sizes and colours, and set those to different values in your media queries. Once you’re comfortable with that, try building a basic page layout (header with links, a section or two, a footer) then make them responsive!
 
-<iframe src="https://docs.google.com/presentation/d/159gqnSTK9KfKxATmxguJBAHM-4Qb3lqR/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# Glossary & Terminology
+
+- `CSS at-rule` - An instruction that ‘tells’ css how to behave. For example, @media instructs the CSS that it should only apply the media queries content if the device meets the criteria of the condition/s.
+- `media type` - Describes the device category, for example screen, print, or all.
+- `media feature` - Describe specific characteristics of the device, such as min-width or max-width.
+
+# Homework
+
+Continue to practice using Media Queries.
+
+# Resources
+
+- [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [What is Mobile First Design](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00)
+
+# Slides
+
+<iframe src="https://docs.google.com/presentation/d/1AkNMFqZrDZrenNuzXGQh9Q7X3MzhXScbCTQnyApRgLQ/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

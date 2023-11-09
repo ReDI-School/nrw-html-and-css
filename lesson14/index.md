@@ -1,9 +1,9 @@
 ---
-title: Lesson 14 - VSCode, Files, & the Next Project
+title: Lesson 14 - Visual Studio Code + Writing HTML & CSS Locally
 nav_order: 14
 ---
 
-# VSCode, Writing HTML & CSS Locally, and the Next Project
+# Visual Studio Code + Writing HTML & CSS Locally
 
 ## Class Agenda
 

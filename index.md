@@ -13,14 +13,3 @@ On this site we collect all the materials like slides, exercises with solutions,
 as well as additional resources that you may/should look into.
 
 In this course we will learn how websites are made and teach you how to build your own.
-
-## Teachers
-
-* Angel
-* Donald
-* Emmanuel
-* Hemanta
-* Rachid
-* Naz
-* Shilpa
-* Ahmet (Teaching Assistant)

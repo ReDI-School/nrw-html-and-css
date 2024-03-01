@@ -52,7 +52,6 @@ The practical part of this course is covered by a project which is built through
 
 Example CV Websites:
 
-- <https://www.sesanosanyinbi.com/>
 - <https://ethanmarcotte.com/>
 - <https://laurieontech.com/>
 - <https://rachelandrew.co.uk/>
